@@ -41,6 +41,15 @@ It quickly handles what would normally be a multi-step process with `FF16.Tools`
 
 ---
 
+## Removing Mods
+
+To remove mods, you can either:
+
+* Disable all mods in Reloaded-II **except** the Mod Loader, and boot up once, or
+* Delete any `.diff` files in the game's `data/` folder.
+
+---
+
 ## Modding Manually
 
 !!! warning
