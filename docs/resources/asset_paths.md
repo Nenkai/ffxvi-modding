@@ -7,6 +7,8 @@ hide:
 
 # :octicons-rel-file-path-16: File Tree/Asset Paths
 
+Each pack corresponds to a different game folder.
+
 ```{ .sh .no-copy }
 // Main Game Packs
 "0000" # animation
