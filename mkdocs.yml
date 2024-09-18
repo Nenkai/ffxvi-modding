@@ -1,0 +1,128 @@
+
+site_name: FINAL FANTASY XVI Modding
+site_description: FINAL FANTASY XVI - Modding
+site_url: https://nenkai.github.io/ffxvi-modding/
+repo_url: https://github.com/Nenkai/ffxvi-modding
+repo_name: nenkai/ffxvi-modding
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  custom_dir: docs/overrides/
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.action.edit
+    - content.code.annotate
+    - header.autohide
+  language: en
+  palette:
+
+  # Palette toggle for automatic mode
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+    primary: brown
+    accent: brown 
+
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default 
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+    primary: brown
+    accent: brown 
+
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference
+    primary: brown
+    accent: brown
+
+
+nav:
+  - Main Page: index.md
+  - Installing/Creating Mods: 
+    - Installing Mods: modding/installing_mods.md
+    - Creating Mods: modding/creating_mods.md
+
+  - Tutorials:
+    - Extracting Files: tutorials/file_extraction.md
+
+    - Textures:
+      - Extracting Textures: tutorials/textures/texture_extraction.md
+
+  - Modder Resources:
+    - Asset Paths: resources/asset_paths.md
+    
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+
+
+  - social
+  - search:
+      lang: en
+  - glightbox
+  - table-reader
+      
+extra:
+  social:
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/D7jhUDfYZh
+
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/Nenkaai
+
+    - icon: fontawesome/brands/github 
+      link: https://github.com/Nenkai
+
+    - icon: simple/kofi
+      link: https://ko-fi.com/nenkai
+
+extra_css:
+  - stylesheets/extra.css
