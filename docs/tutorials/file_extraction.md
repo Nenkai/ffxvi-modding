@@ -11,7 +11,7 @@ icon: material/export
 
 You should be able to find the following files/folders:
 
-* `data/` - This is where the game data resides. Data is split between packs which correspond to different folders in the game.
+* `data/` - This is where the game data resides. Data is split between packs which correspond to different folders in the game. You can refer to **[this list](../resources/asset_paths.md)** to find out which pack corresponds to which folder.
 
 ---
 
