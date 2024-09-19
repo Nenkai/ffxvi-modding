@@ -14,6 +14,7 @@ It quickly handles what would normally be a multi-step process with `FF16.Tools`
 
 * :material-github: [Reloaded-II Mod Manager](https://github.com/Reloaded-Project/Reloaded-II/releases)
 * :simple-nexusmods: [ff16.utility.modloader (Mod Loader)](https://www.nexusmods.com/finalfantasy16/mods/3) - :material-github: [Github Mirror](https://github.com/Nenkai/ff16.utility.modloader/releases/)
+* :simple-7zip: [7-Zip](https://www.7-zip.org/) to extract Reloaded-II (if not using the setup)
 
 ---
 
