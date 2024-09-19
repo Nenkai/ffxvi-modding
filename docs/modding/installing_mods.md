@@ -17,15 +17,22 @@ It quickly handles what would normally be a multi-step process with `FF16.Tools`
 
 ---
 
-## Setting up Reloaded-II
+## Video Tutorial 
+
+<video controls>
+    <source src="../reloadedii-mods-install.mp4" type="video/mp4">
+</video>
+
+## Text Tutorial
+
+### Setting up Reloaded-II
 
 1. Download Reloaded-II's `Release.zip`, or `Setup.exe`.
 2. Extract `Release.zip` to its own folder or run the `Setup.exe` and install it.
 3. Open `Reloaded-II.exe`.
 4. Press the `+` Icon to add a game and select `ffxvi.exe`.
-5. In Reloaded-II's installation folder, open the folder called `Mods`.
-6. Drag & Drop `ff16.utility.modloader.7z` to Reloaded-II. You may need to restart Reloaded-II to be able to drag-drop.
-7. In Reloaded-II make sure to tick on the checkbox next to `FINAL FANTASY XVI / 16 Mod Loader` to enable it.
+5. Drag & Drop `ff16.utility.modloader.7z` to Reloaded-II. You may need to restart Reloaded-II to be able to drag-drop.
+6. In Reloaded-II make sure to tick on the checkbox next to `FINAL FANTASY XVI / 16 Mod Loader` to enable it.
 
 !!! info
 
@@ -33,7 +40,7 @@ It quickly handles what would normally be a multi-step process with `FF16.Tools`
 
 ---
 
-## Installing Mods
+### Installing Mods
 
 1. Download a mod. You can find mods on sites like Nexus Mods and GameBanana. Make sure that they are compatible with Reloaded-II.
 2. Same process, drag & drop.
