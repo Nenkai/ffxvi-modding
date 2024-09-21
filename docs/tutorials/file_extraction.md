@@ -26,6 +26,12 @@ You should be able to find the following files/folders:
 
 ### Extracting all files
 
+#### GUI (Graphical version)
+
+Open `FF16Tools.Pack.GUI.exe`. You will be presented with options to extract packs.
+
+#### CLI (Command-Line version)
+
 Open a command prompt in the folder where `FF16Tools.CLI.exe` is, and then run the following command:
 
 ``` markdown title="Example Command - Extract all files"
