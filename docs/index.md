@@ -31,6 +31,8 @@ hide:
 
     [:material-image-move: Extracting Textures](tutorials/textures/texture_extraction.md)
 
+    [:material-microsoft-excel: Nex (NXD) Editing](tutorials/nex/nxd_editing.md)
+     
 -   :material-book-alphabet:{ .lg .middle } __Resources & Info for Modders__
 
     ---

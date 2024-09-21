@@ -27,6 +27,9 @@ Once you have modded assets you'd like to mod into the game:
     └─ ...
     ```
 
+!!! warning
+    You should preferably **ALWAYS** include the `.path` file if it was present. 
+
 !!! info "Template/Sample Mod"
     :material-download: An example mod can be found [here](https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip). This changes the bottom-left text of the main title screen to add "Hello World".
 

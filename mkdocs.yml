@@ -65,6 +65,9 @@ nav:
   - Tutorials:
     - Extracting Files: tutorials/file_extraction.md
 
+    - Nex (NXD):
+      - Database Editing: tutorials/nex/nxd_editing.md
+
     - Textures:
       - Extracting Textures: tutorials/textures/texture_extraction.md
 
