@@ -76,6 +76,7 @@ nav:
     
     - Formats:
       - .pac - Pack: resources/formats/pac.md
+      - .nxd - Next ExcelDB: resources/formats/nxd.md
 
 markdown_extensions:
   - toc:
