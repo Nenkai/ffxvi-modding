@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/contributing/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/modding/creating_mods/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/modding/installing_mods/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
+    </url>
+    <url>
+         <loc>https://nenkai.github.io/ffxvi-modding/modding/mod_loader/</loc>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/resources/asset_paths/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/resources/formats/nxd/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/resources/formats/pac/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/tutorials/file_extraction/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/tutorials/nex/nxd_editing/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
     <url>
          <loc>https://nenkai.github.io/ffxvi-modding/tutorials/textures/texture_extraction/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-09</lastmod>
     </url>
 </urlset>
