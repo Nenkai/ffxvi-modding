@@ -6,6 +6,8 @@ icon: material/file-excel-box
 
 Originally in Excel form, Nex (Next ExcelDB) are database table files. SQEX converts them into a binary format (`.nxd`) - sister of FF14's `.exd` but with less metadata and little endian.
 
+These files are located in the `nxd` folder. (`0007` packs).
+
 Unlike `exd`, there are **no column metadata** whatsoever. No names, no cell fields. All had to be manually mapped.
 
 * [.exd Documentation](https://xiv.dev/game-data/file-formats/excel#excel-data-.exd)
@@ -14,6 +16,11 @@ Unlike `exd`, there are **no column metadata** whatsoever. No names, no cell fie
 * [Table Layouts](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts)
 
 *Additionally*, row data itself can contain nested structures or arrays.
+
+!!! note
+
+    Ids are also always ordered due to binary search use.
+
 
 ## Header
 
@@ -24,19 +31,19 @@ struct
     uint32_t version; // 1
     enum // uint8_t
     {
-        NEX_ROWTYPE_ROWS = 1, // single-keyed rows
-        NEX_ROWTYPE_ROWSETS = 2, // rows keyed by id, array index/key2
-        NEX_ROWTYPE_DOUBLEKEYED = 3, // rows keyed by id, secondary id, array index/key3
+        NEX_ROWTYPE_SINGLEKEYED = 1, // 1 key
+        NEX_ROWTYPE_DOUBLEKEYED = 2, // 2 keys
+        NEX_ROWTYPE_TRIPLEKEYED = 3, // 3 keys
     } type;
     
     enum // uint8_t
     {
-        NEX_ROWS_UNLOCALIZED = 1,
-        NEX_ROWS_LOCALIZED = 2,
-        NEX_ROWSETS_UNLOCALIZED = 3,
-        NEX_ROWSETS_LOCALIZED = 4,
-        NEX_DOUBLEKEYED_ROWS_UNLOCALIZED = 5,
-        NEX_DOUBLEKEYED_ROWS_LOCALIZED = 6
+        NEX_SINGLEKEYED_UNLOCALIZED = 1,
+        NEX_SINGLEKEYED_LOCALIZED = 2,
+        NEX_DOUBLEKEYED_UNLOCALIZED = 3,
+        NEX_DOUBLEKEYED_LOCALIZED = 4,
+        NEX_TRIPLEKEYED_ROWS_UNLOCALIZED = 5,
+        NEX_TRIPLEKEYED_ROWS_LOCALIZED = 6
     } category;
     
     // Determines whether to use the baseRowId for searching.
@@ -50,7 +57,7 @@ struct
 
 Following the main header, another header follows depending on the type of table.
 
-### Type 1 (Rows)
+### Type 1 (Single-Keyed)
 
 Simple rows with only one key.
 
@@ -59,7 +66,7 @@ struct
 {
     int32_t rowInfosOffset; // Offset to a list of row infos for each row
     uint32_t numRows;
-} NexRowTableHeader;
+} NexSingleKeyedTableHeader;
 ```
 
 ```c
@@ -67,104 +74,104 @@ struct
 {
     uint32_t rowID;
     int32_t rowDataOffset; // Relative to start of row info.
-} NexRowTableRowInfo;
+} NexSingleKeyedTableRowInfo;
 ```
 
 ---
 
-### Type 2 (RowSet)
+### Type 2 (Double-keyed)
 
-Row sets, with one key.
+Rows, with two keys.
 
-#### NexRowSetHeader
+#### NexDoubleKeyedTableHeader
 ```c
 struct
 {
-    uint32_t thisHeaderSize; // Also used as an offset relative to this for NexRowSetInfo[].
-    uint32_t arrayCount; // Number of row arrays in this table.
+    uint32_t thisHeaderSize; // Also used as an offset relative to this for NexDoubleKeyedSetInfo[].
+    uint32_t setCount; // Number of sets in this table.
     uint32_t reserved;
     int32_t rowsInfoOffset; // Points to another list of the data for each row (not row set).
     uint32_t totalRowCount; // Total number of rows in this table.
-} NexRowSetHeader;
-```
-
-##### NexRowSetInfo
-```c
-struct
-{
-    uint32_t rowId; // main row id/set id.
-    int32_t rowInfosOffset; // Offset to Type2RowSetRowInfo[], relative to this structure.
-    uint32_t arrayLength; // Number of rows for this set/array.
-} NexRowSetInfo;
-```
-
-##### NexRowSetRowInfo
-```c
-struct
-{
-    uint32_t rowId;
-    uint32_t arrayIndex; // array index, or key2.
-    int32_t rowDataOffset; // Relative to this structure.
-} NexRowSetRowInfo;
-```
-
-##### NexRowInfo
-```c
-struct
-{
-    uint32_t rowId;
-    uint32_t arrayIndex; // array index, or key2.
-    int32_t rowDataOffset; // Relative to this structure. May be negative (reverse offset).
-} NexRowInfo;
-```
-
-### Type 3 (Double-Keyed Sets)
-
-Rows sets, with two keys.
-
-#### NexDoubleKeyedHeader
-```c
-struct
-{
-    uint32_t thisHeaderSize;  // Also used as an offset relative to this for NexDoubleKeyedSetInfo[].
-    uint32_t count; // Number of double-keyed sets in this table.
-    int32_t rowInfoOffset;
-    int32_t rowsInfoOffset; // Points to another list of the data for each row.
-    uint32_t totalRowCount; // Total number of rows in this table.
-} NexTriKeyedHeader;
+} NexDoubleKeyedTableHeader;
 ```
 
 ##### NexDoubleKeyedSetInfo
 ```c
 struct
 {
-    uint32_t rowId; // Main row id.
-    uint32_t subRowSetInfoOffset; // Offset to NexDoubleKeyedSubSetInfo[], relative to this structure.
-    uint32_t numSubKeys; // Number of sub row keys.
-    uint32_t unkOffset; // Unknown, never used.
-    uint32_t unkAlways0; // Unknown, possible count for above, never used.
+    uint32_t key; // main row id/set id.
+    int32_t rowInfosOffset; // Offset to NexDoubleKeyedRowInfo[], relative to this structure.
+    uint32_t arrayLength; // Number of rows for this set.
 } NexDoubleKeyedSetInfo;
-```
-
-##### NexDoubleKeyedSubSetInfo
-```c
-struct
-{
-    uint32_t subRowId; // or key2.
-    uint32_t unkOffset; // Unknown, never used.
-    uint32_t unkAlways0; // Unknown, possible count for above, never used.
-    int32_t rowInfosOffset; // Offset to NexDoubleKeyedRowInfo[], relative.
-    uint32_t numRows; // Number of rows for this subset.
-} NexDoubleKeyedSubSetInfo;
 ```
 
 ##### NexDoubleKeyedRowInfo
 ```c
 struct
 {
-    uint32_t rowId;
-    uint32_t subRowId; // or key2.
-    uint32_t arrayIndex; // array index, or key3.
+    uint32_t key;
+    uint32_t key2;
+    int32_t rowDataOffset; // Relative to this structure.
+} NexDoubleKeyedRowInfo;
+```
+
+##### NexRowInfo
+```c
+struct
+{
+    uint32_t key;
+    uint32_t key2; // array index, or key2.
+    int32_t rowDataOffset; // Relative to this structure. May be negative (reverse offset).
+} NexRowInfo;
+```
+
+### Type 3 (Triple-Keyed Sets)
+
+Rows sets, with three keys.
+
+#### NexTripleKeyedTableHeader
+```c
+struct
+{
+    uint32_t thisHeaderSize;  // Also used as an offset relative to this for NexTripleKeyedSetInfo[].
+    uint32_t count; // Number of triple-keyed sets in this table.
+    int32_t rowInfoOffset;
+    int32_t rowsInfoOffset; // Points to another list of the data for each row.
+    uint32_t totalRowCount; // Total number of rows in this table.
+} NexTripleKeyedTableHeader;
+```
+
+##### NexTripleKeyedSetInfo
+```c
+struct
+{
+    uint32_t key; // Main row id.
+    uint32_t subRowSetInfoOffset; // Offset to NexTripleKeyedSubSetInfo[], relative to this structure.
+    uint32_t numSubKeys; // Number of sub row keys.
+    uint32_t unkOffset; // Unknown, never used.
+    uint32_t unkAlways0; // Unknown, possible count for above, never used.
+} NexTripleKeyedSetInfo;
+```
+
+##### NexTripleKeyedSubSetInfo
+```c
+struct
+{
+    uint32_t key2; // or key2.
+    uint32_t unkOffset; // Unknown, never used.
+    uint32_t unkAlways0; // Unknown, possible count for above, never used.
+    int32_t rowInfosOffset; // Offset to NexTripleKeyedRowInfo[], relative.
+    uint32_t numRows; // Number of rows for this subset.
+} NexTripleKeyedSubSetInfo;
+```
+
+##### NexTripleKeyedRowInfo
+```c
+struct
+{
+    uint32_t key;
+    uint32_t key2; // or key2.
+    uint32_t key3; // array index, or key3.
     uint32_t unkAlways0; // Unknown, never used.
     int32_t rowDataOffset; // Relative to this structure. May be negative (reverse offset).
 } NexRowInfo;

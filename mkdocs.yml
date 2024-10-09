@@ -58,9 +58,10 @@ theme:
 
 nav:
   - Main Page: index.md
-  - Installing/Creating Mods: 
+  - Mod Management: 
     - Installing Mods: modding/installing_mods.md
     - Creating Mods: modding/creating_mods.md
+    - Mod Loader Internals: modding/mod_loader.md
 
   - Tutorials:
     - Extracting Files: tutorials/file_extraction.md
