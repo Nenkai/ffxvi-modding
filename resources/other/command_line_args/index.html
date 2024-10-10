@@ -10,28 +10,26 @@
       
       
       
-        <link rel="canonical" href="https://nenkai.github.io/ffxvi-modding/modding/creating_mods/">
+        <link rel="canonical" href="https://nenkai.github.io/ffxvi-modding/resources/other/command_line_args/">
       
       
-        <link rel="prev" href="../installing_mods/">
+        <link rel="prev" href="../../formats/nxd/">
       
       
-        <link rel="next" href="../mod_loader/">
       
-      
-      <link rel="icon" href="../../images/favicon.png">
+      <link rel="icon" href="../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
-        <title>Creating Mods - FINAL FANTASY XVI Modding</title>
+        <title>Command Line Arguments - FINAL FANTASY XVI Modding</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,11 +59,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Creating Mods - FINAL FANTASY XVI Modding" >
+        <meta  property="og:title"  content="Command Line Arguments - FINAL FANTASY XVI Modding" >
       
         <meta  property="og:description"  content="FINAL FANTASY XVI - Modding" >
       
-        <meta  property="og:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/modding/creating_mods.png" >
+        <meta  property="og:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/resources/other/command_line_args.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -73,19 +71,19 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://nenkai.github.io/ffxvi-modding/modding/creating_mods/" >
+        <meta  property="og:url"  content="https://nenkai.github.io/ffxvi-modding/resources/other/command_line_args/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Creating Mods - FINAL FANTASY XVI Modding" >
+        <meta  name="twitter:title"  content="Command Line Arguments - FINAL FANTASY XVI Modding" >
       
         <meta  name="twitter:description"  content="FINAL FANTASY XVI - Modding" >
       
-        <meta  name="twitter:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/modding/creating_mods.png" >
+        <meta  name="twitter:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/resources/other/command_line_args.png" >
       
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -94,7 +92,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -113,7 +111,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-mods" class="md-skip">
+        <a href="#command-line-arguments" class="md-skip">
           Skip to content
         </a>
       
@@ -127,9 +125,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="FINAL FANTASY XVI Modding" class="md-header__button md-logo" aria-label="FINAL FANTASY XVI Modding" data-md-component="logo">
+    <a href="../../.." title="FINAL FANTASY XVI Modding" class="md-header__button md-logo" aria-label="FINAL FANTASY XVI Modding" data-md-component="logo">
       
-  <img src="../../images/logo.png" alt="logo">
+  <img src="../../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -146,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creating Mods
+              Command Line Arguments
             
           </span>
         </div>
@@ -265,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -280,13 +278,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../installing_mods/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../modding/installing_mods/" class="md-tabs__link">
           
   
   Mod Management
@@ -304,7 +300,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tutorials/file_extraction/" class="md-tabs__link">
+        <a href="../../../tutorials/file_extraction/" class="md-tabs__link">
           
   
   Tutorials
@@ -318,11 +314,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../resources/asset_paths/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../asset_paths/" class="md-tabs__link">
           
   
   Modder Resources
@@ -355,9 +353,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="FINAL FANTASY XVI Modding" class="md-nav__button md-logo" aria-label="FINAL FANTASY XVI Modding" data-md-component="logo">
+    <a href="../../.." title="FINAL FANTASY XVI Modding" class="md-nav__button md-logo" aria-label="FINAL FANTASY XVI Modding" data-md-component="logo">
       
-  <img src="../../images/logo.png" alt="logo">
+  <img src="../../../images/logo.png" alt="logo">
 
     </a>
     FINAL FANTASY XVI Modding
@@ -384,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,30 +399,25 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -435,7 +428,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Mod Management
@@ -449,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installing_mods/" class="md-nav__link">
+      <a href="../../../modding/installing_mods/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2zm-.75 7H16V9h-2v4h-3.25L15 17.25"/></svg>
@@ -469,32 +462,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.88-.51-1.9-.81-3-.81-3.31 0-6 2.69-6 6m7-1v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg>
-  
-  <span class="md-ellipsis">
-    Creating Mods
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../modding/creating_mods/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 .34.04.67.09 1H4a2 2 0 0 1-2-2V6c0-1.11.89-2 2-2h6l2 2h8a2 2 0 0 1 2 2v5.81c-.88-.51-1.9-.81-3-.81-3.31 0-6 2.69-6 6m7-1v-3h-2v3h-3v2h3v3h2v-3h3v-2z"/></svg>
@@ -505,53 +476,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-mods-for-the-ffxvi-mod-loader" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating Mods for the FFXVI Mod Loader
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-mods-for-manual-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating Mods for Manual Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publishing-mods-guidelines" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publishing Mods &amp; Guidelines
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -564,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mod_loader/" class="md-nav__link">
+      <a href="../../../modding/mod_loader/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19v-2H8v2zm0-6v-2H8v2zM8 7h13V5H8zM4 5v2h2V5zM3 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm1 6v2h2v-2zm-1 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm1 6v2h2v-2zm-1 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
@@ -634,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/file_extraction/" class="md-nav__link">
+      <a href="../../../tutorials/file_extraction/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-4-4v3h-9v2h9v3M1 18V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3h-2V6H3v12h12v-3h2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2"/></svg>
@@ -697,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/nex/nxd_editing/" class="md-nav__link">
+      <a href="../../../tutorials/nex/nxd_editing/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.17 3.25q.33 0 .59.25.24.24.24.58v15.84q0 .34-.24.58-.26.25-.59.25H7.83q-.33 0-.59-.25-.24-.24-.24-.58V17H2.83q-.33 0-.59-.24Q2 16.5 2 16.17V7.83q0-.33.24-.59Q2.5 7 2.83 7H7V4.08q0-.34.24-.58.26-.25.59-.25M7 13.06l1.18 2.22h1.79L8 12.06l1.93-3.17H8.22L7.13 10.9l-.04.06-.03.07q-.26-.53-.56-1.07-.25-.53-.53-1.07H4.16l1.89 3.19L4 15.28h1.78m8.1 4.22V17H8.25v2.5m5.63-3.75v-3.12H12v3.12m1.88-4.37V8.25H12v3.13M13.88 7V4.5H8.25V7m12.5 12.5V17h-5.62v2.5m5.62-3.75v-3.12h-5.62v3.12m5.62-4.37V8.25h-5.62v3.13M20.75 7V4.5h-5.62V7Z"/></svg>
@@ -768,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutorials/textures/texture_extraction/" class="md-nav__link">
+      <a href="../../../tutorials/textures/texture_extraction/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 3h4V0l5 5-5 5V7h-4zm6 8.94V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.06c-.06.33-.06.67-.06 1a8 8 0 0 0 8 8c.33 0 .67 0 1-.06M19 18l-4.5-6-3.5 4.5-2.5-3L5 18z"/></svg>
@@ -803,25 +727,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -832,7 +761,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Modder Resources
@@ -846,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/asset_paths/" class="md-nav__link">
+      <a href="../../asset_paths/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3h6v4H3zm12 7h6v4h-6zm0 7h6v4h-6zm-2-4H7v5h6v2H5V9h2v2h6z"/></svg>
@@ -874,17 +803,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -909,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/formats/pac/" class="md-nav__link">
+      <a href="../../formats/pac/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.12 5h13.75l-.94-1h-12zm15.42.23c.29.34.46.77.46 1.27V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6.5c0-.5.17-.93.46-1.27l1.38-1.68C5.12 3.21 5.53 3 6 3h12c.47 0 .88.21 1.15.55zM6 18h6v-3H6z"/></svg>
@@ -932,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resources/formats/nxd/" class="md-nav__link">
+      <a href="../../formats/nxd/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.2 17h-2L12 13.2 9.8 17h-2l3.2-5-3.2-5h2l2.2 3.8L14.2 7h2L13 12m6-9H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/></svg>
@@ -960,25 +892,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -989,7 +926,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Other
@@ -1000,10 +937,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../resources/other/command_line_args/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53m1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5"/></svg>
+  
+  <span class="md-ellipsis">
+    Command Line Arguments
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53m1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5"/></svg>
@@ -1014,6 +973,185 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#working-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working Arguments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working Arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory_limit-gbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      /memory_limit &lt;gbs&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windowtopmost" class="md-nav__link">
+    <span class="md-ellipsis">
+      /windowtopmost
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razor_gpu_friendly" class="md-nav__link">
+    <span class="md-ellipsis">
+      /razor_gpu_friendly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razor_cpu_friendly" class="md-nav__link">
+    <span class="md-ellipsis">
+      /razor_cpu_friendly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_file_cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_file_cache
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_direct_device" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_direct_device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_direct_destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_direct_destination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_directstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_directstorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildin_cpu_decompression_threads-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      /buildin_cpu_decompression_threads &lt;number&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_gpu_decompression_metacommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_gpu_decompression_metacommand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_gpu_decompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_gpu_decompression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_builtin_cpu_decompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      /enable_builtin_cpu_decompression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_file_buffering" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_file_buffering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignore_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      /ignore_config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_memory_save" class="md-nav__link">
+    <span class="md-ellipsis">
+      /enable_memory_save
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stubbed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stubbed
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1061,27 +1199,159 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-mods-for-the-ffxvi-mod-loader" class="md-nav__link">
+  <a href="#working-arguments" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating Mods for the FFXVI Mod Loader
+      Working Arguments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working Arguments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memory_limit-gbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      /memory_limit &lt;gbs&gt;
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-mods-for-manual-installation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#windowtopmost" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating Mods for Manual Installation
+      /windowtopmost
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#razor_gpu_friendly" class="md-nav__link">
+    <span class="md-ellipsis">
+      /razor_gpu_friendly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razor_cpu_friendly" class="md-nav__link">
+    <span class="md-ellipsis">
+      /razor_cpu_friendly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_file_cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_file_cache
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_direct_device" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_direct_device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_direct_destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_direct_destination
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_directstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_directstorage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buildin_cpu_decompression_threads-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      /buildin_cpu_decompression_threads &lt;number&gt;
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_gpu_decompression_metacommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_gpu_decompression_metacommand
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_gpu_decompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_gpu_decompression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_builtin_cpu_decompression" class="md-nav__link">
+    <span class="md-ellipsis">
+      /enable_builtin_cpu_decompression
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable_file_buffering" class="md-nav__link">
+    <span class="md-ellipsis">
+      /disable_file_buffering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ignore_config" class="md-nav__link">
+    <span class="md-ellipsis">
+      /ignore_config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable_memory_save" class="md-nav__link">
+    <span class="md-ellipsis">
+      /enable_memory_save
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#publishing-mods-guidelines" class="md-nav__link">
+  <a href="#stubbed" class="md-nav__link">
     <span class="md-ellipsis">
-      Publishing Mods &amp; Guidelines
+      Stubbed
     </span>
   </a>
   
@@ -1102,7 +1372,7 @@
                   
 
   
-    <a href="https://github.com/Nenkai/ffxvi-modding/edit/master/docs/modding/creating_mods.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Nenkai/ffxvi-modding/edit/master/docs/resources/other/command_line_args.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1110,44 +1380,46 @@
   
 
 
-<h1 id="creating-mods">Creating Mods<a class="headerlink" href="#creating-mods" title="Permanent link">&para;</a></h1>
-<h2 id="creating-mods-for-the-ffxvi-mod-loader">Creating Mods for the FFXVI Mod Loader<a class="headerlink" href="#creating-mods-for-the-ffxvi-mod-loader" title="Permanent link">&para;</a></h2>
-<p>Once you have modded assets you'd like to mod into the game:</p>
-<ol>
-<li>First, follow the <a href="https://reloaded-project.github.io/Reloaded-II/CreatingMods/">Reloaded II Creating Mods tutorial</a> for general information about creating a mod for Reloaded-II.</li>
-<li>Set the <code>FINAL FANTASY XVI Mod Loader as a dependency</code>. Reloaded-II will prompt you to set mod dependencies when creating the mod.</li>
-<li>Your mod's assets must be contained within the <code>FFXVI/data</code> folder. Example:</li>
-</ol>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="no-copy highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├─<span class="w"> </span>ff16.&lt;category&gt;.&lt;mymodname&gt;/
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│<span class="w">  </span>└─<span class="w"> </span>FFXVI/
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│<span class="w">     </span>└─<span class="w"> </span>data/
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│<span class="w">        </span>└─<span class="w"> </span><span class="m">0007</span>/<span class="w"> </span><span class="c1"># &lt;- Your pack must match the original pack name. 0007 is an example.</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│<span class="w">           </span>│
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│<span class="w">           </span>├─<span class="w"> </span>.path<span class="w">  </span><span class="c1"># IMPORTANT: This file is needed if there is one present.</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│<span class="w">           </span>└─<span class="w"> </span>&lt;files<span class="w"> </span>to<span class="w"> </span>mod<span class="w"> </span><span class="k">for</span><span class="w"> </span>this<span class="w"> </span>pack&gt;
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├─<span class="w"> </span>ModConfig.json
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>└─<span class="w"> </span>...
-</code></pre></div>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>You should preferably <strong>ALWAYS</strong> include the <code>.path</code> file if it was present. </p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Template/Sample Mod</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> An example mod can be found <a href="https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip">here</a>. This changes the bottom-left text of the main title screen to add "Hello World".</p>
-</div>
-<p>If you have successfully gotten your mod to work, congratulations!</p>
-<hr />
-<h2 id="creating-mods-for-manual-installation">Creating Mods for Manual Installation<a class="headerlink" href="#creating-mods-for-manual-installation" title="Permanent link">&para;</a></h2>
-<p>Refer to <a href="../installing_mods/#modding-manually">Modding Manually</a> on the Installing Mods page.</p>
-<hr />
-<h2 id="publishing-mods-guidelines">Publishing Mods &amp; Guidelines<a class="headerlink" href="#publishing-mods-guidelines" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.nexusmods.com/finalfantasy16/mods/">Nexus Mods</a> is the primary website to publish mods.</p>
+<h1 id="command-line-arguments"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53m1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5"/></svg></span> Command Line Arguments<a class="headerlink" href="#command-line-arguments" title="Permanent link">&para;</a></h1>
+<p>The game has a few undocumented command line arguments. Mostly DirectStorage related.</p>
+<h2 id="working-arguments">Working Arguments<a class="headerlink" href="#working-arguments" title="Permanent link">&para;</a></h2>
+<p>These are confirmed read/used parameters.</p>
+<h3 id="memory_limit-gbs"><code>/memory_limit &lt;gbs&gt;</code><a class="headerlink" href="#memory_limit-gbs" title="Permanent link">&para;</a></h3>
+<p>Sets the memory limit in GBs.</p>
+<h3 id="windowtopmost"><code>/windowtopmost</code><a class="headerlink" href="#windowtopmost" title="Permanent link">&para;</a></h3>
+<p>Makes the game be on top of all other programs.</p>
+<h3 id="razor_gpu_friendly"><code>/razor_gpu_friendly</code><a class="headerlink" href="#razor_gpu_friendly" title="Permanent link">&para;</a></h3>
+<p>Razer chroma related</p>
+<h3 id="razor_cpu_friendly"><code>/razor_cpu_friendly</code><a class="headerlink" href="#razor_cpu_friendly" title="Permanent link">&para;</a></h3>
+<p>Razer chroma related</p>
+<h3 id="disable_file_cache"><code>/disable_file_cache</code><a class="headerlink" href="#disable_file_cache" title="Permanent link">&para;</a></h3>
+<h3 id="disable_direct_device"><code>/disable_direct_device</code><a class="headerlink" href="#disable_direct_device" title="Permanent link">&para;</a></h3>
+<p>Sets something directstorage related - directx device/resource transfer related?</p>
+<h3 id="disable_direct_destination"><code>/disable_direct_destination</code><a class="headerlink" href="#disable_direct_destination" title="Permanent link">&para;</a></h3>
+<p>Sets something directstorage related - directx device/resource transfer related?</p>
+<h3 id="disable_directstorage"><code>/disable_directstorage</code><a class="headerlink" href="#disable_directstorage" title="Permanent link">&para;</a></h3>
+<p>Unclear whether it actually disables it, seems to be the case.</p>
+<h3 id="buildin_cpu_decompression_threads-number"><code>/buildin_cpu_decompression_threads &lt;number&gt;</code><a class="headerlink" href="#buildin_cpu_decompression_threads-number" title="Permanent link">&para;</a></h3>
+<p>Sets <a href="https://learn.microsoft.com/en-us/windows/win32/dstorage/dstorage/ns-dstorage-dstorage_configuration1">DSTORAGE_CONFIGURATION1.NumBuiltInCpuDecompressionThreads</a></p>
+<h3 id="disable_gpu_decompression_metacommand"><code>/disable_gpu_decompression_metacommand</code><a class="headerlink" href="#disable_gpu_decompression_metacommand" title="Permanent link">&para;</a></h3>
+<p>Sets <a href="https://learn.microsoft.com/en-us/windows/win32/dstorage/dstorage/ns-dstorage-dstorage_configuration1">DSTORAGE_CONFIGURATION1.DisableGpuDecompressionMetacommand</a></p>
+<h3 id="disable_gpu_decompression"><code>/disable_gpu_decompression</code><a class="headerlink" href="#disable_gpu_decompression" title="Permanent link">&para;</a></h3>
+<p>Sets <a href="https://learn.microsoft.com/en-us/windows/win32/dstorage/dstorage/ns-dstorage-dstorage_configuration1">DSTORAGE_CONFIGURATION1.DisableGpuDecompression</a></p>
+<h3 id="enable_builtin_cpu_decompression"><code>/enable_builtin_cpu_decompression</code><a class="headerlink" href="#enable_builtin_cpu_decompression" title="Permanent link">&para;</a></h3>
+<p>Enables use of <a href="https://learn.microsoft.com/en-us/windows/win32/dstorage/dstorage/ns-dstorage-dstorage_configuration1">DSTORAGE_CONFIGURATION1.NumBuiltInCpuDecompressionThreads</a></p>
+<h3 id="disable_file_buffering"><code>/disable_file_buffering</code><a class="headerlink" href="#disable_file_buffering" title="Permanent link">&para;</a></h3>
+<p>Won't set <a href="https://learn.microsoft.com/en-us/windows/win32/dstorage/dstorage/ns-dstorage-dstorage_configuration1">DSTORAGE_CONFIGURATION1.ForceFileBuffering</a> and <a href="https://learn.microsoft.com/en-us/windows/win32/dstorage/dstorage/ns-dstorage-dstorage_configuration1">DSTORAGE_CONFIGURATION1.DisableBypassIO</a></p>
+<h3 id="ignore_config"><code>/ignore_config</code><a class="headerlink" href="#ignore_config" title="Permanent link">&para;</a></h3>
+<p>Ignore loading system save files aka system-save-data and config.xml</p>
+<h3 id="enable_memory_save"><code>/enable_memory_save</code><a class="headerlink" href="#enable_memory_save" title="Permanent link">&para;</a></h3>
+<h2 id="stubbed">Stubbed<a class="headerlink" href="#stubbed" title="Permanent link">&para;</a></h2>
+<p>Game parses these, but does not use them (stripped by release build).</p>
+<ul>
+<li><code>/exceptionoff</code> (possibly)</li>
+<li><code>/disable_tty</code></li>
+<li><code>/cmd</code></li>
+<li><code>/console</code></li>
+</ul>
 
 
 
@@ -1188,7 +1460,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../installing_mods/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing Mods">
+          <a href="../../formats/nxd/" class="md-footer__link md-footer__link--prev" aria-label="Previous: .nxd - Next ExcelDB">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1198,27 +1470,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Installing Mods
+                .nxd - Next ExcelDB
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../mod_loader/" class="md-footer__link md-footer__link--next" aria-label="Next: Mod Loader Internals">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Mod Loader Internals
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
@@ -1295,10 +1551,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
