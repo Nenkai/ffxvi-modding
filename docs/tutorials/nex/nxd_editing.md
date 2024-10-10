@@ -35,8 +35,8 @@ FF16Tools.CLI sqlite-to-nxd -i <path to sqlite file>
 
 !!! note
 
-    * Refer to the [table layouts here](FF16Tools.Files/Nex/Layouts) for the column value types. Note: this has been mapped mostly manually. **Please contribute!** Many columns are still unknown.
-    * Always check the [Changelog](NEX_CHANGELOG.md) for updated table column names.
+    * Refer to the [table layouts here](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts) for the column value types. Note: this has been mapped mostly manually. **Please contribute!** Many columns are still unknown.
+    * Always check the [Changelog](https://github.com/Nenkai/FF16Tools/blob/master/NEX_CHANGELOG.md) for updated table column names.
     * Nex can contain nested data, therefore arrays and other structs are converted to json strings.
     * Nex can contain row sets that don't actually contain any rows. This information is lost between SQLite conversion, but should *hopefully* not matter.
     * You may need to edit `root.nxl` to reflect the number of rows (if you've added/removed any).

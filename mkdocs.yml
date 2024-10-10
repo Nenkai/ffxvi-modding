@@ -79,6 +79,9 @@ nav:
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md
 
+    - Other:
+      - Command Line Arguments: resources/other/command_line_args.md
+
 markdown_extensions:
   - toc:
       permalink: true
