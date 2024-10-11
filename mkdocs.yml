@@ -75,6 +75,9 @@ nav:
   - Modder Resources:
     - Asset Paths: resources/asset_paths.md
     
+    - IDs:
+      - Character/Model IDs: resources/ids/character_ids.md
+
     - Formats:
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md

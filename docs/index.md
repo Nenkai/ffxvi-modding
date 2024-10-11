@@ -41,6 +41,8 @@ hide:
 
     [:octicons-rel-file-path-16: File Tree/Asset Paths](resources/asset_paths.md)
 	
+    [:material-identifier: Character/Model IDs](resources/ids/character_ids.md)
+
 -   :simple-discord:{ .lg .middle } __Discord__
 
 	---
