@@ -68,6 +68,7 @@ nav:
 
     - Nex (NXD):
       - Database Editing: tutorials/nex/nxd_editing.md
+      - Tables: tutorials/nex/tables.md
 
     - Textures:
       - Extracting Textures: tutorials/textures/texture_extraction.md

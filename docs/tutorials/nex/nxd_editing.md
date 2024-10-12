@@ -6,6 +6,11 @@ icon: material/microsoft-excel
 
 Nex files are pretty much the database of the game. Originally in Excel form, SQEX converts them into a binary format named `.nxd` (sister of FF14's `.exd`).
 
+!!! tip
+
+    * Some tables are described [here](tables.md)
+    * Refer to the [table layouts here](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts) for the column value types. Note: this has been mapped mostly manually. **Please contribute!** Many columns are still unknown.
+
 ## Requirements
 
 * :material-github: [FF16Tools](https://github.com/Nenkai/FF16Tools) - **It is recommended to always use the latest version as column names will be renamed.**
@@ -35,7 +40,6 @@ FF16Tools.CLI sqlite-to-nxd -i <path to sqlite file>
 
 !!! note
 
-    * Refer to the [table layouts here](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts) for the column value types. Note: this has been mapped mostly manually. **Please contribute!** Many columns are still unknown.
     * Always check the [Changelog](https://github.com/Nenkai/FF16Tools/blob/master/NEX_CHANGELOG.md) for updated table column names.
     * Nex can contain nested data, therefore arrays and other structs are converted to json strings.
     * Nex can contain row sets that don't actually contain any rows. This information is lost between SQLite conversion, but should *hopefully* not matter.
