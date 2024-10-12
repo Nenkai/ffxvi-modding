@@ -1215,6 +1215,7 @@
 <div class="admonition example">
 <p class="admonition-title">Example (Mod Loader &gt;= 1.1.0)</p>
 <p><strong>The mod loader will automatically determine in which pack your game files should be according to <a href="../../resources/asset_paths/">this list</a>.</strong> (pack-named folders is still supported for compatibility purposes).</p>
+<p><strong>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span>'s below for more information.</strong></p>
 <div class="no-copy annotate highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├─<span class="w"> </span>ff16.&lt;category&gt;.&lt;mymodname&gt;/
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│<span class="w">  </span>└─<span class="w"> </span>FFXVI/
@@ -1234,7 +1235,7 @@
 <p>A sub-folder with a locale name will appropriately put it in the correct locale pack. <code>nxd/en/equipitem.nxd</code> will translate to pack <code>0007.en</code> and put <code>nxd/equipitem.nxd</code> inside it.</p>
 </li>
 </ol>
-<p>Also, any changes you make to <a href="../../tutorials/nex/nxd_editing/">Nex</a> tables won't replace files altogether, but only cell changes you've made to increase compatibility. <strong>This also means that you should only edit cells you actually need to edit to avoid potential conflicts.</strong></p>
+<p>Also, any changes you make to <a href="../../tutorials/nex/nxd_editing/">Nex</a> tables won't replace files altogether, but only cell changes you've made to increase compatibility with other mods. <strong>This also means that you should only edit cells you actually need to edit to avoid potential conflicts.</strong></p>
 </div>
 <details class="example">
 <summary>Example (Mod Loader &lt; 1.1.0)</summary>
@@ -1251,7 +1252,7 @@
 </details>
 <div class="admonition info">
 <p class="admonition-title">Template/Sample Mod</p>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> An example mod can be found <a href="https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip">here</a>. This changes the bottom-left text of the main title screen to add "Hello World".</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> An example mod (pre-1.1.0) can be found <a href="https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip">here</a>. This changes the bottom-left text of the main title screen to add "Hello World".</p>
 </div>
 <p>If you have successfully gotten your mod to work, congratulations!</p>
 <hr />
