@@ -553,15 +553,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#implementation-caveats" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Caveats
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1154,15 +1145,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#implementation-caveats" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementation Caveats
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1187,20 +1169,24 @@
 
 
 <h1 id="mod-loader-internals"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19v-2H8v2zm0-6v-2H8v2zM8 7h13V5H8zM4 5v2h2V5zM3 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm1 6v2h2v-2zm-1 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm1 6v2h2v-2zm-1 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg></span> Mod Loader Internals<a class="headerlink" href="#mod-loader-internals" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This applies to mod loader version <code>1.1.0</code>.</p>
+</div>
 <h2 id="main-process">Main Process<a class="headerlink" href="#main-process" title="Permanent link">&para;</a></h2>
 <p>The internal mod loader process is documented here.</p>
 <ol>
 <li>When launching, the mod loader will immediately remove any <code>.diff</code> <a href="../../resources/formats/pac/">pack</a> files present in the game's <code>data</code> directory. <code>.diff.pac</code> files essentially extend the base content with extra/modded contents. Cleaning it first means starting from a fresh state.</li>
-<li>Every mod loaded by Reloaded-II which has a <code>FFXVI</code> folder will be picked up by the loader and keep track of every file per-pack.<ul>
+<li>Every mod loaded by Reloaded-II which has a <code>FFXVI</code> folder will be picked up by the loader and keep track of every file (and accordingly translate them to the proper pack <a href="../../resources/asset_paths/">according to this list</a>).<ul>
+<li>Support for folders named after packs is still supported (pre-1.1.0 behavior).</li>
+<li>Nex tables (<code>.nxd</code>) changes from original to modded will be specifically recorded to allow more mods to be compatible if they edit the same table.</li>
 <li>When mod files conflict, the last loaded one has priority.</li>
 </ul>
 </li>
-<li>Once Reloaded-II has alerted the mod loader that all mods have been loaded, the mod loader will merge every files provided for each pack by mods. The mod loader will begin to build each pack with <a href="https://github.com/Nenkai/FF16Tools/">FF16Tools</a> and save them as <code>.diff.pac</code> files in the game's <code>data</code> folder.</li>
+<li>The mod loader will inject its own edited files for the main menu mod information (if enabled).</li>
+<li>Once Reloaded-II has alerted the mod loader that all mods have been loaded, the mod loader will merge all nex changes, and every other files provided for each pack by mods. The mod loader will begin to build each pack with <a href="https://github.com/Nenkai/FF16Tools/">FF16Tools</a> and save them as <code>.diff.pac</code> files in the game's <code>data</code> folder.</li>
 </ol>
 <p>Which means, file mods will persist when booting without Reloaded-II. However, Reloaded-II can also consist of <em>code-based</em> mods, so it is always recommended to boot through it.</p>
-<h2 id="implementation-caveats">Implementation Caveats<a class="headerlink" href="#implementation-caveats" title="Permanent link">&para;</a></h2>
-<p>All packs are basically just a mounted file-system. In theory <em>any</em> pack can include <em>any</em> folder/file in the game. </p>
-<p>At first the idea of not having folders per pack was obvious, but one problem is that localization works with localization-specific packs. There is no clear way to detect how to build localized contents without having pack specific folders.</p>
 
 
 
