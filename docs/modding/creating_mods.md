@@ -16,6 +16,8 @@ Once you have modded assets you'd like to mod into the game:
 
     **The mod loader will automatically determine in which pack your game files should be according to [this list](../resources/asset_paths.md).** (pack-named folders is still supported for compatibility purposes).
 
+    **Click the :material-plus-circle:'s below for more information.**
+
     ```{ .sh .no-copy .annotate }
     .
     ├─ ff16.<category>.<mymodname>/
@@ -33,7 +35,7 @@ Once you have modded assets you'd like to mod into the game:
 
     2.  A sub-folder with a locale name will appropriately put it in the correct locale pack. `nxd/en/equipitem.nxd` will translate to pack `0007.en` and put `nxd/equipitem.nxd` inside it.
 
-    Also, any changes you make to [Nex](../tutorials/nex/nxd_editing.md) tables won't replace files altogether, but only cell changes you've made to increase compatibility. **This also means that you should only edit cells you actually need to edit to avoid potential conflicts.**
+    Also, any changes you make to [Nex](../tutorials/nex/nxd_editing.md) tables won't replace files altogether, but only cell changes you've made to increase compatibility with other mods. **This also means that you should only edit cells you actually need to edit to avoid potential conflicts.**
 
 ??? example "Example (Mod Loader < 1.1.0)"
     ```{ .sh .no-copy }
@@ -49,7 +51,7 @@ Once you have modded assets you'd like to mod into the game:
     ```
 
 !!! info "Template/Sample Mod"
-    :material-download: An example mod can be found [here](https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip). This changes the bottom-left text of the main title screen to add "Hello World".
+    :material-download: An example mod (pre-1.1.0) can be found [here](https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip). This changes the bottom-left text of the main title screen to add "Hello World".
 
 If you have successfully gotten your mod to work, congratulations!
 
