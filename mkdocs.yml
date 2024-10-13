@@ -80,6 +80,7 @@ nav:
       - Character/Model IDs: resources/ids/character_ids.md
 
     - Formats:
+      - Format List: resources/formats/format_list.md
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md
 
