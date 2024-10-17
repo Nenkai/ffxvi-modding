@@ -1,0 +1,374 @@
+Key,Name
+0,**(no name)**
+1,Gil
+2,Renown
+3,Ability Points
+4,**(no name)**
+5,Potion
+6,High Potion
+7,Elixir
+8,Strength Tonic
+9,Stoneskin Tonic
+10,Lionheart Tonic
+11,Last Elixir
+12,**(no name)**
+20,**(no name)**
+21,Meteorite
+22,Flawless Meteorite
+30,**(no name)**
+31,Scarletite
+32,Orichalcum
+100,**(no name)**
+101,Wyrrite
+102,Sharp Fang
+103,Steelsilk
+104,Bloody Hide
+105,Magicked Ash
+106,Desert Rose
+107,Valley Madder
+108,Briar Clam Shell
+109,Clutchmine
+110,Iron Filings
+150,**(no name)**
+151,Gil Bug
+152,Black Blood
+153,Goblin Coin
+154,Empty Shard
+155,Amber
+156,Fallen Enigma
+157,One Man's Treasure
+158,Silver Penning
+159,Gold Penning
+160,Rhema
+200,**(no name)**
+201,Wind Shard
+202,Fire Shard
+203,Lightning Shard
+204,Earth Shard
+205,Light Shard
+206,Water Shard
+207,Ice Shard
+208,Dark Shard
+209,Flawless Wind Shard
+210,Flawless Fire Shard
+211,Flawless Lightning Shard
+212,Flawless Earth Shard
+213,Flawless Light Shard
+214,Flawless Water Shard
+215,Flawless Ice Shard
+216,Flawless Dark Shard
+217,Utterance of Creation
+300,**(no name)**
+301,Frozen Tear
+302,Gnarled Scales
+303,Clouded Eye
+304,Liquid Flame
+305,Earthen Fury
+306,Whitewyrm Bone
+307,Sanguine Insignia
+308,Behemoth Shackle
+312,Flawless Frozen Tear
+313,Flawless Gnarled Scales
+314,Flawless Clouded Eye
+315,Flawless Liquid Flame
+316,Flawless Earthen Fury
+317,Flawless Whitewyrm Bone
+318,Flawless Sanguine Insignia
+319,Flawless Behemoth Shackle
+320,Living Tissue
+321,Aqueous Humours
+322,Omega Nodule
+323,Flawless Tissue
+324,Flawless Humours
+325,Flawless Nodule
+326,Aqueous Orb
+327,Bilious Scales
+328,Timeless Gardbrace
+329,Flawless Orb
+330,Flawless Bilious Scales
+331,Flawless Gardbrace
+332,Opportunity
+335,Aquamarine
+336,Ageless Tallow
+337,Ageless Odorament
+338,Ageless Oilstone
+339,Ageless Millet
+340,Eludium
+341,Flawless Eludium
+342,Fool's Gold
+500,**(no name)**
+501,Drakeslayer Gear Design Draft
+502,Excalibur Design Draft
+503,Ouroboros Design Draft
+504,Gotterdammerung Design Draft
+505,Ambrosia's Pinion
+506,Morganbeard Extract
+507,Invigorated Morganbeard Extract
+508,Treated Potion Satchel
+509,Expanded Potion Satchel
+510,The Cracked Anvil
+511,The Hanged Man
+512,The Slumbering Chocobo
+513,The Moon and Stars
+514,The Burnt Blade
+515,The Desert Rose
+516,The Crimson Collar
+517,The Collar and Compass
+518,Phoenix Down
+519,Scholar's Bonnet
+520,Cid's Goblet
+521,Winter Mead
+522,Continental Censer
+523,Rusted Battlehelm
+524,Snow Daisy Garland
+525,Charred Sparring Sword
+526,The Triunity Accord
+527,Stolas Quill
+528,Clayhearth Signboard
+529,Briar's Kiss Signboard
+530,Veil Signboard
+531,Crimson Caravans Signboard
+532,Martha's Rest Signboard
+533,Hanged Man Signboard
+534,Model Airship
+535,Phoenix Feather
+536,Shield Ensign
+537,Treasure Map
+538,Guardians Scarf
+539,Ambrosia's Tack
+540,Medicine Chest
+542,Martelle Apples
+546,Silken Handkerchief
+547,Linen Handkerchief
+548,Velvet Handkerchief
+549,The Circle of Malius
+550,The Book of Martyrs
+551,Archduke Elwin's Testament
+552,The Oath
+553,Fragrant Satchel
+554,Dusk Crystal
+555,Dusk Shard
+556,The Ceaseless Rill
+557,Haven Signboard
+558,First Rain Talisman
+559,Serpent Ring Design Draft
+560,Adder Stone
+561,**(no name)**
+562,**(no name)**
+563,**(no name)**
+564,**(no name)**
+565,**(no name)**
+600,**(no name)**
+604,<i>A Rose Is a Rose</i> Orchestrion Roll
+605,"<i>No Risk, No Reward</i> Orchestrion Roll"
+606,<i>To Sail Forbidden Seas</i> Orchestrion Roll
+607,<i>Sand and Stone</i> Orchestrion Roll
+608,<i>Histoire</i> Orchestrion Roll
+609,<i>Forevermore</i> Orchestrion Roll
+610,<i>Indomitable</i> Orchestrion Roll
+611,<i>Idylls of the Empire</i> Orchestrion Roll
+612,<i>The Founder's Footsteps</i> Orchestrion Roll
+613,"<i>Lovely, Dark, and Deep</i> Orchestrion Roll"
+614,<i>Before the Storm</i> Orchestrion Roll
+615,<i>Into the Mire</i> Orchestrion Roll
+616,<i>Night Terrors</i> Orchestrion Roll
+617,<i>The Thousand Tables</i> Orchestrion Roll
+618,<i>Betrayal</i> Orchestrion Roll
+619,<i>On the Shoulders of Giants</i> Orchestrion Roll
+620,<i>The Lion and the Hare</i> Orchestrion Roll
+621,<i>Sixteen Bells</i> Orchestrion Roll
+622,<i>Away (1987)</i> Orchestrion Roll
+624,<i>Torn from the Heavens</i> Orchestrion Roll
+626,<i>Through the Maelstrom</i> Orchestrion Roll
+627,<i>The Worm Mounts</i> Orchestrion Roll
+628,<i>O'er Shifting Sands Lie</i> Orchestrion Roll
+629,<i>The Desert Dims</i> Orchestrion Roll
+630,<i>In Darkness Hope</i> Orchestrion Roll
+631,<i>Darkest Before the Dawn</i> Orchestrion Roll
+632,<i>My Star</i> Orchestrion Roll
+633,<i>Writ in Water</i> Orchestrion Roll
+634,<i>Safe Haven</i> Orchestrion Roll
+635,<i>Bid Time Return</i> Orchestrion Roll
+636,<i>Eikonoklasm</i> Orchestrion Roll
+637,<i>Cascade</i> Orchestrion Roll
+638,<i>Land of Eikons</i> Orchestrion Roll
+639,<i>Final Farewells</i> Orchestrion Roll
+640,<i>Holos</i> Orchestrion Roll
+641,<i>Logos</i> Orchestrion Roll
+642,<i>Hymn of the Penitent</i> Orchestrion Roll
+643,<i>All As One</i> Orchestrion Roll
+644,<i>Winter's Bound</i> Orchestrion Roll
+645,<i>Control</i> Orchestrion Roll
+646,<i>Against the Wind</i> Orchestrion Roll
+647,<i>Whitewater</i> Orchestrion Roll
+648,<i>Press On</i> Orchestrion Roll
+649,<i>Find the Flame</i> Orchestrion Roll
+650,<i>Where It All Began</i> Orchestrion Roll
+651,<i>Catacecaumene</i> Orchestrion Roll
+652,<i>Treading Lightly</i> Orchestrion Roll
+653,<i>Reflections</i> Orchestrion Roll
+654,<i>Color and Crackle</i> Orchestrion Roll
+655,<i>Hamartia</i> Orchestrion Roll
+656,<i>Blood Beats Black</i> Orchestrion Roll
+657,<i>Enter the Oratrix</i> Orchestrion Roll
+658,<i>Homecoming</i> Orchestrion Roll
+659,<i>Do or Die</i> Orchestrion Roll
+660,<i>Titan Lost</i> Orchestrion Roll
+661,<i>Heart of Stone</i> Orchestrion Roll
+662,<i>Anon Becomes a Mountain</i> Orchestrion Roll
+663,<i>Titanomachy</i> Orchestrion Roll
+664,<i>Beyond the Heavens</i> Orchestrion Roll
+665,<i>Ascension</i> Orchestrion Roll
+666,<i>Rooftops</i> Orchestrion Roll
+667,<i>Facets of Rage</i> Orchestrion Roll
+668,<i>Away</i> Orchestrion Roll
+669,<i>Under Siege</i> Orchestrion Roll
+670,<i>Army of One</i> Orchestrion Roll
+671,<i>The Riddle</i> Orchestrion Roll
+672,<i>Heavensbound</i> Orchestrion Roll
+673,<i>Death Shall Me Devour</i> Orchestrion Roll
+674,<i>'Neath the Pall</i> Orchestrion Roll
+675,<i>Bastion</i> Orchestrion Roll
+676,<i>Bow</i> Orchestrion Roll
+700,**(no name)**
+705,Medal of Valor - Midnight Raven
+706,Medal of Valor - Benedikta
+707,Medal of Valor - Garuda
+708,Medal of Valor - Kingsfall
+709,Medal of Valor - Ifrit
+710,Medal of Valor - Typhon
+711,Medal of Valor - War Panther
+712,Medal of Valor - Liquid Flame
+713,Medal of Valor - Hugo
+714,Medal of Valor - Titan
+715,Medal of Valor - Bahamut
+716,Medal of Valor - Sleipnir
+717,Medal of Valor - Barnabas
+718,Medal of Valor - Odin
+719,Medal of Valor - Ultima
+720,Medal of Valor - Ultimalius
+721,Coat of the Dominator
+722,Coat of the Inexorable
+723,Seven Stars
+724,Coat of the Dominator (Sagespire)
+725,Coat of the Inexorable (Sagespire)
+726,Coat of the Dominator (Aire of Hours)
+727,Coat of the Inexorable (Aire of Hours)
+728,The Eighth Star
+729,Emblem of the Dark Season
+730,Emblem of Proof
+731,Medal of Valor - Omega
+732,Medal of Valor - Leviathan
+1000,**(no name)**
+1001,Dragon Talon
+1002,Flawless Dragon Talon
+1003,Minotaur Mane
+1004,Flawless Minotaur Mane
+1005,Imperial Link
+1006,Flawless Imperial Link
+1007,Fallen Iron
+1008,Flawless Fallen Iron
+1009,Coeurl Whisker
+1010,Flawless Coeurl Whisker
+1011,Bone Necklace
+1012,Flawless Bone Necklace
+1100,**(no name)**
+1101,Comet Feather
+1102,Flawless Comet Feather
+1103,Grimalkin Hide
+1104,Flawless Grimalkin Hide
+1105,Bomb Ember
+1106,Flawless Bomb Ember
+1107,Darksteel
+1108,Flawless Darksteel
+1109,Morbol Flower
+1110,Flawless Morbol Flower
+1111,Stone Tongue
+1112,Flawless Stone Tongue
+1113,Stained Loincloth
+1114,Flawless Loincloth
+1115,Electrum
+1116,Flawless Electrum
+1117,Gelatinous Mass
+1118,Flawless Mass
+1123,Primitive Battlehorn
+1124,Flawless Battlehorn
+1125,Aqueous Membrane
+1126,Flawless Membrane
+1127,Notched Tang
+1128,Flawless Tang
+1200,**(no name)**
+1203,Kretov Report
+1204,Bundle of Cloth
+1206,Elder Antelope Femur
+1207,Wild Wyvern Tail
+1208,Stonawort
+1210,Heartstone
+1212,Silver Chocobo Feather
+1214,Shipwright's Tallow
+1215,Adamantoise Shell
+1217,Treated Leather
+1218,Morganbeard
+1221,Bomb Ash
+1223,Sundered Whetstone
+1224,Morbol Tendril
+1225,Salamander Skin
+1226,Pit-coal Cinder
+1227,Spherical Echo
+1229,Salt Broth
+1230,Wood Planks
+1231,Bread and Wine
+1232,Hearty Meal
+1233,Vineyard Soil Sample
+1234,Sealed Crate
+1235,Foul Crystal
+1238,Lost Letter
+1239,Heavy Purse
+1241,Bearer Comestibles
+1244,Martelle Apples
+1245,Pitcher Wax
+1246,Unwonted Violet
+1249,Errmonea Leaf
+1255,Raptor Liver
+1256,Saint's Bonnet
+1262,Spider Eye
+1263,Leather Pouch
+1265,Weathered Comb
+1266,Mortal Remains
+1267,Trader's Pass
+1310,Iron Lantern
+1311,Continental Rum
+1314,Aevis Skin
+1315,<i>On Gods and Men</i>
+1316,Brass Cogwheel
+1317,Lost Supplies
+1318,Brandywine
+1319,Essence of Rose
+1320,Box of Cigars
+1322,<i>From a Distance</i>
+1326,Gaoler's Key
+1327,The Final Piece
+1328,Star Ruby
+1329,List of Materials
+1330,Supply Kit
+1332,Handwritten Receipt
+1333,Gysahl Greens Seeds
+1334,Mikkelburg Report
+1335,Thermal Plating Designs
+1336,Thermal Shielding Designs
+1337,Garlic
+1338,Pepio Nuts
+1339,Stardust
+1340,Spring Lime
+1341,Bearer Registry
+1342,Tarnished Ring
+1343,White Chocobo Pinion
+1344,Empty Phial
+1345,Water of the Mountain
+1346,Water of the River
+1347,Water of the Sea
+1348,Ibex Haunch
+1349,Guivre Tongue
+1350,Mimett Gourd
+1351,Silver Chain
+1352,Basketful of Flowers

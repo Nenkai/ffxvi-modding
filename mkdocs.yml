@@ -78,6 +78,11 @@ nav:
     
     - IDs:
       - Character/Model IDs: resources/ids/character_ids.md
+      - BNpc IDs: resources/ids/bnpc_ids.md
+      - ENpc IDs: resources/ids/enpc_ids.md
+      - Game Map/Level IDs: resources/ids/gamemap_ids.md
+      - Item IDs: resources/ids/item_ids.md
+      - Equip Item IDs: resources/ids/equip_item_ids.md
 
     - Formats:
       - Format List: resources/formats/format_list.md
