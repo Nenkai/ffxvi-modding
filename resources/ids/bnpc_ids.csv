@@ -1,0 +1,1759 @@
+Id,Name
+1,Clive
+2,Clive
+3,Clive
+4,Clive
+5,Joshua
+6,Clive
+7,Joshua
+8,Clive
+9,Clive
+10,Clive
+100,Torgal
+101,Torgal
+110,Joshua
+111,Joshua
+120,Jill
+121,Jill
+130,Cid
+200,Gav
+201,Byron
+202,Tyler
+203,Wade
+204,Lord Commander Murdoch
+205,Tiamat
+206,Aevis
+208,Theodore
+209,Wade
+220,Shula
+301,Ambrosia
+901,Virtual Mugger
+902,Virtual Weaver
+903,Virtual Gigas
+904,Virtual Aevis
+905,Virtual Tognvaldr
+906,Virtual Minotaur
+907,Virtual Lich
+908,Virtual Guardian
+909,Virtual Champion
+910,Virtual Mousse
+911,Virtual Undertaker
+912,Virtual Warlord
+913,Virtual Wolf
+914,Virtual Hornet
+915,Virtual Elemental
+916,Virtual Iron Giant
+917,Virtual Cannonier
+918,Virtual Salamander
+919,Virtual Fanatic
+920,Virtual Reaper
+921,Virtual Coeurl
+922,Virtual Marshal
+923,Virtual Lancer
+924,Virtual Sveithvaldr
+925,Virtual Bavarois
+926,Virtual Node
+927,Virtual Aurum Giant
+950,Virtual Domovikha
+951,Virtual Domovoi
+952,Virtual Omicron
+953,Virtual Asterios
+960,Virtual Creeper
+961,Virtual Hexer
+962,Virtual Master
+963,Virtual Wolf Trap
+964,Virtual Temple Coeurl
+965,Virtual Frost Bomb
+966,Virtual Egi
+1101,Lord Commander Murdoch
+1203,Goblin Mugger
+1204,Goblin Mugger
+1205,Goblin Mugger
+1206,Goblin Weaver
+1207,Gigas
+1208,Goblin Mugger
+1209,Goblin Mugger
+1210,Goblin Mugger
+1211,Goblin Weaver
+1212,Morbol
+1214,Goblin Weaver
+1215,Goblin Mugger
+1216,Goblin Mugger
+1301,Armored Interloper
+1302,Imperial Legionnaire
+1303,Imperial Captain
+1304,Imperial Legionnaire
+1305,Imperial Astrologer
+1306,Knight of the Blinding Dawn
+1307,Imperial Captain
+1308,Imperial Legionnaire
+1309,Imperial Astrologer
+1401,Phoenix
+1402,Eikon of Fire
+1403,Eikon of Fire
+1501,Shiva's Dominant
+1502,Ironblood Commander
+1503,Ironblood Crusader
+1504,Ironblood Crusader
+1510,Ironblood Commander
+1511,Tiamat
+1512,Ironblood Crusader
+1513,Ironblood Crusader
+1601,Vampire Thorn
+1602,Vampire Thorn
+1603,Vampire Thorn
+1605,Hornet
+1606,Worgen
+1607,Dragon Aevis
+1608,Minotaur
+1609,Fafnir
+1610,Midnight Raven
+1611,Royal Sigfreyr
+1612,Silver Lobo
+1613,Dragon Aevis
+1614,Worgen
+1615,Worgen
+1618,Dragonet
+1620,Green Fool
+1622,Chimera
+1623,Raptor
+1624,Raptor
+1632,Royal Osfreyr
+1633,Royal Osfreyr
+1651,Chirada
+1661,Royal Folkstaf
+1662,Royal Osfreyr
+1663,Royal Osfreyr
+1664,Royal Sigfreyr
+1665,Royal Gandfreyr
+1666,Royal Mastiff
+1702,Royal Folkstaf
+1703,Royal Osfreyr
+1704,Royal Osfreyr
+1705,Royal Sigfreyr
+1706,Royal Gandfreyr
+1707,Royal Mastiff
+1708,Royal Tognvaldr
+1709,Suparna
+1710,Chirada
+1711,Benedikta
+1712,Benedikta
+1719,Royal Gandfreyr
+1720,Royal Folkstaf
+1721,Royal Osfreyr
+1722,Royal Osfreyr
+1723,Royal Sigfreyr
+1724,Royal Gandfreyr
+1725,Royal Mastiff
+1726,Royal Tognvaldr
+1730,Royal Gandfreyr
+1731,Royal Gunnvaldr
+1732,Royal War Aevis
+1733,Royal Sveithvaldr
+1735,Royal Tognvaldr
+1771,Imperial Captain
+1772,Imperial Legionnaire
+1773,Imperial Legionnaire
+1774,Imperial Astrologer
+1776,Imperial War Wyrm
+1777,Imperial War Wyrm
+1778,Imperial Captain
+1779,Imperial Legionnaire
+1780,Imperial Legionnaire
+1785,Imperial Legionnaire
+1786,Imperial Legionnaire
+1789,Imperial War Aevis
+1791,Wind Elemental
+1801,Ifrit
+1802,Garuda
+1803,Garuda
+1804,Garuda
+1901,Arachne
+1904,Hornet
+1905,Minotaur
+1906,Imperial Captain
+1907,Imperial Legionnaire
+1908,Imperial Astrologer
+1909,Minotaur
+1911,Imperial War Aevis
+1912,Knight of the Dying Sun
+1913,Black Widow
+1917,Griffin
+1918,River Huntress
+2001,Fallen Bug
+2002,Fallen Hunter
+2003,Defense Node
+2004,Bomb
+2005,Fallen Guardian
+2006,Wraith
+2007,Specter
+2008,Lich
+2009,Iron Giant
+2010,Infernal Eikon
+2011,Infernal Shadow
+2012,Infernal Eikon
+2013,Ifrit
+2017,Blue Trifle
+2018,Fallen Guardian
+2020,Akashic Warlord
+2021,Specter
+2022,Undertaker
+2051,Imperial Legionnaire
+2052,Imperial Legionnaire
+2053,Imperial Legionnaire
+2054,Imperial Legionnaire
+2055,Imperial Astrologer
+2056,Imperial Astrologer
+2057,Imperial Captain
+2058,Imperial Captain
+2059,Imperial War Wyrm
+2060,Imperial War Wyrm
+2061,Imperial Champion
+2062,Imperial Champion
+2101,Imperial Captain
+2102,Imperial Legionnaire
+2103,Imperial Legionnaire
+2104,Imperial Astrologer
+2105,Imperial War Wyrm
+2107,Imperial Cannonier
+2108,Imperial Cannonier
+2111,Akashic Captain
+2112,Akashic Legionnaire
+2113,Akashic Legionnaire
+2115,Akashic War Wyrm
+2116,Akashic Miner
+2117,Akashic Champion
+2118,Wraith
+2119,Specter
+2120,Lich
+2121,Akashic Dragon
+2122,Typhon
+2123,Ifrit
+2124,Typhon the Transgressor
+2127,Typhon
+2128,Wraith
+2129,Revenant
+2130,Specter
+2138,Akashic Miner
+2139,Akashic Miner
+2140,Akashic Miner
+2141,Akashic Miner
+2142,Akashic Miner
+2143,Specter
+2148,Imperial War Aevis
+2149,Akashic Coeurl
+2152,Lich
+2153,Undertaker
+2154,Purobolos
+2155,Specter
+2156,Akashic Widow
+2157,Imperial War Wyrm
+2158,Akashic Champion
+2201,Stone Commandant
+2202,Stone Scimitar
+2203,Stone Scimitar
+2204,Stone Scimitar
+2205,Stone Scepter
+2206,Republican War Panther
+2207,Stone Commandant
+2208,Stone Scimitar
+2301,Dragonet
+2302,Akashic Thorn
+2303,Akashic Worgen
+2304,Akashic Hornet
+2306,Akashic Morbol
+2308,Scarlet Scorpion
+2309,Bomb
+2310,Red Mousse
+2311,Flame Lizard
+2312,Ironblood Commander
+2314,Ironblood Crusader
+2316,Ironblood Crusader
+2318,Ironblood Fanatic
+2320,Liquid Flame
+2324,Salamander
+2325,Akashic Minotaur
+2327,Ironblood Commander
+2328,Ironblood Crusader
+2329,Ironblood Crusader
+2335,Akashic Dragonet
+2336,Dragonet
+2339,Chimera
+2340,Red Mousse
+2341,Yellow Jelly
+2342,Ironblood Fanatic
+2343,Iron Giant
+2344,Akashic Raptor
+2345,Akashic Plague
+2401,Republican Battlehound
+2402,Stone Commandant
+2403,Stone Scimitar
+2404,Stone Scimitar
+2405,Stone Scimitar
+2406,Stone Scepter
+2407,Stone Gaoler
+2408,Stone Headsman
+2409,Coeurl
+2410,Hugo
+2414,Stone Scepter
+2415,Stone Scepter
+2417,Republican War Panther
+2420,Stone Gaoler
+2421,Stone Headsman
+2422,Stone Commandant
+2423,Stone Scimitar
+2424,Stone Scimitar
+2425,Stone Scimitar
+2426,Republican Battlehound
+2427,Stone Scepter
+2428,Stone Headsman
+2429,Stone Scimitar
+2430,Stone Scimitar
+2431,Stone Scimitar
+2432,Stone Scimitar
+2451,Royal Osfreyr
+2452,Royal Osfreyr
+2453,Royal Osfreyr
+2454,Royal Osfreyr
+2455,Desert Raider
+2456,Desert Raider
+2457,Desert Raider
+2458,Desert Djinn
+2459,Desert Raider
+2501,Orcish Fodder
+2502,Orcish Fodder
+2503,Orcish Mesmerizer
+2504,Orcish Warlord
+2505,Wraith
+2506,Revenant
+2507,Specter
+2508,Lich
+2509,Undertaker
+2510,Orcish Mesmerizer
+2511,Black Mastiff
+2512,Specter
+2513,Wraith
+2514,Revenant
+2515,Specter
+2521,Orcish Mesmerizer
+2522,Yellow Jelly
+2523,Purobolos
+2524,Lich
+2527,Akashic Plague
+2550,Titan
+2551,Titan Lost
+2552,Ifrit
+2556,Titan
+2701,Dragoon Knight Captain
+2702,Dragoon Knight
+2703,Dragoon Knight
+2704,Dragoon Astrologer
+2705,Dragoon Astrologer
+2706,Elite War Wyrm
+2707,Elite War Aevis
+2708,Dragoon Lancer
+2709,White Dragon
+2710,Akashic Dragoon
+2711,Akashic Dragoon
+2712,Akashic Captain
+2713,Akashic Astrologer
+2714,Megalocrab
+2715,Wraith
+2716,Revenant
+2717,Specter
+2718,Lich
+2719,Undertaker
+2720,Necrophobe
+2722,Ifrit
+2723,Phoenix
+2724,Ifrit Risen
+2725,Bahamut
+2726,Bahamut
+2738,Specter
+2739,Elite War Wyrm
+2740,Akashic Chocobo
+2741,Purobolos
+2744,Elite War Aevis
+2745,Imperial Bombardier
+2746,Imperial Champion
+2748,Akashic Griffin
+2809,Sleipnir
+2810,Sleipnir
+2812,Sleipnir
+2813,Orcish Fodder
+2814,Orcish Fodder
+2815,Orcish Mesmerizer
+2816,Orcish Warlord
+2817,Akashic Osfreyr
+2818,Akashic Osfreyr
+2820,Akashic Sigfreyr
+2821,Akashic Gandfreyr
+2822,Akashic Folkstaf
+2823,Royal Mastiff
+2824,Akashic Tognvaldr
+2825,Akashic Sveithvaldr
+2826,Wraith
+2827,Revenant
+2828,Specter
+2831,Orcish Fodder
+2832,Orcish Fodder
+2833,Orcish Mesmerizer
+2834,Akashic Gandfreyr
+2835,Specter
+2836,Specter
+2841,Akashic Chocobo
+2842,Akashic Coeurl
+2845,Akashic Sveithvaldr
+2860,Akashic Gandfreyr
+2861,Akashic Osfreyr
+2862,Akashic Osfreyr
+2863,Akashic Sigfreyr
+2864,Akashic Gandfreyr
+2865,Akashic Folkstaf
+2866,Akashic Sveithvaldr
+2868,Sleipnir
+2901,Royal Folkstaf
+2902,Royal Osfreyr
+2903,Royal Osfreyr
+2904,Royal Sigfreyr
+2905,Royal Gandfreyr
+2906,Royal Tognvaldr
+2907,Barnabas
+2908,Royal Sveithvaldr
+2909,Royal Gandfreyr
+2910,Royal Gandfreyr
+2911,Royal Tognvaldr
+2918,Royal Gunnvaldr
+2920,Royal War Wyrm
+2922,Royal War Aevis
+2951,Akashic Folkstaf
+2952,Akashic Osfreyr
+2953,Akashic Osfreyr
+2954,Akashic Sigfreyr
+2955,Akashic Gandfreyr
+2957,Akashic Sveithvaldr
+2958,Akashic Mastiff
+2959,Akashic War Aevis
+2960,Akashic Gandfreyr
+2971,Orcish Fodder
+2972,Orcish Fodder
+2973,Orcish Mesmerizer
+2974,Orcish Warlord
+2975,Akashic Osfreyr
+2976,Akashic Osfreyr
+2977,Akashic Sigfreyr
+2979,Akashic Folkstaf
+2980,Akashic Tognvaldr
+2982,Akashic Mastiff
+2984,Akashic Courser
+2985,Akashic Mastiff
+2986,Orcish Fodder
+2987,Orcish Fodder
+2988,Orcish Mesmerizer
+3001,Fallen Bug
+3002,Fallen Hunter
+3003,Defense Node
+3005,Purobolos
+3006,Fallen Guardian
+3007,Purple Bavarois
+3008,Control Node
+3018,Aurum Giant
+3019,Barnabas
+3020,Soultaker
+3025,Odin
+3027,Fallen Hunter
+3029,Defense Node
+3030,Defense Node
+3031,Purobolos
+3033,Defense Node
+3034,Purobolos
+3038,Akashic Griffin
+3039,Fallen Guardian
+3101,Akashic Folkstaf
+3102,Akashic Osfreyr
+3103,Akashic Osfreyr
+3104,Akashic Sigfreyr
+3105,Akashic Gandfreyr
+3108,Akashic Gunnvaldr
+3109,Orcish Fodder
+3110,Orcish Fodder
+3111,Orcish Mesmerizer
+3113,Behemoth
+3114,Ultima
+3138,Akashic Vulture
+3139,Akashic Worgen
+3140,Akashic Coeurl
+3142,Wraith
+3143,Revenant
+3144,Lich
+3145,Undertaker
+3146,Specter
+3150,Orcish Mesmerizer
+3151,Akashic Folkstaf
+3152,Akashic Osfreyr
+3153,Akashic Osfreyr
+3154,Akashic Sigfreyr
+3155,Akashic Gandfreyr
+3156,Akashic Worgen
+3161,Akashic Salamander
+3162,Iron Giant
+3163,Akashic Plague
+3164,Akashic Gunnvaldr
+3171,Akashic Osfreyr
+3172,Akashic Osfreyr
+3173,Akashic Sigfreyr
+3174,Akashic Gandfreyr
+3175,Akashic Fodder
+3176,Akashic Fodder
+3177,Revenant
+3179,Akashic Tognvaldr
+3182,Akashic Warlord
+3183,Wraith
+3184,Akashic Gandfreyr
+3185,Akashic Tognvaldr
+3201,"Ifrit, Phoenix, & Bahamut"
+3202,Ultima Prime
+3203,Ultima
+3204,Ultima Prime
+3205,Ultima Risen
+3206,Ultimalius
+3207,Ultimalius
+3208,Ultimalius
+3209,Ultimalius
+3301,Automation Unit MRN
+3302,Patrol Unit MEG
+3303,Surveillance Unit MMC
+3304,Domovikha
+3305,Domovikha
+3306,Domovoi
+3307,Spire Mousse
+3311,Prototype Unit EVL
+3312,Pacification Unit MEG
+3321,Sigma
+3331,Spire Wolf
+3332,Spire Dragonet
+3333,Spire Dragonet
+3334,Spire Dragonet
+3335,Spire Scorpion
+3336,Spire Raptor
+3339,Spire Chocobo
+3340,Domovoi
+3341,Assault Unit OGR
+3344,Spire Griffin
+3345,Omicron
+3346,Spire Wyvern
+3347,Spire Chimera
+3348,Pacification Unit MEG
+3351,Angra Mainyu
+3352,Angra Mainyu
+3362,Spire Purboros
+3363,Spire Purboros
+3371,Asterios
+3372,Omicron
+3373,Spire Panther
+3375,Spire Bavarois
+3376,Omicron
+3381,Omega
+3382,Omega Aionios
+3401,Perykos
+3402,Eddy
+3411,Northern Wolf
+3412,Wolf Trap
+3413,Tonberry Creeper
+3414,Chronoraptor
+3416,Temple Dragonet
+3417,Wolf Trap
+3418,Chronoraptor
+3421,Temple Coeurl
+3422,Master Tonberry
+3423,Comfiture
+3424,Appulmoy
+3425,Temple Coeurl
+3429,Master Tonberry
+3430,Comfiture
+3431,Hreidmar
+3441,Frost Bomb
+3443,Tonberry Hexer
+3444,Deathstalker
+3445,Frost Bomb
+3446,Grey Widow
+3447,Tonberry Creeper
+3448,Tonberry Hexer
+3449,Bird of Paradise
+3450,Temple Dhole
+3451,Wolf Trap
+3456,Master Tonberry
+3457,Seer
+3461,Timekeeper
+3501,Leviathan Egi
+3502,Eddy
+3511,Leviathan
+3512,Leviathan
+3514,Ifrit
+3515,Ifrit
+3602,Kairos Wraith
+3603,Kairos Revenant
+3605,Kairos Undertaker
+4041,Goblin Gardener
+4042,Gigas Ploughswain
+4043,Goblin Gardener
+4081,The Innkeeper
+4082,Bedmaker
+4123,Desert Salamander
+4141,Woken Bug
+4142,Woken Guardian
+4143,Woken Hunter
+4145,Bomb Errant
+4146,Woken Node
+4147,Woken Node
+4148,Woken Bug
+4164,Canyon Chimera
+4165,Akashic Wolf
+4166,Akashic Scorpion
+4167,Akashic Leg Eater
+4168,Akashic Bighorn
+4169,Akashic Griffin
+4181,Chocobo Poacher
+4182,Chocobo Poacher
+4183,Chocobo Poacher
+4185,Chocobo Poacher
+4186,Chocobo Poacher
+4187,Huntsman
+4188,Harrier Hound
+4300,Tot Aevis
+4321,Killer
+4341,Elder Antelope
+4361,Republican Scepter
+4362,Republican Scimitar
+4363,Roughshod Rustic
+4364,Spring-heeled Jacques
+4365,Republican Scimitar
+4366,Roughshod Rustic
+4367,Roughshod Rustic
+4382,Hired Muscle
+4383,Hired Muscle
+4384,Hired Muscle
+4385,Mangy Cur
+4401,Akashic Gigas
+4405,Akashic Weaver
+4421,Simurgh
+4443,Dragonet
+4444,Dragonet
+4445,Worgen
+4446,Oillepheist Bull
+4461,Desert Tor
+4481,Bannerless Commandant
+4484,Bannerless Scimitar
+4485,Bannerless Scimitar
+4486,Bannerless Scepter
+4487,Bannerless Commandant
+4488,Bannerless Scepter
+4522,Executor Aide
+4524,Executor Aide
+4525,Executor Aide
+4526,Inquisitor
+4601,Cray Claw
+4622,Mud Dauber
+4623,Worgen
+4641,Bloated Wolf
+4642,Bloated Alpha
+4661,Black Shield
+4662,Black Shield
+4663,Black Shield
+4664,Provincial Guard
+4665,Provincial Guard
+4671,Black Shield
+4672,Black Shield
+4673,Black Shield
+4674,Black Shield
+4675,Black Shield
+4681,Lazarus Bandit
+4682,Lazarus Bandit
+4683,Lazarus Bandit
+4684,Lazarus Bandit
+4685,Lazarus Bandit
+4686,Lazarus Bandit
+4687,Lazarus Bandit
+4691,Black Shield Captain
+4692,Black Shield
+4693,Black Shield
+4694,Imperial War Wyvern
+4696,Imperial War Wyrm
+4697,Knight of the Lasting Dark
+4701,Vampire Thorn
+4705,Cray Claw
+4707,Vampire Thorn
+4708,Wivre
+4709,Vulture
+4711,Back-alley Bruiser
+4712,Back-alley Bruiser
+4713,Back-alley Bruiser
+4714,Back-alley Bruiser
+4715,Back-alley Bruiser
+4716,Back-alley Bruiser
+4717,Back-alley Bruiser
+4718,Back-alley Bruiser
+4721,Kupka's Private Guard
+4722,Kupka's Private Guard
+4723,Kupka's Private Guard
+4724,Royal Knight Captain
+4725,Royal Knight
+4726,Royal Knight
+4727,Royal Chaplain
+4728,Royal Courser
+4756,Unwanted Visitor
+4761,Cast Stone
+4762,Cast Stone
+4763,Cast Stone
+4764,Cast Stone
+4765,Cast Stone
+4766,Cast Stone
+4767,Cast Stone
+4768,Cast Stone
+4769,Cast Stone
+4770,Cast Stone
+4781,Thrall Specter
+4782,Thrall Wraith
+4783,Thrall Revenant
+4784,Thrall Lich
+4785,Thrall Revenant
+4786,Thrall Specter
+4801,Horde Goblin
+4802,Akashic Thistle
+4803,Horde Crab
+4804,Horde Adamantoise
+4806,Akashic Plague
+4807,Akashic Dragonet
+4808,Akashic Dragonet
+4809,Horde Goblin
+4810,Horde Wolf
+4811,Akashic Claw
+4812,Akashic Recluse
+4813,Akashic Vulture
+4814,Akashic Chocobo
+4860,Desert Bandit
+4861,Desert Bandit
+4862,Desert Bandit
+4864,The Sultan
+4865,Desert Bandit
+4866,Desert Bandit
+4869,Desert Bandit
+4901,Black Shield Sergeant
+4902,Black Shield
+4903,Black Shield
+4904,Black Shield
+4906,Black Shield
+4921,Minas
+4931,Akashic Shield
+4932,Akashic Shield
+4933,Akashic Shield
+4934,Akashic Shield
+4937,Akashic Shield
+4938,Akashic Shield
+4939,Akashic Shield
+4961,Encroaching Wraith
+4962,Encroaching Revenant
+4963,Encroaching Wraith
+4964,Encroaching Revenant
+4966,Encroaching Undertaker
+4967,Encroaching Specter
+4968,Encroaching Specter
+5001,Unsavory Settler
+5002,Unsavory Settler
+5003,Unsavory Settler
+5004,Two Scoops
+5022,Akashic Bandercoeurl
+5023,Akashic Goblin
+5029,Akashic Thistle
+5030,Akashic Claw
+5031,Akashic Raptor
+5032,Akashic Dragonet
+5033,Akashic Dragonet
+5034,Akashic Wolf
+5035,Akashic Goblin
+5060,League Footpad
+5061,Unleashed Hound
+5062,League Cunning-man
+5063,League Cunning-man
+5081,Akashic Gentleman
+5082,Akashic Footpad
+5083,Akashic Footpad
+5084,Akashic Cunning-man
+5088,Akashic Footpad
+5089,Akashic Footpad
+5121,Feral Hound
+5122,Helldiver
+5141,Herensuge
+5142,Akashic Hound
+5143,Akashic Leg Eater
+5144,Helldiver
+5145,Akashic Scorpion
+5181,Fallen Echo
+5183,Fallen Echo
+5184,Fool's Gold
+5185,Fallen Echo
+5201,Titus
+5202,Fallen Echo
+5203,Fallen Echo
+5300,Vintner Wasp
+5310,Vine Spinner
+5330,Bog Crab
+5341,Uninvited Guest
+5342,Uninvited Guest
+5350,Starving Wolf
+5351,Starving Alpha
+5360,Hill Gigas
+5361,Hill Goblin
+5370,"Leon, Garrison Soldier"
+5371,"Robin, Garrison Soldier"
+5380,Rabid Wolf
+5400,Thorny Thistle
+5402,Thorny Thistle
+5410,Lowland Scorpion
+5440,Agitated Hornet
+5441,Riled Raptor
+5450,Gigas Bruiser
+5451,Goblin Leecher
+5461,Old Faithful
+5462,Bath Bomb
+5463,Bath Bomb
+5500,Ne'er-do-well
+5501,Ne'er-do-well
+5502,Goblin Roughhouser
+5503,Wandering Echo
+5505,Goblin Roughhouser
+5506,Goblin Rabblerouser
+5507,Ne'er-do-well
+5509,Wailing Echo
+5510,Goblin Prince
+5521,Blueback Wyvern
+5530,Imperial Legionnaire
+5531,Imperial Legionnaire
+5532,Imperial Legionnaire
+5533,Imperial Astrologer
+5535,Imperial Legionnaire
+5536,Imperial Legionnaire
+5537,Imperial Astrologer
+5541,Akashic Scimitar
+5542,Akashic Scimitar
+5543,Akashic Scimitar
+5545,Akashic Steed
+5551,Dread Aevis
+5570,Akashic Clergyman
+5571,Akashic Gunnvaldr
+5574,Akashic Sigfreyr
+5590,Akashic Osfreyr
+5591,Akashic Sigfreyr
+5592,Akashic Gandfreyr
+5594,Akashic Gandfreyr
+5595,Akashic Guard Hound
+5600,Miteling
+5620,Pincher Crab
+5621,Muddy Quindim
+5640,Wily Wolf Trap
+5641,Wily Widowmaker
+5660,Angry Gryps
+5661,Angry Chronoraptor
+5680,Tonberry Chopper
+5682,Tonberry Chopper
+5700,Ibex
+5701,Guivre
+5720,Torama
+5721,Frost Bomb
+5741,Archelon
+5761,Tonberry Creeper
+5762,Tonberry Hexer
+5763,Tonberry Creeper
+5764,Tonberry Creeper
+5765,Tonberry Hexer
+5766,Tonberry Creeper
+5767,Tonberry Creeper
+5768,Tonberry Hexer
+5769,Tonberry Creeper
+5780,Lesser Archelon
+5781,Quindim
+5821,Goblin Mugger
+5822,Goblin Weaver
+5901,Nine of Knives
+5902,Ten of Clubs
+5903,Grimalkin
+5904,Wild Nakk
+5905,Gorgimera
+5906,Fastitocalon
+5907,Dread Comet
+5908,Thanatos
+5909,Pack Wolf
+5910,Soul Stinger
+5915,Svarog
+5916,Knight of the Splendent Heart
+5917,Holy Trumpitour
+5918,Prince of Death
+5919,Aruna
+5920,Dozmare
+5921,Bomb King
+5922,Bomb Babe
+5923,Petit Purobolos
+5924,Terminus
+5930,Carrot
+5931,Sekhret
+5932,Atlas
+5933,Sandwydd
+5934,Belphegor
+5935,Flan Prince
+5936,Severian
+5937,Ahriman
+5938,Mindwydd
+5939,Cindwydd
+5945,Behemoth King
+5946,Agni
+5947,Pandemonium
+5948,Bygul
+5949,Gizamaluk
+5950,Gobermouch
+5951,Kuza Beast
+5961,Tonberry King
+5962,Thalaos
+5963,Tonberry Shadower
+6080,Footpad
+6081,Footpad
+6082,Footpad
+6100,Footpad
+6101,Footpad
+6105,Footpad
+6160,Footpad
+6161,Footpad
+6180,Footpad
+6181,Footpad
+6220,Hedge Wizard
+6221,Hedge Wizard
+6222,Hedge Wizard
+6240,Goblin Mugger
+6241,Goblin Mugger
+6280,Goblin Mugger
+6282,Goblin Mugger
+6320,Goblin Mugger
+6322,Goblin Mugger
+6360,Goblin Weaver
+6361,Goblin Weaver
+6362,Goblin Weaver
+6400,Hill Gigas
+6440,Orcish Fodder
+6460,Orcish Fodder
+6480,Orcish Mesmerizer
+6500,Wild Chocobo
+6501,Wild Chocobo
+6502,Wild Chocobo
+6520,Akashic Chocobo
+6540,Leg Eater
+6541,Leg Eater
+6542,Leg Eater
+6560,Leg Eater
+6562,Leg Eater
+6580,Akashic Leg Eater
+6600,Anak
+6601,Anak
+6620,Scorpion
+6621,Scorpion
+6640,Akashic Scorpion
+6660,Scarlet Scorpion
+6661,Scarlet Scorpion
+6681,Bloodfang
+6682,Bloodfang
+6700,Wild Nakk
+6701,Wild Nakk
+6702,Wild Nakk
+6720,Akashic Nakk
+6740,Sunhound
+6741,Sunhound
+6742,Sunhound
+6760,Royal Mastiff
+6780,Helldiver
+6781,Helldiver
+6782,Helldiver
+6800,Akashic Eagle
+6820,Salamander
+6822,Salamander
+6840,Akashic Salamander
+6860,Hellgaroo
+6861,Hellgaroo
+6880,Storm Panther
+6882,Storm Panther
+6900,Republican War Panther
+6920,Coeurl
+6921,Coeurl
+6940,Akashic Coeurl
+6960,Bighorn
+6961,Bighorn
+6980,Fallen Hunter
+6981,Fallen Hunter
+6983,Fallen Hunter
+7000,Fallen Bug
+7020,Defense Node
+7021,Defense Node
+7040,Fallen Guardian
+7041,Fallen Guardian
+7061,Bomb
+7081,Yellow Jelly
+7120,Wraith
+7140,Revenant
+7160,Specter
+7180,Lich
+7200,Antares
+7201,Antares
+7600,Imperial Captain
+7601,Imperial Captain
+7602,Imperial Captain
+7620,Imperial Legionnaire
+7621,Imperial Legionnaire
+7622,Imperial Legionnaire
+7623,Imperial Legionnaire
+7640,Akashic Legionnaire
+7660,Imperial Legionnaire
+7661,Imperial Legionnaire
+7662,Imperial Legionnaire
+7663,Imperial Legionnaire
+7680,Imperial Legionnaire
+7681,Imperial Legionnaire
+7700,Imperial Astrologer
+7701,Imperial Astrologer
+7702,Imperial Astrologer
+7703,Imperial Astrologer
+7720,Akashic Bombardier
+7740,Footpad
+7760,Footpad
+7780,Hedge Wizard
+7800,Akashic Serf
+7801,Akashic Serf
+7820,Akashic Friar
+7840,Akashic Miner
+7860,Goblin Mugger
+7880,Akashic Mugger
+7900,Goblin Mugger
+7940,Goblin Weaver
+7960,Akashic Weaver
+7980,Gigas
+8000,Akashic Gigas
+8020,Bluebird
+8040,Wild Chocobo
+8060,Akashic Chocobo
+8080,Silver Lobo
+8081,Silver Lobo
+8100,Worgen
+8101,Worgen
+8102,Worgen
+8103,Worgen
+8120,Akashic Worgen
+8140,Woldhound
+8141,Woldhound
+8142,Woldhound
+8143,Woldhound
+8161,Vampire Thorn
+8162,Vampire Thorn
+8163,Vampire Thorn
+8180,Black Widow
+8181,Black Widow
+8182,Black Widow
+8200,Arachne
+8201,Arachne
+8202,Arachne
+8203,Arachne
+8220,Karlabos
+8221,Karlabos
+8222,Karlabos
+8223,Karlabos
+8240,Vulture
+8260,Dragonet
+8261,Dragonet
+8262,Dragonet
+8280,Akashic Dragonet
+8300,Imperial War Wyrm
+8320,Imperial War Wyrm
+8321,Imperial War Wyrm
+8360,Antelope
+8361,Antelope
+8362,Antelope
+8380,Raptor
+8381,Raptor
+8382,Raptor
+8400,Akashic Raptor
+8420,Dragon Aevis
+8421,Dragon Aevis
+8422,Dragon Aevis
+8423,Dragon Aevis
+8441,Imperial War Aevis
+8460,Akashic Aevis
+8480,Matagot
+8520,Fallen Bug
+8521,Fallen Bug
+8540,Fallen Hunter
+8541,Fallen Hunter
+8560,Bomb
+8580,Green Fool
+8581,Green Fool
+8600,Wraith
+8620,Revenant
+8640,Specter
+8641,Specter
+8660,Lich
+9080,Black Shield
+9100,Black Shield
+9120,Footpad
+9121,Footpad
+9122,Footpad
+9160,Footpad
+9161,Footpad
+9162,Footpad
+9163,Footpad
+9180,Footpad
+9181,Footpad
+9182,Footpad
+9220,Footpad
+9261,Hedge Wizard
+9262,Hedge Wizard
+9280,Footpad
+9282,Footpad
+9283,Footpad
+9320,Footpad
+9340,Akashic Serf
+9360,Akashic Serf
+9380,Akashic Miner
+9400,Akashic Miner
+9420,Goblin Mugger
+9422,Goblin Mugger
+9440,Akashic Mugger
+9460,Goblin Mugger
+9462,Goblin Mugger
+9480,Akashic Mugger
+9501,Goblin Mugger
+9520,Goblin Weaver
+9522,Goblin Weaver
+9540,Akashic Weaver
+9560,Gigas
+9561,Gigas
+9580,Akashic Gigas
+9600,Bluebird
+9601,Bluebird
+9602,Bluebird
+9620,Wild Chocobo
+9621,Wild Chocobo
+9622,Wild Chocobo
+9640,Akashic Chocobo
+9660,Antelope
+9681,Death Blossom
+9683,Death Blossom
+9684,Death Blossom
+9685,Death Blossom
+9686,Death Blossom
+9687,Death Blossom
+9721,Akashic Blossom
+9723,Akashic Blossom
+9740,Gloom Widow
+9741,Gloom Widow
+9742,Gloom Widow
+9743,Gloom Widow
+9763,Akashic Recluse
+9780,Arachne
+9781,Arachne
+9782,Arachne
+9783,Arachne
+9820,Megalocrab
+9822,Megalocrab
+9823,Megalocrab
+9840,Akashic Megalocrab
+9860,Devil Crab
+9861,Devil Crab
+9862,Devil Crab
+9863,Devil Crab
+9870,Akashic Devil Crab
+9871,Akashic Devil Crab
+9880,Cray Claw
+9882,Cray Claw
+9883,Akashic Claw
+9900,Hornet
+9901,Hornet
+9903,Hornet
+9920,Akashic Hornet
+9940,Killer Bee
+9941,Killer Bee
+9943,Killer Bee
+9960,Dragonet
+9980,Akashic Dragonet
+10000,Imperial War Wyrm
+10020,Bighorn
+10021,Bighorn
+10040,Akashic Bighorn
+10060,Wivre
+10061,Wivre
+10062,Wivre
+10063,Wivre
+10064,Wivre
+10065,Wivre
+10080,Akashic Wivre
+10081,Akashic Wivre
+10140,Adamantoise
+10141,Adamantoise
+10160,Akashic Adamantoise
+10180,Minotaur
+10200,Akashic Minotaur
+10220,Bomb
+10221,Bomb
+10240,Bomb
+10241,Bomb
+10260,Red Mousse
+10261,Red Mousse
+10262,Red Mousse
+10280,Fallen Hunter
+10281,Fallen Hunter
+10282,Fallen Hunter
+10283,Fallen Hunter
+10300,Fallen Bug
+10301,Fallen Bug
+10302,Fallen Bug
+10320,Wraith
+10340,Revenant
+10360,Specter
+10380,Lich
+10800,Akashic Osfreyr
+10801,Akashic Osfreyr
+10820,Akashic Osfreyr
+10821,Akashic Osfreyr
+10840,Akashic Folkstaf
+10841,Akashic Folkstaf
+10861,Akashic Nathfreyr
+10862,Akashic Gandfreyr
+10880,Akashic Miner
+10881,Akashic Miner
+10882,Akashic Miner
+10883,Akashic Serf
+10884,Akashic Serf
+10885,Akashic Serf
+10886,Akashic Serf
+10887,Akashic Miner
+10888,Akashic Serf
+11020,Orcish Fodder
+11022,Orcish Fodder
+11040,Akashic Fodder
+11061,Orcish Fodder
+11064,Orcish Fodder
+11080,Akashic Fodder
+11100,Orcish Mesmerizer
+11102,Orcish Mesmerizer
+11104,Orcish Mesmerizer
+11120,Akashic Mesmerizer
+11140,Wild Chocobo
+11180,Akashic Chocobo
+11201,Royal Courser
+11202,Akashic Courser
+11220,Pyrolisk
+11221,Pyrolisk
+11240,Akashic Pyrolisk
+11260,Lesser Lopros
+11261,Lesser Lopros
+11262,Lesser Lopros
+11280,Tarantula
+11281,Tarantula
+11320,Mud Crab
+11321,Mud Crab
+11323,Mud Crab
+11324,Mud Crab
+11340,Akashic Mud Crab
+11341,Akashic Mud Crab
+11360,Belzecue
+11420,Royal Mastiff
+11430,Akashic Mastiff
+11440,Hyena
+11442,Akashic Hyena
+11460,Sprinter
+11480,Akashic Sprinter
+11500,Lindwurm
+11501,Lindwurm
+11502,Lindwurm
+11503,Lindwurm
+11540,Akashic Lindwurm
+11560,Adamantitan
+11561,Adamantitan
+11565,Akashic Adamantitan
+11580,Ogre
+11620,Plague
+11621,Plague
+11641,Bomb
+11661,Bomb
+11680,Purobolos
+11700,Purobolos
+11722,Purple Bavarois
+11723,Purple Bavarois
+11740,Blue Trifle
+11741,Blue Trifle
+11742,Blue Trifle
+11743,Blue Trifle
+11760,Fallen Hunter
+11780,Wraith
+11800,Revenant
+11820,Specter
+11840,Lich
+11860,Undertaker
+11880,Akashic Lopros
+11882,Akashic Lopros
+11900,Akashic Plague
+11920,Akashic Tarantula
+11940,Akashic Gandfreyr
+14001,Northern Wolf
+14002,Wolf Trap
+14004,Temple Coeurl
+14005,Robber Crab
+14006,Grey Widow
+14007,Lesser Archelon
+14008,Old Ibex
+14009,Quindim
+14010,Tonberry Creeper
+14011,Widowmaker
+14012,Lesser Archelon
+14013,Deathstalker
+20001,Firebound Orc
+20002,Firebound Orc
+20012,Firebound Vulture
+20014,Firebound Scorpion
+20021,Firebound Wivre
+20031,Firebound Guardian
+20032,Firebound Hunter
+20041,Firebound Node
+20043,Firebound Crab
+20051,Firebound Cannonier
+20053,Firebound Hornet
+20061,Firebound Mousse
+20063,Firebound Bug
+20071,Firebound Dragonet
+20072,Firebound Revenant
+20084,Firebound Lich
+20085,Firebound Undertaker
+20092,Firebound Plague
+20101,Windbound Mesmerizer
+20102,Windbound Worgen
+20111,Windbound Mugger
+20113,Windbound Thorn
+20123,Windbound Minotaur
+20133,Windbound Aevis
+20134,Windbound Hornet
+20144,Windbound Orc
+20145,Windbound Weaver
+20153,Windbound Specter
+20154,Windbound Tognvaldr
+20163,Windbound Bighorn
+20165,Windbound Weaver
+20171,Windbound Osfreyr
+20172,Windbound Vulture
+20181,Windbound Elemental
+20182,Windbound Gigas
+20191,Windbound Coeurl
+20202,Thunderbound Antelope
+20203,Thunderbound Mugger
+20211,Thunderbound Vulture
+20214,Thunderbound Bug
+20223,Thunderbound Salamander
+20232,Thunderbound Bighorn
+20233,Thunderbound Mesmerizer
+20241,Thunderbound Folkstaf
+20242,Thunderbound Sigfreyr
+20244,Thunderbound Dragonet
+20253,Thunderbound Bavarois
+20255,Thunderbound Bomb
+20262,Thunderbound Undertaker
+20263,Thunderbound Node
+20272,Thunderbound Orc
+20273,Thunderbound Orc
+20274,Thunderbound Crusader
+20282,Thunderbound Panther
+20283,Thunderbound Guardian
+20292,Thunderbound Griffin
+20301,Earthbound Hunter
+20312,Earthbound Revenant
+20313,Earthbound Wolf
+20325,Earthbound Gigas
+20331,Earthbound Widow
+20332,Earthbound Adamantoise
+20342,Earthbound Wraith
+20343,Earthbound Lieutenant
+20351,Earthbound Marshal
+20352,Earthbound Bomb
+20362,Earthbound Panther
+20364,Earthbound Mugger
+20371,Earthbound Orc
+20372,Earthbound Orc
+20373,Earthbound Scepter
+20381,Earthbound Fool
+20382,Earthbound Tognvaldr
+20391,Earthbound Giant
+20402,Lightbound Revenant
+20411,Lightbound Bug
+20412,Lightbound Node
+20422,Lightbound Bavarois
+20431,Lightbound Lich
+20432,Lightbound Wolf
+20442,Lightbound Weaver
+20444,Lightbound Raptor
+20451,Lightbound Champion
+20453,Lightbound Vulture
+20462,Lightbound Guardian
+20463,Lightbound Specter
+20471,Lightbound Scorpion
+20475,Lightbound Lancer
+20481,Lightbound Cannonier
+20485,Lightbound Astrologer
+20491,Lightbound Warlord
+20501,Icebound Wolf
+20502,Icebound Wraith
+20511,Icebound Bug
+20512,Icebound Hornet
+20522,Icebound Jelly
+20531,Icebound Adamantoise
+20533,Icebound Mugger
+20541,Icebound Bluebird
+20543,Icebound Purobolos
+20551,Icebound Thorn
+20554,Icebound Fanatic
+20561,Icebound Wivre
+20562,Icebound Mesmerizer
+20571,Icebound Commander
+20573,Icebound Scorpion
+20581,Icebound Bighorn
+20582,Icebound Lich
+20591,Icebound Necrophobe
+20602,Darkbound Mugger
+20603,Darkbound Mugger
+20612,Darkbound Wolf
+20613,Darkbound Hunter
+20621,Darkbound Minotaur
+20631,Darkbound Node
+20632,Darkbound Panther
+20641,Darkbound Orc
+20642,Darkbound Bug
+20651,Darkbound Legionnaire
+20652,Darkbound Lancer
+20661,Darkbound Guardian
+20662,Darkbound Orc
+20671,Darkbound Specter
+20673,Darkbound Raptor
+20681,Darkbound Salamander
+20682,Darkbound Marshal
+20691,Darkbound Chimera
+20701,Waterbound Wolf Trap
+20702,Waterbound Worgen
+20711,Waterbound Domovikha
+20712,Waterbound Domovoi
+20721,Waterbound Guardian
+20731,Waterbound Ibis
+20732,Waterbound Antelope
+20741,Waterbound Creeper
+20742,Waterbound Hexer
+20751,Waterbound Terminal
+20752,Waterbound Hunter
+20761,Waterbound Undertaker
+20762,Waterbound Frost Bomb
+20771,Waterbound Raptor
+20772,Waterbound Vulture
+20781,Waterbound Master
+20782,Waterbound Trifle
+20791,Waterbound King
+21001,Firebound Revenant
+21002,Firebound Elemental
+21011,Firebound Dragonet
+21012,Firebound Scorpion
+21022,Firebound Wivre
+21023,Firebound Astrologer
+21031,Firebound Guardian
+21032,Firebound Hunter
+21041,Firebound Specter
+21042,Firebound Mesmerizer
+21051,Firebound Cannonier
+21052,Firebound Hornet
+21053,Firebound Thorn
+21061,Firebound Mousse
+21062,Firebound Node
+21071,Firebound Vulture
+21072,Firebound Salamander
+21081,Firebound Lich
+21082,Firebound Undertaker
+21092,Firebound Wraith
+21101,Windbound Node
+21102,Windbound Champion
+21111,Windbound Thorn
+21112,Windbound Mugger
+21121,Windbound Panther
+21122,Windbound Specter
+21131,Windbound Aevis
+21132,Windbound Scorpion
+21141,Windbound Orc
+21142,Windbound Gandfreyr
+21151,Windbound Tognvaldr
+21152,Windbound Bug
+21161,Windbound Bighorn
+21162,Windbound Wraith
+21171,Windbound Sigfreyr
+21172,Windbound Fool
+21181,Windbound Gigas
+21182,Windbound Elemental
+21192,Windbound Worgen
+21201,Thunderbound Antelope
+21202,Thunderbound Gigas
+21211,Thunderbound Claw
+21212,Thunderbound Specter
+21221,Thunderbound Salamander
+21222,Thunderbound Purobolos
+21231,Thunderbound Bighorn
+21232,Thunderbound Vulture
+21241,Thunderbound Revenant
+21242,Thunderbound Node
+21251,Thunderbound Bavarois
+21252,Thunderbound Raptor
+21261,Thunderbound Undertaker
+21262,Thunderbound Folkstaf
+21271,Thunderbound Lancer
+21272,Thunderbound Hunter
+21281,Thunderbound Guardian
+21282,Thunderbound Panther
+21292,Thunderbound Widow
+21301,Earthbound Mugger
+21302,Earthbound Undertaker
+21311,Earthbound Chocobo
+21312,Earthbound Thorn
+21321,Earthbound Aevis
+21322,Earthbound Revenant
+21331,Earthbound Adamantoise
+21332,Earthbound Crab
+21341,Earthbound Orc
+21342,Earthbound Bug
+21351,Earthbound Marshal
+21352,Earthbound Scepter
+21361,Earthbound Panther
+21362,Earthbound Widow
+21371,Earthbound Wraith
+21372,Earthbound Gunnvaldr
+21381,Earthbound Tognvaldr
+21382,Earthbound Fool
+21392,Earthbound Hunter
+21401,Lightbound Revenant
+21402,Lightbound Lich
+21411,Lightbound Scorpion
+21412,Lightbound Node
+21421,Lightbound Bavarois
+21422,Lightbound Vulture
+21431,Lightbound Wivre
+21432,Lightbound Legionnaire
+21441,Lightbound Raptor
+21442,Lightbound Dragonet
+21451,Lightbound Champion
+21452,Lightbound Purobolos
+21461,Lightbound Guardian
+21462,Lightbound Hunter
+21471,Lightbound Aevis
+21472,Lightbound Specter
+21481,Lightbound Lancer
+21482,Lightbound Cannonier
+21492,Lightbound Orc
+21493,Lightbound Orc
+21501,Icebound Claw
+21502,Icebound Gunnvaldr
+21511,Icebound Commander
+21512,Icebound Wolf
+21521,Icebound Jelly
+21522,Icebound Vulture
+21531,Icebound Adamantoise
+21532,Icebound Thorn
+21541,Icebound Orc
+21542,Icebound Mesmerizer
+21551,Icebound Fanatic
+21552,Icebound Bluebird
+21561,Icebound Wivre
+21562,Icebound Node
+21571,Icebound Weaver
+21572,Icebound Lancer
+21581,Icebound Bighorn
+21582,Icebound Lich
+21592,Icebound Revenant
+21601,Darkbound Wolf
+21602,Darkbound Bighorn
+21611,Darkbound Raider
+21612,Darkbound Hunter
+21621,Darkbound Minotaur
+21622,Darkbound Crab
+21631,Darkbound Panther
+21632,Darkbound Weaver
+21641,Darkbound Orc
+21642,Darkbound Specter
+21651,Darkbound Lancer
+21652,Darkbound Legionnaire
+21661,Darkbound Guardian
+21662,Darkbound Bug
+21671,Darkbound Raptor
+21672,Darkbound Trifle
+21681,Darkbound Marshal
+21682,Darkbound Salamander
+21692,Darkbound Scorpion
+21701,Waterbound Egi
+21702,Waterbound Node
+21711,Waterbound Domovikha
+21712,Waterbound Domovoi
+21721,Waterbound Guardian
+21722,Waterbound Widow
+21731,Waterbound Ibis
+21732,Waterbound Hexer
+21741,Waterbound Worgen
+21742,Waterbound Dragonet
+21751,Waterbound Terminal
+21752,Waterbound Bug
+21761,Waterbound Undertaker
+21762,Waterbound Wolf Trap
+21771,Waterbound Panther
+21772,Waterbound Creeper
+21781,Waterbound Master
+21782,Waterbound Trifle
+21791,Waterbound Wraith
+31001,Shard Sharp
+31002,Shard Sharp
+31003,Shard Sharp
+31004,Shard Sharp
+31005,Shard Sharp
+31006,Shard Sharp
+31007,Shard Sharp
+31009,Shard Sharp
+31020,Akashic Bighorn
+31021,Akashic Thorn
+31022,Akashic Megalocrab
+31023,Domovikha
+31024,Domovikha
+31025,Shard Sharp
+31026,Shard Sharp
+31027,Shard Sharp
+31028,Shard Sharp
+33001,Kairos Goblin
+33004,Kairos Wolf
+33007,Kairos Thorn
+33008,Kairos Chimera
+33010,Kairos Goblin
+33016,Kairos Wasp
+33019,Kairos Widow
+33022,Kairos Raptor
+33023,Kairos Goblin
+33025,Kairos Marshmallow
+33026,Kairos Trifle
+33031,Kairos Goblin
+33032,Kairos Vulture
+33034,Kairos Scorpion
+33037,Kairos Gigas
+33038,Kairos Gigas
+33040,Infernal Ifrit
+33041,Kairos Wyvern
+33042,Divine Griffin
+33044,Kairos Crab
+33045,Kairos Wasp
+33047,Kairos Fool
+33048,Kairos Thorn
+33051,Kairos Hunter
+33052,Kairos Bug
+33054,Kairos Node
+33057,Kairos Captain
+33058,Kairos Terminal
+33059,Kairos Giant
+33060,Kairos Goblin
+33066,Kairos Bug
+33067,Kairos Hunter
+33069,Kairos Wyrm
+33070,Kairos Astrologer
+33072,Kairos Elemental
+33073,Kairos Lancer
+33074,Kairos Wivre
+33075,Kairos Goblin
+33076,Kairos Goblin
+33081,Kairos Captain
+33082,Kairos Wolf
+33084,Kairos Node
+33085,Kairos Hunter
+33086,Kairos Tognvaldr
+33087,Kairos Champion
+33090,Warden of Wind
+33091,Kairos Terminal
+33094,Kairos Folkstaf
+33095,Kairos Courser
+33097,Kairos Omicron
+33098,Kairos Bug
+33099,Kairos Omicron
+33101,Kairos Fodder
+33104,Kairos Raptor
+33105,Kairos Bomb
+33106,Kairos Hexer
+33107,Kairos Creeper
+33108,Kairos Mesmerizer
+33109,Kairos Fodder
+33110,Kairos Wivre
+33111,Kairos Vulture
+33112,Kairos Raptor
+33113,Kairos Eater
+33116,Kairos Wivre
+33117,Kairos Domovikha
+33119,Kairos Domovoi
+33120,Kairos Domovikha
+33122,Kairos Warlord
+33123,Kairos Fodder
+33124,Kairos Warlord
+33125,Kairos Hexer
+33128,Kairos Marshmallow
+33129,Kairos Trifle
+33130,Kairos Jelly
+33131,Kairos Torama
+33132,Kairos Torama
+33133,Kairos Master
+33134,Kairos Mesmerizer
+33135,Kairos Scarlet Scorpion
+33137,Kairos Asterios
+33138,Kairos Minotaur
+33139,Kairos Asterios
+33140,Warden of Stone
+33141,Kairos Chimera
+33142,Kairos Master
+33143,Kairos King
+33146,Kairos Jelly
+33147,Kairos Fool
+33149,Divine Gunnvaldr
+33150,Kairos Omicron
+33151,Kairos Revenant
+33154,Kairos Wraith
+33155,Kairos Puroboros
+33157,Kairos Giant
+33158,Kairos Wolf
+33160,Kairos Captain
+33161,Kairos Giant
+33162,Divine Griffin
+33166,Kairos Plague
+33167,Kairos Wolf
+33168,Kairos Specter
+33169,Kairos Specter
+33170,Kairos Wraith
+33172,Kairos Egi
+33173,Kairos Wyvern
+33174,Divine Gunnvaldr
+33176,Kairos Undertaker
+33177,Kairos Lancer
+33181,Kairos Frost Bomb
+33182,Divine Panther
+33183,Kairos Wyrm
+33184,Kairos Captain
+33185,Kairos Astrologer
+33187,Philargyria
+33190,Warden of Darkness
+33191,Acedia
+33192,Divine Panther
+33193,Acedia
+33194,Kairos Undertaker
+33195,Kairos Captain
+33197,Orge
+33198,Kairos Giant
+33199,Kairos Champion
+33201,The Shadow Within
+33203,Kenodoxia
+33204,Porneia
+33205,Hyperephania
+33206,Gastrimargia
+33207,Philargyria
+33208,Lype
+33209,Orge
+33210,Kairos King

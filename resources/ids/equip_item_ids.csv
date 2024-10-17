@@ -1,0 +1,538 @@
+Key,Name
+100000,**(no name)**
+100001,Imperial Infantry Blade
+100002,Rosarian Oath
+100003,Sparring Sword
+100005,Broadsword
+100006,Broadsword +1
+100007,Broadsword +2
+100008,Longsword
+100009,Longsword +1
+100010,Longsword +2
+100011,Bastard Sword
+100012,Bastard Sword +1
+100013,Bastard Sword +2
+100014,Gaia Blade
+100015,Gaia Blade +1
+100016,Gaia Blade +2
+100017,Platinum Sword
+100018,Platinum Sword +1
+100019,Platinum Sword +2
+100020,Enhancer
+100021,Enhancer +1
+100022,Enhancer +2
+100023,Diamond Sword
+100024,Diamond Sword +1
+100025,Diamond Sword +2
+100026,Rune Blade
+100027,Rune Blade +1
+100028,Rune Blade +2
+100029,Defender
+100030,Defender +1
+100031,Defender +2
+100032,Excalibur
+100033,Ragnarok
+100034,Coral Sword
+100035,Ancient Sword
+100036,Masamune
+100037,Stormcry
+100038,Flametongue
+100039,Levinbolt
+100040,Grindstone
+100041,Brightburn
+100042,Tidestrike
+100043,Icebrand
+100044,Everdark
+100045,Invictus
+100046,Imperial Infantry Blade +1
+100047,Rosarian Oath +1
+100048,Sparring Sword +1
+100050,Broadsword +3
+100051,Broadsword +4
+100052,Broadsword Reforged
+100053,Longsword +3
+100054,Longsword +4
+100055,Longsword Reforged
+100056,Bastard Sword +3
+100057,Bastard Sword +4
+100058,Bastard Sword Reforged
+100059,Gaia Blade +3
+100060,Gaia Blade +4
+100061,Gaia Blade Reforged
+100062,Platinum Sword +3
+100063,Platinum Sword +4
+100064,Platinum Sword Reforged
+100065,Enhancer +3
+100066,Enhancer +4
+100067,Enhancer Reforged
+100068,Diamond Sword +3
+100069,Diamond Sword +4
+100070,Diamond Sword Reforged
+100071,Rune Blade +3
+100072,Rune Blade +4
+100073,Rune Blade Reforged
+100074,Defender +3
+100075,Defender +4
+100076,Defender Reforged
+100077,Excalibur Reforged
+100078,Ragnarok Reforged
+100079,Coral Sword Reforged
+100080,Ancient Sword Reforged
+100081,Masamune Reforged
+100082,Stormcry Reforged
+100083,Flametongue Reforged
+100084,Levinbolt Reforged
+100085,Grindstone Reforged
+100086,Brightburn Reforged
+100087,Tidestrike Reforged
+100088,Icebrand Reforged
+100089,Everdark Reforged
+100090,Ultima Weapon
+100091,Invictus +1
+100092,The Burning Thorn
+100093,The Burning Thorn +1
+100094,Gotterdammerung
+100095,Gotterdammerung Reforged
+100096,Braveheart
+100097,Blood Sword
+100098,Onion Sword
+100099,Brave Blade
+100100,Buster Sword
+100101,Curtana
+100102,The Sword of Labors
+100103,The Sword of the Final Labor
+100104,Fallen Enforcer
+100105,Omega Weapon
+100106,Fallen Enforcer Reforged
+100107,Omega Weapon Reforged
+100108,Tonberry Knife
+100109,Tonberry Knife +1
+100110,Original Sin
+100111,Radiant Stormcry
+100112,Radiant Flametongue
+100113,Radiant Levinbolt
+100114,Radiant Grindstone
+100115,Radiant Brightburn
+100116,Radiant Tidestrike
+100117,Radiant Icebrand
+100118,Radiant Everdark
+100119,Radiant Stormcry Reforged
+100120,Radiant Flametongue Reforged
+100121,Radiant Levinbolt Reforged
+100122,Radiant Grindstone Reforged
+100123,Radiant Brightburn Reforged
+100124,Radiant Tidestrike Reforged
+100125,Radiant Icebrand Reforged
+100126,Radiant Everdark Reforged
+100127,The Sword of Opportunity
+100128,The Sword of the Final Opportunity
+100200,**(no name)**
+100201,Imperial Infantry Belt
+100202,Rosarian Belt
+100203,Iron Belt
+100204,Iron Belt +1
+100205,Iron Belt +2
+100206,Wolfskin Sash
+100207,Wolfskin Sash +1
+100208,Wolfskin Sash +2
+100209,Dark Sash
+100210,Dark Sash +1
+100211,Dark Sash +2
+100212,Goldwork Sash
+100213,Goldwork Sash +1
+100214,Goldwork Sash +2
+100215,Platinum Belt
+100216,Platinum Belt +1
+100217,Platinum Belt +2
+100218,Hunter's Waistcloth
+100219,Hunter's Waistcloth +1
+100220,Hunter's Waistcloth +2
+100221,Silken Sash
+100222,Silken Sash +1
+100223,Silken Sash +2
+100224,Rune Belt
+100225,Rune Belt +1
+100226,Rune Belt +2
+100227,Circle of Heaven
+100228,Circle of Heaven +1
+100229,Circle of Heaven +2
+100230,Demontamer's Sash
+100231,Mythril Belt
+100232,Regal Sash
+100233,Drakeslayer's Belt
+100234,Ouroboros
+100235,Metian Cross
+100236,Imperial Infantry Belt +1
+100237,Rosarian Belt +1
+100238,Iron Belt +3
+100239,Iron Belt +4
+100240,Reinforced Iron Belt
+100241,Wolfskin Sash +3
+100242,Wolfskin Sash +4
+100243,Reinforced Wolfskin Sash
+100244,Dark Sash +3
+100245,Dark Sash +4
+100246,Reinforced Dark Sash
+100247,Goldwork Sash +3
+100248,Goldwork Sash +4
+100249,Reinforced Goldwork Sash
+100250,Platinum Belt +3
+100251,Platinum Belt +4
+100252,Reinforced Platinum Belt
+100253,Hunter's Waistcloth +3
+100254,Hunter's Waistcloth +4
+100255,Reinforced Hunter's Waistcloth
+100256,Silken Sash +3
+100257,Silken Sash +4
+100258,Reinforced Silken Sash
+100259,Rune Belt +3
+100260,Rune Belt +4
+100261,Reinforced Rune Belt
+100262,Circle of Heaven +3
+100263,Circle of Heaven +4
+100264,Reinforced Circle of Heaven
+100265,Reinforced Demontamer's Sash
+100266,Reinforced Mythril Belt
+100267,Reinforced Regal Sash
+100268,Reinforced Drakeslayer's Belt
+100269,Reinforced Ouroboros
+100270,Metian Cross +1
+100271,Princely Stay
+100272,Princely Stay +1
+100273,The Belt of Labors
+100274,The Belt of the Final Labor
+100275,Fallen Belt
+100276,Fallen Belt +1
+100277,Fallen Belt +2
+100278,Fallen Belt +3
+100279,Fallen Belt +4
+100280,Reinforced Fallen Belt
+100281,Minwu Waistcloth
+100282,Minwu Waistcloth +1
+100283,Minwu Waistcloth +2
+100284,Minwu Waistcloth +3
+100285,Minwu Waistcloth +4
+100286,Reinforced Minwu Waistcloth
+100287,Eludium Belt
+100288,Reinforced Eludium Belt
+100289,The Belt of Opportunity
+100290,The Belt of the Final Opportunity
+100300,**(no name)**
+100301,Imperial Infantry Bracers
+100302,Hard Leather Armlets
+100303,Iron Bracers
+100304,Iron Bracers +1
+100305,Iron Bracers +2
+100306,Traveler's Bands
+100307,Traveler's Bands +1
+100308,Traveler's Bands +2
+100309,Steel Crowns
+100310,Steel Crowns +1
+100311,Steel Crowns +2
+100312,Battlechains
+100313,Battlechains +1
+100314,Battlechains +2
+100315,Platinum Cannons
+100316,Platinum Cannons +1
+100317,Platinum Cannons +2
+100318,Hunter's Armcloths
+100319,Hunter's Armcloths +1
+100320,Hunter's Armcloths +2
+100321,Diamond Armlets
+100322,Diamond Armlets +1
+100323,Diamond Armlets +2
+100324,Rune Crescents
+100325,Rune Crescents +1
+100326,Rune Crescents +2
+100327,Sun Bracelets
+100328,Sun Bracelets +1
+100329,Sun Bracelets +2
+100330,Demontamer's Armguards
+100331,Mythril Wristlets
+100332,Regal Armguards
+100333,Drakeslayer's Bracelets
+100334,The Sons of Ouroboros
+100335,Metian Bonds
+100336,Imperial Infantry Bracers +1
+100337,Hard Leather Armlets +1
+100338,Iron Bracers +3
+100339,Iron Bracers +4
+100340,Reinforced Iron Bracers
+100341,Traveler's Bands +3
+100342,Traveler's Bands +4
+100343,Reinforced Traveler's Bands
+100344,Steel Crowns +3
+100345,Steel Crowns +4
+100346,Reinforced Steel Crowns
+100347,Battlechains +3
+100348,Battlechains +4
+100349,Reinforced Battlechains
+100350,Platinum Cannons +3
+100351,Platinum Cannons +4
+100352,Reinforced Platinum Cannons
+100353,Hunter's Armcloths +3
+100354,Hunter's Armcloths +4
+100355,Reinforced Hunter's Armcloths
+100356,Diamond Armlets +3
+100357,Diamond Armlets +4
+100358,Reinforced Diamond Armlets
+100359,Rune Crescents +3
+100360,Rune Crescents +4
+100361,Reinforced Rune Crescents
+100362,Sun Bracelets +3
+100363,Sun Bracelets +4
+100364,Reinforced Sun Bracelets
+100365,Reinforced Demontamer's Armguards
+100366,Reinforced Mythril Wristlets
+100367,Reinforced Regal Armguards
+100368,Reinforced Drakeslayer's Bracelets
+100369,Reinforced Sons of Ouroboros
+100370,Metian Bonds +1
+100371,Princely Bangles
+100372,Princely Bangles +1
+100373,The Founder's Grasp
+100374,The Founder's Grasp +1
+100375,The Bonds of Labors
+100376,The Bonds of the Final Labor
+100377,Fallen Bracelets
+100378,Fallen Bracelets +1
+100379,Fallen Bracelets +2
+100380,Fallen Bracelets +3
+100381,Fallen Bracelets +4
+100382,Reinforced Fallen Bracelets
+100383,Minwu Arm Ring
+100384,Minwu Arm Ring +1
+100385,Minwu Arm Ring +2
+100386,Minwu Arm Ring +3
+100387,Minwu Arm Ring +4
+100388,Minwu Reinforced Arm Ring
+100389,Eludium Wristlets
+100390,Reinforced Eludium Wristlets
+100391,The Bonds of Opportunity
+100392,The Bonds of the Final Opportunity
+100393,**(no name)**
+100394,**(no name)**
+100395,**(no name)**
+100396,**(no name)**
+100397,**(no name)**
+100398,**(no name)**
+100399,**(no name)**
+100400,**(no name)**
+100401,Badge of Might
+100402,Badge of Mettle
+100403,Cavall's Fang
+100405,Cleric's Medallion
+100406,The Eye of the Warrior
+100407,Stoneskin Cuffs
+100408,Badge of Might +1
+100409,Badge of Mettle +1
+100410,Cavall's Fang +1
+100412,Cleric's Medallion +1
+100413,The Eye of the Warrior +1
+100414,Stoneskin Cuffs +1
+100415,Genji Gloves
+100416,Adamantite Gauntlets
+100418,Griffin's Head Braid
+100419,Bull's Horn Braid
+100420,Kestrel's Beak Braid
+100421,Dire Wolf Jess
+100422,Blood Hawk Jess
+100423,Ring of the Marksman
+100424,Ring of the Swiftshot
+100425,Channeler's Whispers
+100426,Ring of the Demolitionist
+100427,Crimson Tassels
+100428,Cobalt Tassels
+100429,Cavall's Bite
+100431,Cleric's Amulet
+100432,High Cleric's Medallion
+100433,The Eye of the Savior
+100434,Protective Cuffs
+100435,Talisman of Priming
+100436,<i>The Golden Testament</i>
+100437,<i>On Fortune and the Heavens</i>
+100438,<i>The Wages of Warcraft</i>
+100439,<color=h_phoenix>The Will of Fire</color> (Rising Flames)
+100440,<color=h_phoenix>The Favor of Fire</color> (Scarlet Cyclone)
+100441,<color=h_phoenix>The Favor of Fire</color> (Heatwave)
+100442,<color=h_phoenix>The Breath of Fire</color> (Flames of Rebirth)
+100443,<color=h_garuda>The Favor of Wind</color> (Gouge)
+100444,<color=h_garuda>The Favor of Wind</color> (Wicked Wheel)
+100445,<color=h_garuda>The Will of Wind</color> (Rook's Gambit)
+100446,<color=h_garuda>The Breath of Wind</color> (Aerial Blast)
+100447,<color=h_phoenix>The Favor of the Inferno</color> (Ignition)
+100448,<color=h_phoenix>The Grace of the Inferno</color> (Will-o'-the-Wykes)
+100449,<color=h_ramuh>The Will of Lightning</color> (Pile Drive)
+100450,<color=h_ramuh>The Favor of Lightning</color> (Thunderstorm)
+100451,<color=h_ramuh>The Favor of Lightning</color> (Lightning Rod)
+100452,<color=h_ramuh>The Breath of Lightning</color> (Judgment Bolt)
+100453,<color=h_titan>The Favor of Earth</color> (Windup)
+100454,<color=h_titan>The Favor of Earth</color> (Upheaval)
+100455,<color=h_titan>The Favor of Earth</color> (Raging Fists)
+100456,<color=h_titan>The Breath of Earth</color> (Earthen Fury)
+100457,<color=h_bahamut>The Will of Light</color> (Impulse)
+100458,<color=h_bahamut>The Favor of Light</color> (Flare Breath)
+100459,<color=h_bahamut>The Will of Light</color> (Satellite)
+100460,<color=h_bahamut>Bahamut's Mercy</color>
+100461,<color=h_shiva>The Favor of Ice</color> (Ice Age)
+100462,<color=h_shiva>The Will of Ice</color> (Mesmerize)
+100463,<color=h_shiva>The Will of Ice</color> (Rime)
+100464,<color=h_shiva>Shiva's Kiss</color>
+100465,<color=h_odin>The Will of Darkness</color> (Gungnir)
+100466,<color=h_odin>The Favor of Darkness</color> (Heaven's Cloud)
+100467,<color=h_odin>The Breath of Darkness</color> (Rift Slip)
+100468,<color=h_odin>The Pull of Darkness</color> (Dancing Steel)
+100469,<color=h_leviathan>The Will of Water</color> (Deluge)
+100470,<color=h_leviathan>The Will of Water</color> (Cross Swell)
+100471,<color=h_leviathan>The Favor of Water</color> (Abyssal Tear)
+100472,<color=h_leviathan>The Serpent's Worth</color> (Tsunami)
+100473,<color=h_phoenix>The Breath of Fire</color> (Rising Flames)
+100474,<color=h_phoenix>The Breath of Fire</color> (Scarlet Cyclone)
+100475,<color=h_phoenix>The Breath of Fire</color> (Heatwave)
+100476,<color=h_garuda>The Breath of Wind</color> (Gouge)
+100477,<color=h_garuda>The Breath of Wind</color> (Wicked Wheel)
+100478,<color=h_garuda>The Breath of Wind</color> (Rook's Gambit)
+100479,<color=h_phoenix>The Breath of the Inferno</color> (Ignition)
+100480,<color=h_ramuh>The Breath of Lightning</color> (Pile Drive)
+100481,<color=h_ramuh>The Breath of Lightning</color> (Thunderstorm)
+100482,<color=h_ramuh>The Breath of Lightning</color> (Lightning Rod)
+100483,<color=h_titan>The Breath of Earth</color> (Windup)
+100484,<color=h_titan>The Breath of Earth</color> (Upheaval)
+100485,<color=h_titan>The Breath of Earth</color> (Raging Fists)
+100486,<color=h_bahamut>The Breath of Light</color> (Impulse)
+100487,<color=h_bahamut>The Breath of Light</color> (Flare Breath)
+100488,<color=h_bahamut>The Breath of Light</color> (Satellite)
+100489,<color=h_shiva>The Breath of Ice</color> (Ice Age)
+100490,<color=h_shiva>The Breath of Ice</color> (Mesmerize)
+100491,<color=h_shiva>The Breath of Ice</color> (Rime)
+100492,<color=h_odin>The Breath of Darkness</color> (Gungnir)
+100493,<color=h_odin>The Breath of Darkness</color> (Heaven's Cloud)
+100494,<color=h_odin>The Breath of Darkness</color> (Dancing Steel)
+100495,<color=h_leviathan>The Serpent's Wonder</color> (Deluge)
+100496,<color=h_leviathan>The Serpent's Word</color> (Cross Swell)
+100497,<color=h_leviathan>The Serpent's Watch</color> (Abyssal Tear)
+100498,Badge of Might +2
+100499,Badge of Might +3
+100500,Badge of Mettle +2
+100501,Badge of Mettle +3
+100502,Ring of Timely Healing
+100503,Ring of Timely Assistance
+100504,Ring of Timely Strikes
+100505,Ring of Timely Evasion
+100506,Ring of Timely Focus
+100507,Berserker Ring
+100508,Scholar's Spectacles
+100509,Cait Sith Charm
+100510,<color=h_phoenix>The Favor of Fire</color> (Flames of Rebirth)
+100511,<color=h_garuda>The Will of Wind</color> (Aerial Blast)
+100512,<color=h_ramuh>The Favor of Lightning</color> (Judgment Bolt)
+100513,<color=h_titan>The Favor of Earth</color> (Earthen Fury)
+100514,<color=h_bahamut>The Favor of Light</color> (Gigaflare)
+100515,<color=h_shiva>The Will of Ice</color> (Diamond Dust)
+100516,<color=h_odin>The Will of Darkness</color> (Dancing Steel)
+100517,Genji Gloves +1
+100518,Adamantite Gauntlets +1
+100519,Griffin's Head Braid +1
+100520,Bull's Horn Braid +1
+100521,Kestrel's Beak Braid +1
+100522,Dire Wolf Jess +1
+100523,Blood Hawk Jess +1
+100524,Ring of the Marksman +1
+100525,Ring of the Swiftshot +1
+100526,Ring of the Demolitionist +1
+100527,Crimson Tassels +1
+100528,Cobalt Tassels +1
+100529,High Cleric's Medallion +1
+100530,Talisman of Priming +1
+100531,<i>The Golden Testament II</i>
+100532,<i>On Fortune and the Heavens II</i>
+100533,<i>The Wages of Warcraft II</i>
+100534,<color=h_phoenix>The Will of Fire +1</color> (Rising Flames)
+100535,<color=h_phoenix>The Favor of Fire +1</color> (Scarlet Cyclone)
+100536,<color=h_phoenix>The Favor of Fire +1</color> (Heatwave)
+100537,<color=h_phoenix>The Breath of Fire +1</color> (Flames of Rebirth)
+100538,<color=h_garuda>The Favor of Wind +1</color> (Gouge)
+100539,<color=h_garuda>The Favor of Wind +1</color> (Wicked Wheel)
+100540,<color=h_garuda>The Will of Wind +1</color> (Rook's Gambit)
+100541,<color=h_garuda>The Breath of Wind +1</color> (Aerial Blast)
+100542,<color=h_phoenix>The Favor of the Inferno +1</color> (Ignition)
+100543,<color=h_phoenix>The Grace of the Inferno +1</color> (Will-o'-the-Wykes)
+100544,<color=h_ramuh>The Will of Lightning +1</color> (Pile Drive)
+100545,<color=h_ramuh>The Favor of Lightning +1</color> (Thunderstorm)
+100546,<color=h_ramuh>The Favor of Lightning +1</color> (Lightning Rod)
+100547,<color=h_ramuh>The Breath of Lightning +1</color> (Judgment Bolt)
+100548,<color=h_titan>The Favor of Earth +1</color> (Windup)
+100549,<color=h_titan>The Favor of Earth +1</color> (Upheaval)
+100550,<color=h_titan>The Favor of Earth +1</color> (Raging Fists)
+100551,<color=h_titan>The Breath of Earth +1</color> (Earthen Fury)
+100552,<color=h_bahamut>The Will of Light +1</color> (Impulse)
+100553,<color=h_bahamut>The Favor of Light +1</color> (Flare Breath)
+100554,<color=h_bahamut>The Will of Light +1</color> (Satellite)
+100555,<color=h_bahamut>Bahamut's Mercy +1</color>
+100556,<color=h_shiva>The Favor of Ice +1</color> (Ice Age)
+100557,<color=h_shiva>The Will of Ice +1</color> (Mesmerize)
+100558,<color=h_shiva>The Will of Ice +1</color> (Rime)
+100559,<color=h_shiva>Shiva's Kiss +1</color>
+100560,<color=h_odin>The Will of Darkness +1</color> (Gungnir)
+100561,<color=h_odin>The Favor of Darkness +1</color> (Heaven's Cloud)
+100562,<color=h_odin>The Breath of Darkness +1</color> (Rift Slip)
+100563,<color=h_odin>The Pull of Darkness +1</color> (Dancing Steel)
+100564,<color=h_leviathan>The Will of Water +1</color> (Deluge)
+100565,<color=h_leviathan>The Will of Water +1</color> (Cross Swell)
+100566,<color=h_leviathan>The Favor of Water +1</color> (Abyssal Tear)
+100567,<color=h_leviathan>The Serpent's Worth</color> +1 (Tsunami)
+100568,<color=h_phoenix>The Breath of Fire +1</color> (Rising Flames)
+100569,<color=h_phoenix>The Breath of Fire +1</color> (Scarlet Cyclone)
+100570,<color=h_phoenix>The Breath of Fire +1</color> (Heatwave)
+100571,<color=h_garuda>The Breath of Wind +1</color> (Gouge)
+100572,<color=h_garuda>The Breath of Wind +1</color> (Wicked Wheel)
+100573,<color=h_garuda>The Breath of Wind +1</color> (Rook's Gambit)
+100574,<color=h_phoenix>The Breath of the Inferno +1</color> (Ignition)
+100575,<color=h_ramuh>The Breath of Lightning +1</color> (Pile Drive)
+100576,<color=h_ramuh>The Breath of Lightning +1</color> (Thunderstorm)
+100577,<color=h_ramuh>The Breath of Lightning +1</color> (Lightning Rod)
+100578,<color=h_titan>The Breath of Earth +1</color> (Windup)
+100579,<color=h_titan>The Breath of Earth +1</color> (Upheaval)
+100580,<color=h_titan>The Breath of Earth +1</color> (Raging Fists)
+100581,<color=h_bahamut>The Breath of Light +1</color> (Impulse)
+100582,<color=h_bahamut>The Breath of Light +1</color> (Flare Breath)
+100583,<color=h_bahamut>The Breath of Light +1</color> (Satellite)
+100584,<color=h_shiva>The Breath of Ice +1</color> (Ice Age)
+100585,<color=h_shiva>The Breath of Ice +1</color> (Mesmerize)
+100586,<color=h_shiva>The Breath of Ice +1</color> (Rime)
+100587,<color=h_odin>The Breath of Darkness +1</color> (Gungnir)
+100588,<color=h_odin>The Breath of Darkness +1</color> (Heaven's Cloud)
+100589,<color=h_odin>The Breath of Darkness +1</color> (Dancing Steel)
+100590,<color=h_leviathan>The Serpent's Wonder</color> +1 (Deluge)
+100591,<color=h_leviathan>The Serpent's Word</color> +1 (Cross Swell)
+100592,<color=h_leviathan>The Serpent's Watch</color> +1 (Abyssal Tear)
+100593,<color=h_phoenix>The Favor of Fire +1</color> (Flames of Rebirth)
+100594,<color=h_garuda>The Will of Wind +1</color> (Aerial Blast)
+100595,<color=h_ramuh>The Favor of Lightning +1</color> (Judgment Bolt)
+100596,<color=h_titan>The Favor of Earth +1</color> (Earthen Fury)
+100597,<color=h_bahamut>The Favor of Light +1</color> (Gigaflare)
+100598,<color=h_shiva>The Will of Ice +1</color> (Diamond Dust)
+100599,<color=h_odin>The Will of Darkness +1</color> (Dancing Steel)
+100600,<color=h_leviathan>The Favor of Water</color> (Tsunami)
+100601,<color=h_leviathan>The Favor of Water +1</color> (Tsunami)
+100602,<color=h_ultima>The Will of the Creator</color> (Proselytize)
+100603,<color=h_ultima>The Will of the Creator</color> (Voice of God)
+100604,<color=h_ultima>The Favor of the Creator</color> (Dominion)
+100605,<color=h_ultima>The Favor of the Creator</color> (Ultimate Demise)
+100606,<color=h_ultima>The Breath of the Creator</color> (Proselytize)
+100607,<color=h_ultima>The Breath of the Creator</color> (Voice of God)
+100608,<color=h_ultima>The Breath of the Creator</color> (Dominion)
+100609,<color=h_ultima>The Breath of the Creator</color> (Ultimate Demise)
+100610,Revivement Bit
+100611,Nourishment Bit
+100612,Assailment Bit
+100613,Escapement Bit
+100614,Bombardment Bit
+100615,Disengagement Bit
+100616,<color=h_phoenix>Reflection of Fire</color> (Phoenix Shift)
+100617,<color=h_garuda>Reflection of Wind</color> (Deadly Embrace)
+100618,<color=h_ramuh>Reflection of Lightning</color> (Blind Justice)
+100619,<color=h_titan>Reflection of Earth</color> (Titanic Block)
+100620,<color=h_bahamut>Reflection of Light</color> (Wings of Light)
+100621,<color=h_shiva>Reflection of Ice</color> (Cold Snap)
+100622,<color=h_odin>Reflection of Darkness</color> (Arm of Darkness)
