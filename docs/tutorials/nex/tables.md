@@ -6,14 +6,26 @@ icon: material/table
 
 !!! note
 
-    This is far from complete.
+    This is far from complete considering there are over 800 tables.
 
-### Ability Tables
+### Ability/Movement Tables
 
+* `attackparam` - Defines values & parameters for attacks
 * `command`
+* `charatimelinevariation`
 * `fatalattack`
 * `phoenixshiftmove` - Phoenix shift parameters
-* `skill`
+* `skill` - Links a UI Skill/Ability to a `command`, otherwise largely UI related parameters
+
+### AI Tables
+* `aicounter`
+* `battleai`
+
+### Crafting/Shop Tables
+* `recipe`
+* `shopbase`
+* `smithshopbase`
+* `stageshopbase`
 
 ### Entity Tables
 
@@ -38,6 +50,9 @@ icon: material/table
     * 7 / 7xxxxxx - nullactorbase
     * 8 / 8xxxxxx - animalbase
     * 9 / 9xxxxxx - propbase
+
+### Event Tables
+* `simpleevent`
 
 ### Game State Tables
 * `usersituation` - Game/player progress states in general, a very important table. Each row is a condition which can be refered by other tables as unlock/lock flags.
@@ -92,9 +107,16 @@ icon: material/table
 
 ### Model Tables
 
+* `colorcoordinate`
 * `eid`
+* `eyecolor`
+* `haircolor`
 * `model` - Defines models in the game, usually pointed to by entity tables
 * `modelcoordinate`
+* `skincolor`
+
+### Physics Tables
+* `ragdollparam`
 
 ### Quest Tables
 
@@ -105,14 +127,41 @@ icon: material/table
 ### Reward Tables
 * `droptable`
 
+### Sound Tables
+* `jingle`
+* `orchestrion` - Hideaway orchestrion/bgm listing
+
+### Tutorial Tables
+* `howto`
+
+### UI Tables
+* `uiaddon` - Defines assets to use for UIs along with additional parameters (character input & more)
+* `uicolor`
+* `uifieldmapicon`
+* `uisummonaction`
+* `window`
+
 ### World/Menu Map
 
 * `worldmapanchor`
 
 ### Other
 
+* `caption`
 * `difficultylevel` - Difficulty settings
-* `orchestrion` - Hideaway orchestrion/bgm listing
+* `moviedata` - Defines available cutscene/movie assets in the game
 * `smobdirector` - Monster Hunt Board
+* `speaker` - Defines names for entities, used for ingame enemy names for instance
+* `speakerset`
 * `loadingimage` - Loading screen images/background
 * `resultcompletemessage` - Message to show when a fight is over
+
+## Unused Tables
+
+These tables are known to not be used at all (at least in retail builds).
+
+* `magic`
+* `mergegrid`
+* `systemparam`
+* `userpermission`
+* `ztext`

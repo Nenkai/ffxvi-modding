@@ -6,15 +6,15 @@ icon: material/file-find
 
 ## File System
 
-* [`.pac`](pac.md) - DirectStorage Pack
+* [`.pac`](pac.md) - DirectStorage Pack - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_pac_PACK.bt)
 
 ## Tables
-* [`.nxd`](nxd.md) - Next ExcelDB Table
+* [`.nxd`](nxd.md) - Next ExcelDB Table - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_nxd_NXDF.bt)
 * `root.nxl` - Table definitions
 
 ## Map/Levels
 
-* `.mpb` - Map Binary (main file)
+* `.mpb` - Map Binary (main file, loading all other map files) - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mpb_MapBinary.bt)
 * `.vatb`
 * `.ssb` - Stage Set Binary
 * `.tnb` - Tanebi (??)
@@ -27,20 +27,20 @@ icon: material/file-find
 * `.sndmap` - Sound Map
 * `.gid`
 * `.gwb`
+* `.tera` - Map Terrain
 
 ## Models/Textures
 
-* `.mdl` - Model
-* `.tec` - Shaders
-* `.tex`/`.gtex` - Textures
-* `.vfxb` - Visual Effect
+* `.mdl` - Model - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mdl_Model.bt)
+* `.tec` - Shaders - [010 Editor Template](https://github.com/KillzXGaming/FF16-010-Templates/blob/main/TEC.bt)
+* `.tex`/`.gtex` - Textures - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_tex_Texture.bt)
+* `.vfxb` - Visual Effect - [010 Editor Template](https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/vfxb.bt)
 * `.panb`
-* `.tera`
-* `.mtl` - Material
+* `.mtl` - Material - [010 Editor Template](https://github.com/KillzXGaming/FF16-010-Templates/blob/main/MTL.bt)
 * `.spd8` - Speedtree
 * `.gset`
 * `.shb` - Also tec shaders
-* `.srope`
+* `.srope` - Spline Rope
 
 * `.anmb` - Havok Animation
 * `.skl` - Havok Skeleton
@@ -55,7 +55,7 @@ icon: material/file-find
 * `.lmb` - Limb? (FlatBuffer file)
 
 ## Fonts
-* `.fnt` - Font
+* `.fnt` - Font - [010 Editor Template](https://github.com/KillzXGaming/FF16-010-Templates/blob/main/FNT.bt)
 * `.ker` - Kerning Data
 
 ## Sounds
@@ -64,4 +64,8 @@ icon: material/file-find
 * `.mab`
 
 ## Localization
-* `.pzd` - Panzer Localization
+* `.pzd` - Panzer Localization - [010 Editor Template](https://github.com/KillzXGaming/FF16-010-Templates/blob/main/PZD.bt)
+
+## UI
+* `.uib` - UI Layout - [010 Editor Template](https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/uib.bt)
+* `.utexpt` - UI Texture Part [010 Editor Template](https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/utexpt.bt)
