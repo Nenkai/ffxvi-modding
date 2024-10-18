@@ -92,6 +92,9 @@ nav:
     - Other:
       - Command Line Arguments: resources/other/command_line_args.md
 
+    - Updates:
+      - Update List: resources/updates/updates.md
+      
 markdown_extensions:
   - toc:
       permalink: true
