@@ -21,6 +21,13 @@ icon: material/table
 * `aicounter`
 * `battleai`
 
+### Animal Tables
+
+* `animalbase`
+* `animalbehaviorparam`
+* `animalbehaviortype`
+* `maptoanimaltable`
+
 ### Crafting/Shop Tables
 * `recipe`
 * `shopbase`
@@ -53,6 +60,9 @@ icon: material/table
 
 ### Event Tables
 * `simpleevent`
+
+### Obelisk / Fast Travel Tables
+* `obelisk`
 
 ### Game State Tables
 * `usersituation` - Game/player progress states in general, a very important table. Each row is a condition which can be refered by other tables as unlock/lock flags.
@@ -94,19 +104,31 @@ icon: material/table
 * `item` - Items. (internally, this table is used when the id being fetched is < 100000).
 * `useitem` - Usable items (potions, etc).
 
+### Hunt/Mark Tables
+* `smobdirector` - Defines hunts
+
 ### Map/Level Tables
 
+* `astralprojection` - Aether Floods
 * `access` - World map item interaction (and more?)
 * `accessmessage` - World object interaction for message prompt (tavern papers, etc)
 * `areadefine`
 * `gamemap` - Defines all the levels/maps in the game and which master map file `.mpb` they point to.
 * `layoutsettings`
+* `mapdirector`
+* `mapdirectormodule`
+* `mapdirectorsequenceset`
 * `placement` - World map related
 * `placename` - World map places names, used for just about everything
 * `specialarea` - Defines special areas in maps, including walk/ui/battle restrictions.
 
+### Minimap Tables
+* `fieldmapobelisk`
+
 ### Model Tables
 
+* `animpacexistface`
+* `animpacexisthead`
 * `colorcoordinate`
 * `eid`
 * `eyecolor`
@@ -124,12 +146,18 @@ icon: material/table
 * `questcharalayout`
 * `questsequence` - Quest states/stages
 
+### Player Stat Tables
+* `paramgrow` - Player Levels
+
 ### Reward Tables
 * `droptable`
 
 ### Sound Tables
 * `jingle`
 * `orchestrion` - Hideaway orchestrion/bgm listing
+
+### Hall of Virtue/Training Tables
+* `trainingenemy`
 
 ### Tutorial Tables
 * `howto`
@@ -147,21 +175,105 @@ icon: material/table
 
 ### Other
 
+* `brooch` - Seals
 * `caption`
 * `difficultylevel` - Difficulty settings
 * `moviedata` - Defines available cutscene/movie assets in the game
-* `smobdirector` - Monster Hunt Board
+* `replay` - Stage Replay Mode
 * `speaker` - Defines names for entities, used for ingame enemy names for instance
 * `speakerset`
 * `loadingimage` - Loading screen images/background
 * `resultcompletemessage` - Message to show when a fight is over
 
-## Unused Tables
+### Unused Tables
 
 These tables are known to not be used at all (at least in retail builds).
 
+* `attackelement`
+* `achievement`
+* `actorstate`
+* `actorstateset`
+* `aiactionselectorcondition`
+* `animalgroupid`
+* `areatype`
+* `bardssonglist`
+* `contentdynamicparam`
+* `gamemapfieldtype`
 * `magic`
+* `mapdirectorflag`
 * `mergegrid`
+* `patchdlcversion`
+* `shopcamera`
+* `squad`
 * `systemparam`
+* `titlecount`
 * `userpermission`
 * `ztext`
+
+## Union Codes
+
+Union codes are used by columns that can reference other tables. They usually appear right before the actual ID columns.
+
+* `0` = ?
+* `23` = questcharalayoutbnpc
+* `25` = ?
+* `41` = ?
+* `50` = questcharalayoutenpc
+* `55` = layoutnamedinstance
+* `79` = ?
+* `82` = ?
+* `99` = itemshopbase
+* `100` = smithshopbase
+* `146` = bgmmode
+* `147` = placename
+* `204` = questprogress
+* `266` = Icon Id?
+* `273` = worldmapanchor
+* `277` = usersituation
+* `314` = bgmselect
+* `316` = moviedata
+* `330` = ?
+* `373` = ?
+* `382` = ?
+* `399` = directoractorlist
+* `428` = ?
+* `454` = ?
+* `458` = usersituationflag
+* `484` = shopchronicle
+* `486` = ?
+* `487` = ?
+* `488` = shoppastsight
+* `491` = ?
+* `494` = ?
+* `502` = stageshopbase
+* `517` = ?
+* `523` = shoplore
+* `528` = ?
+* `545` = ?
+* `557` = ?
+* `577` = ?
+* `568` = directoractormonitor
+* `649` = ?
+* `655` = ?
+* `664` = captionfreeword
+* `719` = shopmythril
+* `818` = shopfixedpaletteexit
+* `847` = questsimpleventsequence
+* `856` = simpleevent
+* `889` = ?
+* `935` = directormovecustomspeedparam
+* `942` = simpleeventselect
+* `957` = shopquestcounter
+* `976` = shopfixedpaletteaccess
+* `977` = shopfixedpalettewarp
+* `978` = fixedpalette
+* `985` = questdiscardlist
+* `989` = icondiscovery
+* `998` = shopfamevalue
+* `1011` = ?
+* `1027` = ?
+* `1044` = ?
+* `1047` = abysseffect
+* `1138` = ?
+* `1249` = abyssboostparam
+* `1255` = ?
