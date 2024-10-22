@@ -62,7 +62,7 @@ nav:
     - Installing Mods: modding/installing_mods.md
     - Creating Mods: modding/creating_mods.md
     - Mod Loader Internals: modding/mod_loader.md
-
+    - Mod Loader API: modding/mod_loader_api.md
   - Tutorials:
     - Extracting Files: tutorials/file_extraction.md
 

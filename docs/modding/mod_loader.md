@@ -5,7 +5,7 @@ icon: material/format-list-checkbox
 # :material-format-list-checkbox: Mod Loader Internals
 
 !!! note
-    This applies to mod loader version `1.1.0`.
+    This applies to mod loader version `>=1.1.0`.
 
 ## Main Process
 
