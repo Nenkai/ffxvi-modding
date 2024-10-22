@@ -29,10 +29,10 @@ In your mod's constructor, grab a reference to `IFF16ModPackManager`:
 _modLoader.GetController<IFF16ModPackManager>()?.TryGetTarget(out IFF16ModPackManager modPackManager!);
 
 // Adding a new modded file
-modPackManager.AddModdedFile(_modConfig.ModId, "path to mod's data directory", "game path");
+modPackManager.AddModdedFile(_modConfig.ModId, "path to mod's data directory", "path to file");
 
 // Removing a modded file
-if (modPackManager.RemoveModdedFile("game path"))
+if (modPackManager.RemoveModdedFile("path to file"))
 {
     // File was removed
 }
