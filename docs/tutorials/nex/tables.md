@@ -28,6 +28,10 @@ icon: material/table
 * `animalbehaviortype`
 * `maptoanimaltable`
 
+### Battle Tables
+* `battleevent`
+* `dpscheck`
+
 ### Crafting/Shop Tables
 * `recipe`
 * `shopbase`
@@ -113,6 +117,7 @@ icon: material/table
 * `access` - World map item interaction (and more?)
 * `accessmessage` - World object interaction for message prompt (tavern papers, etc)
 * `areadefine`
+* `directormodule`
 * `gamemap` - Defines all the levels/maps in the game and which master map file `.mpb` they point to.
 * `layoutsettings`
 * `mapdirector`
@@ -121,9 +126,6 @@ icon: material/table
 * `placement` - World map related
 * `placename` - World map places names, used for just about everything
 * `specialarea` - Defines special areas in maps, including walk/ui/battle restrictions.
-
-### Minimap Tables
-* `fieldmapobelisk`
 
 ### Model Tables
 
@@ -141,10 +143,12 @@ icon: material/table
 * `ragdollparam`
 
 ### Quest Tables
-
+* `defaulttalk`
+* `maindefaulttalksequence`
 * `quest` - Defines all quests in the game (main/side)
 * `questcharalayout`
 * `questsequence` - Quest states/stages
+* `questdefaulttalksequence`
 
 ### Player Stat Tables
 * `paramgrow` - Player Levels
@@ -160,7 +164,8 @@ icon: material/table
 * `trainingenemy`
 
 ### Tutorial Tables
-* `howto`
+* `howto` - Tutorial messages/states
+* `tutorial` - Battle Tutorial (start of game, Rosalith Castle with Lord Commander Murdoch)
 
 ### UI Tables
 * `uiaddon` - Defines assets to use for UIs along with additional parameters (character input & more)
@@ -170,7 +175,7 @@ icon: material/table
 * `window`
 
 ### World/Menu Map
-
+* `fieldmapobelisk`
 * `worldmapanchor`
 
 ### Other
@@ -198,16 +203,21 @@ These tables are known to not be used at all (at least in retail builds).
 * `areatype`
 * `bardssonglist`
 * `contentdynamicparam`
+* `footstep`
 * `gamemapfieldtype`
+* `gamemapbuildresult`
 * `magic`
 * `mapdirectorflag`
 * `mergegrid`
+* `onlinesuiteeventtype`
 * `patchdlcversion`
 * `shopcamera`
 * `squad`
 * `systemparam`
 * `titlecount`
 * `userpermission`
+* `uicharactersacttype`
+* `uicharacterslargecategory`
 * `ztext`
 
 ## Union Codes
@@ -218,15 +228,22 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `23` = questcharalayoutbnpc
 * `25` = ?
 * `41` = ?
+* `46` = defaulttalk
 * `50` = questcharalayoutenpc
 * `55` = layoutnamedinstance
 * `79` = ?
 * `82` = ?
 * `99` = itemshopbase
 * `100` = smithshopbase
+* `114` = sidequestbattledirector
+* `127` = item
+* `131` = partytalk
+* `135` = droptable
 * `146` = bgmmode
 * `147` = placename
+* `192` = cutsceneset
 * `204` = questprogress
+* `256` = partymember
 * `266` = Icon Id?
 * `273` = worldmapanchor
 * `277` = usersituation
@@ -234,6 +251,7 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `316` = moviedata
 * `330` = ?
 * `373` = ?
+* `375` = mapdirectorsequence
 * `382` = ?
 * `399` = directoractorlist
 * `428` = ?
@@ -258,6 +276,9 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `664` = captionfreeword
 * `719` = shopmythril
 * `818` = shopfixedpaletteexit
+* `831` = cutsceneconnect
+* `845` = maindefaulttalksequence
+* `846` = questdefaulttalksequence
 * `847` = questsimpleventsequence
 * `856` = simpleevent
 * `889` = ?
