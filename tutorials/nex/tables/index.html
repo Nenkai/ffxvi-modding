@@ -756,6 +756,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#battle-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battle Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#craftingshop-tables" class="md-nav__link">
     <span class="md-ellipsis">
       Crafting/Shop Tables
@@ -831,15 +840,6 @@
   <a href="#maplevel-tables" class="md-nav__link">
     <span class="md-ellipsis">
       Map/Level Tables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimap-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimap Tables
     </span>
   </a>
   
@@ -1652,6 +1652,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#battle-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battle Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#craftingshop-tables" class="md-nav__link">
     <span class="md-ellipsis">
       Crafting/Shop Tables
@@ -1727,15 +1736,6 @@
   <a href="#maplevel-tables" class="md-nav__link">
     <span class="md-ellipsis">
       Map/Level Tables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimap-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimap Tables
     </span>
   </a>
   
@@ -1907,6 +1907,11 @@
 <li><code>animalbehaviortype</code></li>
 <li><code>maptoanimaltable</code></li>
 </ul>
+<h3 id="battle-tables">Battle Tables<a class="headerlink" href="#battle-tables" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>battleevent</code></li>
+<li><code>dpscheck</code></li>
+</ul>
 <h3 id="craftingshop-tables">Crafting/Shop Tables<a class="headerlink" href="#craftingshop-tables" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>recipe</code></li>
@@ -2000,6 +2005,7 @@
 <li><code>access</code> - World map item interaction (and more?)</li>
 <li><code>accessmessage</code> - World object interaction for message prompt (tavern papers, etc)</li>
 <li><code>areadefine</code></li>
+<li><code>directormodule</code></li>
 <li><code>gamemap</code> - Defines all the levels/maps in the game and which master map file <code>.mpb</code> they point to.</li>
 <li><code>layoutsettings</code></li>
 <li><code>mapdirector</code></li>
@@ -2008,10 +2014,6 @@
 <li><code>placement</code> - World map related</li>
 <li><code>placename</code> - World map places names, used for just about everything</li>
 <li><code>specialarea</code> - Defines special areas in maps, including walk/ui/battle restrictions.</li>
-</ul>
-<h3 id="minimap-tables">Minimap Tables<a class="headerlink" href="#minimap-tables" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>fieldmapobelisk</code></li>
 </ul>
 <h3 id="model-tables">Model Tables<a class="headerlink" href="#model-tables" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2031,9 +2033,12 @@
 </ul>
 <h3 id="quest-tables">Quest Tables<a class="headerlink" href="#quest-tables" title="Permanent link">&para;</a></h3>
 <ul>
+<li><code>defaulttalk</code></li>
+<li><code>maindefaulttalksequence</code></li>
 <li><code>quest</code> - Defines all quests in the game (main/side)</li>
 <li><code>questcharalayout</code></li>
 <li><code>questsequence</code> - Quest states/stages</li>
+<li><code>questdefaulttalksequence</code></li>
 </ul>
 <h3 id="player-stat-tables">Player Stat Tables<a class="headerlink" href="#player-stat-tables" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2054,7 +2059,8 @@
 </ul>
 <h3 id="tutorial-tables">Tutorial Tables<a class="headerlink" href="#tutorial-tables" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>howto</code></li>
+<li><code>howto</code> - Tutorial messages/states</li>
+<li><code>tutorial</code> - Battle Tutorial (start of game, Rosalith Castle with Lord Commander Murdoch)</li>
 </ul>
 <h3 id="ui-tables">UI Tables<a class="headerlink" href="#ui-tables" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2066,6 +2072,7 @@
 </ul>
 <h3 id="worldmenu-map">World/Menu Map<a class="headerlink" href="#worldmenu-map" title="Permanent link">&para;</a></h3>
 <ul>
+<li><code>fieldmapobelisk</code></li>
 <li><code>worldmapanchor</code></li>
 </ul>
 <h3 id="other">Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h3>
@@ -2092,16 +2099,21 @@
 <li><code>areatype</code></li>
 <li><code>bardssonglist</code></li>
 <li><code>contentdynamicparam</code></li>
+<li><code>footstep</code></li>
 <li><code>gamemapfieldtype</code></li>
+<li><code>gamemapbuildresult</code></li>
 <li><code>magic</code></li>
 <li><code>mapdirectorflag</code></li>
 <li><code>mergegrid</code></li>
+<li><code>onlinesuiteeventtype</code></li>
 <li><code>patchdlcversion</code></li>
 <li><code>shopcamera</code></li>
 <li><code>squad</code></li>
 <li><code>systemparam</code></li>
 <li><code>titlecount</code></li>
 <li><code>userpermission</code></li>
+<li><code>uicharactersacttype</code></li>
+<li><code>uicharacterslargecategory</code></li>
 <li><code>ztext</code></li>
 </ul>
 <h2 id="union-codes">Union Codes<a class="headerlink" href="#union-codes" title="Permanent link">&para;</a></h2>
@@ -2111,15 +2123,22 @@
 <li><code>23</code> = questcharalayoutbnpc</li>
 <li><code>25</code> = ?</li>
 <li><code>41</code> = ?</li>
+<li><code>46</code> = defaulttalk</li>
 <li><code>50</code> = questcharalayoutenpc</li>
 <li><code>55</code> = layoutnamedinstance</li>
 <li><code>79</code> = ?</li>
 <li><code>82</code> = ?</li>
 <li><code>99</code> = itemshopbase</li>
 <li><code>100</code> = smithshopbase</li>
+<li><code>114</code> = sidequestbattledirector</li>
+<li><code>127</code> = item</li>
+<li><code>131</code> = partytalk</li>
+<li><code>135</code> = droptable</li>
 <li><code>146</code> = bgmmode</li>
 <li><code>147</code> = placename</li>
+<li><code>192</code> = cutsceneset</li>
 <li><code>204</code> = questprogress</li>
+<li><code>256</code> = partymember</li>
 <li><code>266</code> = Icon Id?</li>
 <li><code>273</code> = worldmapanchor</li>
 <li><code>277</code> = usersituation</li>
@@ -2127,6 +2146,7 @@
 <li><code>316</code> = moviedata</li>
 <li><code>330</code> = ?</li>
 <li><code>373</code> = ?</li>
+<li><code>375</code> = mapdirectorsequence</li>
 <li><code>382</code> = ?</li>
 <li><code>399</code> = directoractorlist</li>
 <li><code>428</code> = ?</li>
@@ -2151,6 +2171,9 @@
 <li><code>664</code> = captionfreeword</li>
 <li><code>719</code> = shopmythril</li>
 <li><code>818</code> = shopfixedpaletteexit</li>
+<li><code>831</code> = cutsceneconnect</li>
+<li><code>845</code> = maindefaulttalksequence</li>
+<li><code>846</code> = questdefaulttalksequence</li>
 <li><code>847</code> = questsimpleventsequence</li>
 <li><code>856</code> = simpleevent</li>
 <li><code>889</code> = ?</li>
