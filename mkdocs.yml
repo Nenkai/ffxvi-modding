@@ -92,6 +92,7 @@ nav:
     - Other:
       - Command Line Arguments: resources/other/command_line_args.md
       - Save Files: resources/other/save_files.md
+      - Text Formatting: resources/other/text_formatting.md
       
     - Updates:
       - Update List: resources/updates/updates.md
