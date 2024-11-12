@@ -11,14 +11,36 @@ icon: material/table
 ### Ability/Movement Tables
 
 * `attackparam` - Defines values & parameters for attacks
-* `command`
 * `charatimelinevariation`
+* `command`
+* `customaction`
 * `fatalattack`
+* `jumpparam` - Defines jumping (field or battle) parameters
 * `phoenixshiftmove` - Phoenix shift parameters
 * `skill` - Links a UI Skill/Ability to a `command`, otherwise largely UI related parameters
+* `shotcharge` - Charging fire & other abilities
+* `summonpartspattern`
+* `systemmove`
+
+### Active Time Lore
+* `loreworldviewnavigation`
+* `lorecutmreference`
+* `lorecutqreference`
+* `loresynopsisreference`
+* `loreworldviewnavigationcat`
+* `loreworldviewnavigationstype`
+
+### Arcade Mode Tables
+* `scoreattackmode`
+* `scoreattackstagerank`
+* `uileaderboard`
+* `telemetryleaderboardversion`
 
 ### AI Tables
 * `aicounter`
+* `aiparam`
+* `aiaction`
+* `aitask`
 * `battleai`
 
 ### Animal Tables
@@ -29,8 +51,35 @@ icon: material/table
 * `maptoanimaltable`
 
 ### Battle Tables
+* `autoattackpack` - Monster related?
 * `battleevent`
+* `battlemessage` - Enemy ability messages i.e casts
+* `battlescoreachieveddifficulty`
+* `battlelayoutinfo` - ? Seen triggered when staggering
+* `buddycommand` - Torgal controls
+* `buff`
+* `chancedowndamagerate` - Stagger?
+* `damagereaction`
+* `damagereactionreplacement`
+* `damagereactionsize`
+* `damagerate` - Unknown, seen used with Heaven's Cloud
+* `directorbattleuitype`
+* `directorgenerateheatmapinfo` - New enemies (?)
 * `dpscheck`
+* `emcameraparam`
+* `emcorrectionparam`
+* `guardresult`
+* `hitvfx`
+* `spreaddroptable` - Drops on field enemy killed
+* `spreaddroptable`
+* `stagerank` - Fired on abttle end
+* `uidamagepopup`
+
+#### Death
+* `deadparam`
+* `corpsebase`
+* `corpsestay`
+* `deadeffect`
 
 ### Crafting/Shop Tables
 * `recipe`
@@ -61,9 +110,6 @@ icon: material/table
     * 7 / 7xxxxxx - nullactorbase
     * 8 / 8xxxxxx - animalbase
     * 9 / 9xxxxxx - propbase
-
-### Event Tables
-* `simpleevent`
 
 ### Obelisk / Fast Travel Tables
 * `obelisk`
@@ -101,6 +147,9 @@ icon: material/table
 * `gratexturequality` - Texture Quality
 * `gravariablerateshading` - Variable Rate Shading
 * `grawaterquality` - Water Quality
+* `uiframelimitconfig`
+* `uigamma`
+* `uiresolutionconfig`
 
 ### Item Tables
 
@@ -117,12 +166,15 @@ icon: material/table
 * `access` - World map item interaction (and more?)
 * `accessmessage` - World object interaction for message prompt (tavern papers, etc)
 * `areadefine`
+* `bnpcignorecollision` - Unknown. Seen used at the first bridge in rosaria, starting from three reeds 
 * `directormodule`
 * `gamemap` - Defines all the levels/maps in the game and which master map file `.mpb` they point to.
+* `gimmickitemdrop` - Item Pickups on field
 * `layoutsettings`
 * `mapdirector`
 * `mapdirectormodule`
 * `mapdirectorsequenceset`
+* `physicsobjectsound`
 * `placement` - World map related
 * `placename` - World map places names, used for just about everything
 * `specialarea` - Defines special areas in maps, including walk/ui/battle restrictions.
@@ -142,13 +194,32 @@ icon: material/table
 ### Physics Tables
 * `ragdollparam`
 
-### Quest Tables
+### Party/Squad Tables
+
+* `partyfollowback`
+* `partyfollowdistance`
+* `partyfollowformation`
+* `partyfollowposition`
+* `partyfollowspeedlimitgroup`
+* `partyfollowspeedlimit`
+* `partyfollowspeed`
+* `partyobstacle`
+* `partywarpposition`
+
+### Quest/Cutscene Tables
 * `defaulttalk`
+* `destinationmarkerparam` - Sets a destination marker
 * `maindefaulttalksequence`
 * `quest` - Defines all quests in the game (main/side)
 * `questcharalayout`
-* `questsequence` - Quest states/stages
 * `questdefaulttalksequence`
+* `questcutscene`
+* `questsequence` - Quest states/stages
+* `questreportjump` - Fast travel to NPC for task sequence completion
+* `simpleevent`
+* `simpleeventpartylocationset`
+* `simpleeventlocationoffset`
+* `useimportantitemstodo` - Giving items to NPCs
 
 ### Player Stat Tables
 * `paramgrow` - Player Levels
@@ -157,38 +228,55 @@ icon: material/table
 * `droptable`
 
 ### Sound Tables
+* `bgmchangedefine` - Handles bgm changes
 * `jingle`
 * `orchestrion` - Hideaway orchestrion/bgm listing
+* `simpleeventbgmvolume` - Unknown, used alongside resultcompletemessage
+* `soundreverbparam` - Used for reverb line of dialogue (i.e hooded man speaks to clive)
 
 ### Hall of Virtue/Training Tables
 * `trainingenemy`
+
+### Thousand Tomes
+* `loredictionaryalias`
+* `loredictionaryexp`
+* `loredictionarypickup`
+* `loredictionarycategory`
+* `loredictionarytagcategory`
+* `loredictionarytag`
+* `uimemorandumsearchname`
 
 ### Tutorial Tables
 * `howto` - Tutorial messages/states
 * `tutorial` - Battle Tutorial (start of game, Rosalith Castle with Lord Commander Murdoch)
 
-### UI Tables
+### UI Tables (Misc)
 * `uiaddon` - Defines assets to use for UIs along with additional parameters (character input & more)
+* `uiannounce` - Defines alerts/errors with a red banner i.e 'Unable to craft', 'Insufficient materials'
 * `uicolor`
-* `uifieldmapicon`
+* `uifocusinfo`
+* `uipadguide` - Controller Settings
 * `uisummonaction`
+* `uitooltip`
 * `window`
 
 ### World/Menu Map
 * `fieldmapobelisk`
 * `worldmapanchor`
+* `uifieldmapicon`
 
 ### Other
 
 * `brooch` - Seals
 * `caption`
 * `difficultylevel` - Difficulty settings
+* `guidancecameraparam` - Camera guiding, i.e used when petting torgal
 * `moviedata` - Defines available cutscene/movie assets in the game
 * `replay` - Stage Replay Mode
 * `speaker` - Defines names for entities, used for ingame enemy names for instance
 * `speakerset`
 * `loadingimage` - Loading screen images/background
-* `resultcompletemessage` - Message to show when a fight is over
+* `resultcompletemessage` - Message to show when a quest/fight is over
 
 ### Unused Tables
 
