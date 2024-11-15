@@ -2178,13 +2178,17 @@
 <ul>
 <li><code>animpacexistface</code></li>
 <li><code>animpacexisthead</code></li>
+<li><code>characterskinid</code> - Defines the skin ids, used for <code>characterskincategory</code>. Can only be two enabled rows.</li>
+<li><code>characterskincategory</code> - Arete Stone 'Appearance' Menu, every character. Hardcoded to id 0-4 (each character). There can only be two skins due to table design. (read <code>characterskincategory.layout</code> for more information).</li>
+<li><code>characterskinmodelparam</code> - Points skins to a <code>modelcoordinate</code> row.</li>
 <li><code>colorcoordinate</code></li>
 <li><code>eid</code></li>
 <li><code>eyecolor</code></li>
 <li><code>haircolor</code></li>
 <li><code>model</code> - Defines models in the game, usually pointed to by entity tables</li>
-<li><code>modelcoordinate</code></li>
+<li><code>modelcoordinate</code> - Coordinates/links models into their respective parts (body/face/head) &amp; more.</li>
 <li><code>skincolor</code></li>
+<li><code>weaponskincategory</code> - Arete Stone 'Appearance' Menu, weapon skins. Number of rows will match <code>c8001</code>, body folder.</li>
 </ul>
 <h3 id="physics-tables">Physics Tables<a class="headerlink" href="#physics-tables" title="Permanent link">&para;</a></h3>
 <ul>
