@@ -183,13 +183,17 @@ icon: material/table
 
 * `animpacexistface`
 * `animpacexisthead`
+* `characterskinid` - Defines the skin ids, used for `characterskincategory`. Can only be two enabled rows.
+* `characterskincategory` - Arete Stone 'Appearance' Menu, every character. Hardcoded to id 0-4 (each character). There can only be two skins due to table design. (read `characterskincategory.layout` for more information).
+* `characterskinmodelparam` - Points skins to a `modelcoordinate` row.
 * `colorcoordinate`
 * `eid`
 * `eyecolor`
 * `haircolor`
 * `model` - Defines models in the game, usually pointed to by entity tables
-* `modelcoordinate`
+* `modelcoordinate` - Coordinates/links models into their respective parts (body/face/head) & more.
 * `skincolor`
+* `weaponskincategory` - Arete Stone 'Appearance' Menu, weapon skins. Number of rows will match `c8001`, body folder.
 
 ### Physics Tables
 * `ragdollparam`
