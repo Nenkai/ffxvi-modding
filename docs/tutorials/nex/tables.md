@@ -405,6 +405,7 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `1044` = ?
 * `1047` = abysseffect
 * `1138` = fieldmapobelisk
+* `1144` = dlcentitlement
 * `1174` = patchdlcversion
 * `1249` = abyssboostparam
 * `1255` = ?
