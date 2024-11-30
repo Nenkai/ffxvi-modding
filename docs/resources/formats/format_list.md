@@ -47,7 +47,7 @@ icon: material/file-find
 * `.skp` - Bone Part Names (?)
 * `.iks`
 * `.ikb` - IK Body (?) (FlatBuffer file)
-* `.kdb` - (FlatBuffer file)
+* `.kdb` - KineDriver Binary - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/KDB_KineDriverBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_kdb_KineDriverBinary.bt)
 * `.bnmb` - (FlatBuffer file)
 * `.bnfb` - (FlatBuffer file)
 * `.bnwb`
