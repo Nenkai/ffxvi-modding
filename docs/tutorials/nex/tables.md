@@ -87,12 +87,17 @@ icon: material/table
 * `smithshopbase`
 * `stageshopbase`
 
+## DLC Tables
+* `dlcitem` - Defines DLC & Claimable Items
+* `dlcentitlement`
+* `patchdlcversion`
+
 ### Entity Tables
 
 * `actorbase`
 * `bnpcbase`
 * `enpcbase`
-* `weaponbase`
+* `weaponbase` - Defines weapon models
 * `gimmickbase`
 * `stagesetbase`
 * `nullactorbase`
@@ -189,6 +194,7 @@ icon: material/table
 * `colorcoordinate`
 * `eid`
 * `eyecolor`
+* `footwetness` - Points to additional parts in each model (.mdl) file
 * `haircolor`
 * `model` - Defines models in the game, usually pointed to by entity tables
 * `modelcoordinate` - Coordinates/links models into their respective parts (body/face/head) & more.
@@ -302,7 +308,6 @@ These tables are known to not be used at all (at least in retail builds).
 * `mapdirectorflag`
 * `mergegrid`
 * `onlinesuiteeventtype`
-* `patchdlcversion`
 * `shopcamera`
 * `squad`
 * `systemparam`
@@ -317,61 +322,73 @@ These tables are known to not be used at all (at least in retail builds).
 Union codes are used by columns that can reference other tables. They usually appear right before the actual ID columns.
 
 * `0` = ?
+* `17` = attackparamid
 * `23` = questcharalayoutbnpc
-* `25` = ?
+* `25` = directorbankitemid
 * `41` = ?
+* `42` = command
 * `46` = defaulttalk
 * `50` = questcharalayoutenpc
 * `55` = layoutnamedinstance
+* `58` = customaction (?)
 * `79` = ?
-* `82` = ?
+* `82` = ? (not an id to any table?)
 * `99` = itemshopbase
 * `100` = smithshopbase
 * `114` = sidequestbattledirector
-* `127` = item
+* `124` = item
+* `127` = levelcutscene
 * `131` = partytalk
 * `135` = droptable
+* `143` = ?
 * `146` = bgmmode
 * `147` = placename
 * `192` = cutsceneset
 * `204` = questprogress
 * `256` = partymember
+* `260` = scenariocutscene
 * `266` = Icon Id?
 * `273` = worldmapanchor
 * `277` = usersituation
 * `314` = bgmselect
 * `316` = moviedata
+* `317` = gamemap
 * `330` = ?
+* `359` = missionbattledirector
 * `373` = ?
 * `375` = mapdirectorsequence
 * `382` = ?
 * `399` = directoractorlist
+* `403` = behaviormovesequence (or behaviormoveset)
 * `428` = ?
-* `454` = ?
+* `454` = directorchangebgmparam
 * `458` = usersituationflag
 * `484` = shopchronicle
 * `486` = ?
 * `487` = ?
 * `488` = shoppastsight
 * `491` = ?
-* `494` = ?
+* `494` = battleblockdirector
 * `502` = stageshopbase
 * `517` = ?
 * `523` = shoplore
 * `528` = ?
+* `530` = ?
 * `545` = ?
-* `557` = ?
+* `557` = directorcondition
 * `577` = ?
 * `568` = directoractormonitor
 * `649` = ?
-* `655` = ?
+* `655` = mapdirectorsequence
 * `664` = captionfreeword
 * `719` = shopmythril
 * `818` = shopfixedpaletteexit
 * `831` = cutsceneconnect
+* `841` = questcutscene
 * `845` = maindefaulttalksequence
 * `846` = questdefaulttalksequence
 * `847` = questsimpleventsequence
+* `854` = behavioreventdirector
 * `856` = simpleevent
 * `889` = ?
 * `935` = directormovecustomspeedparam
@@ -387,6 +404,7 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `1027` = ?
 * `1044` = ?
 * `1047` = abysseffect
-* `1138` = ?
+* `1138` = fieldmapobelisk
+* `1174` = patchdlcversion
 * `1249` = abyssboostparam
 * `1255` = ?
