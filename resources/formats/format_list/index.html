@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
@@ -1184,6 +1184,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#cutscenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cutscenes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#localization" class="md-nav__link">
     <span class="md-ellipsis">
       Localization
@@ -1544,6 +1553,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#cutscenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cutscenes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#localization" class="md-nav__link">
     <span class="md-ellipsis">
       Localization
@@ -1609,36 +1627,53 @@
 <li><code>.sndmap</code> - Sound Map</li>
 <li><code>.gid</code></li>
 <li><code>.gwb</code></li>
-<li><code>.tera</code> - Map Terrain</li>
+<li><code>.tera</code> - Map Terrain Binarry</li>
 </ul>
 <h2 id="modelstextures">Models/Textures<a class="headerlink" href="#modelstextures" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>.mdl</code> - Model - <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mdl_Model.bt">010 Editor Template</a></li>
 <li><code>.tec</code> - Shaders - <a href="https://github.com/KillzXGaming/FF16-010-Templates/blob/main/TEC.bt">010 Editor Template</a></li>
 <li><code>.tex</code>/<code>.gtex</code> - Textures - <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_tex_Texture.bt">010 Editor Template</a></li>
-<li><code>.vfxb</code> - Visual Effect - <a href="https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/vfxb.bt">010 Editor Template</a></li>
+<li><code>.vfxb</code> - Visual Effect Binary - <a href="https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/vfxb.bt">010 Editor Template</a></li>
 <li><code>.panb</code></li>
 <li><code>.mtl</code> - Material - <a href="https://github.com/KillzXGaming/FF16-010-Templates/blob/main/MTL.bt">010 Editor Template</a></li>
 <li><code>.spd8</code> - Speedtree</li>
 <li><code>.gset</code></li>
-<li><code>.shb</code> - Also tec shaders</li>
+<li><code>.shb</code> - Shader Binary, also tec shaders</li>
 <li>
 <p><code>.srope</code> - Spline Rope</p>
 </li>
 <li>
-<p><code>.anmb</code> - Havok Animation</p>
+<p><code>.anmb</code> - Havok Animation Binary</p>
 </li>
 <li><code>.skl</code> - Havok Skeleton</li>
 <li><code>.skp</code> - Bone Part Names (?)</li>
 <li><code>.iks</code></li>
-<li><code>.ikb</code> - IK Body (?) (FlatBuffer file)</li>
+<li><code>.ikb</code> - IK (?) (FlatBuffer file)<ul>
+<li><code>body_bending</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/BDYB_BodyBendingBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_BodyBending.bt">010 Editor Template</a></li>
+<li><code>bonamik_shared_params</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/BNMS_BonamikSharedParamsBinary.fbs">FlatBuffer Schema</a></li>
+<li><code>dialogue_lookat</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/DGLK_DialogueLookAtBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_DialogueLookAt.bt">010 Editor Template</a></li>
+<li><code>eye_blink</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/EYEB_EyeBlinkBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_EyeBlink.bt">010 Editor Template</a></li>
+<li><code>hit_reaction</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/HITR_HitReactionBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_HitReaction.bt">010 Editor Template</a></li>
+<li><code>lod_setup</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/LODB_LodBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_LODBinary.bt">010 Editor Template</a></li>
+<li><code>ride_posture</code> - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/RIDE_RidePostureBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_RidePosture.bt">010 Editor Template</a></li>
+</ul>
+</li>
 <li><code>.kdb</code> - KineDriver Binary - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/KDB_KineDriverBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_kdb_KineDriverBinary.bt">010 Editor Template</a></li>
-<li><code>.bnmb</code> - (FlatBuffer file)</li>
+<li><code>.bnmb</code> - Bonamik Binary - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/BNMB_BonamikBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_bnmb_Bonamik.bt">010 Editor Template</a></li>
 <li><code>.bnfb</code> - (FlatBuffer file)</li>
 <li><code>.bnwb</code></li>
-<li><code>.lsb</code> - Lipsync (FlatBuffer file)</li>
-<li><code>.lmb</code> - Limb? (FlatBuffer file)</li>
+<li><code>.lsb</code> - Lipsync (Silent?) Binary (FlatBuffer file) - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LSDB_LipsyncSilentDataBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LSDB_LipsyncSilentDataBinary.fbs">010 Editor Template</a></li>
+<li><code>.lmb</code> - Lipsync (Common?) Binary (FlatBuffer file) - <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LMDB_LipsyncCommonDataBinary.fbs">FlatBuffer Schema</a> / <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LMDB_LipsyncCommonDataBinary.fbs">010 Editor Template</a></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to convert FlatBuffer files to json, get <a href="https://github.com/google/flatbuffers/releases">flatc</a> and run:</p>
+<ul>
+<li><code>flatc.exe --raw-binary --strict-json -t &lt;path to .fbs schema file&gt; -- &lt;path to .kdb file&gt;</code> to convert to json</li>
+<li><code>flatc -b &lt;path to .fbs schema file&gt; &lt;path to .json file&gt;</code> to convert back.</li>
+</ul>
+</div>
 <h2 id="fonts">Fonts<a class="headerlink" href="#fonts" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>.fnt</code> - Font - <a href="https://github.com/KillzXGaming/FF16-010-Templates/blob/main/FNT.bt">010 Editor Template</a></li>
@@ -1649,6 +1684,10 @@
 <li><code>.sab</code> - Square Enix Audio Binary</li>
 <li><code>.mab</code></li>
 </ul>
+<h2 id="cutscenes">Cutscenes<a class="headerlink" href="#cutscenes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>csb</code> - Cutscene Binary</li>
+</ul>
 <h2 id="localization">Localization<a class="headerlink" href="#localization" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>.pzd</code> - Panzer Localization - <a href="https://github.com/KillzXGaming/FF16-010-Templates/blob/main/PZD.bt">010 Editor Template</a></li>
@@ -1656,7 +1695,7 @@
 <h2 id="ui">UI<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>.uib</code> - UI Layout - <a href="https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/uib.bt">010 Editor Template</a></li>
-<li><code>.utexpt</code> - UI Texture Part <a href="https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/utexpt.bt">010 Editor Template</a></li>
+<li><code>.utexpt</code> - UI Texture Part - <a href="https://github.com/AlexPlaceres/FF16Templates/blob/main/Incomplete/utexpt.bt">010 Editor Template</a></li>
 </ul>
 
 
