@@ -28,7 +28,7 @@ icon: material/file-find
 * `.gid`
 * `.gwb`
 * `.tera` - Map Terrain Binarry
-
+* `.aml` - Map Timeline
 ## Models/Textures
 
 * `.mdl` - Model - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mdl_Model.bt)
@@ -46,7 +46,7 @@ icon: material/file-find
 * `.skl` - Havok Skeleton
 * `.skp` - Bone Part Names (?)
 * `.iks`
-* `.ikb` - IK (?) (FlatBuffer file)
+* `.ikb` - IK (?) (FlatBuffer Files) - determined from `skeletonparam` file
     * `body_bending` - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/BDYB_BodyBendingBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_BodyBending.bt)
     * `bonamik_shared_params` - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/BNMS_BonamikSharedParamsBinary.fbs)
     * `dialogue_lookat` - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/DGLK_DialogueLookAtBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_DialogueLookAt.bt)
@@ -56,10 +56,10 @@ icon: material/file-find
     * `ride_posture` - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/IKB/RIDE_RidePostureBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_ikb_RidePosture.bt)
 * `.kdb` - KineDriver Binary - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/KDB_KineDriverBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_kdb_KineDriverBinary.bt)
 * `.bnmb` - Bonamik Binary - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/BNMB_BonamikBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_bnmb_Bonamik.bt)
-* `.bnfb` - (FlatBuffer file)
+* `.bnfb` - Bonamik F (?) Binary - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/BNFB_BonamikFBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_bnmb_Bonamik.bt)
 * `.bnwb`
 * `.lsb` - Lipsync (Silent?) Binary (FlatBuffer file) - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LSDB_LipsyncSilentDataBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LSDB_LipsyncSilentDataBinary.fbs)
-* `.lmb` - Lipsync (Common?) Binary (FlatBuffer file) - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LMDB_LipsyncCommonDataBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LMDB_LipsyncCommonDataBinary.fbs)
+* `.lmb` - Lipsync (Common?) Binary (FlatBuffer file) - [FlatBuffer Schema](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files.FlatBuffers/LMDB_LipsyncCommonDataBinary.fbs) / [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_bnfb_BonamikFBinary.bt)
 
 !!! note
     If you want to convert FlatBuffer files to json, get [flatc](https://github.com/google/flatbuffers/releases) and run:

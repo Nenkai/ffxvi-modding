@@ -13,6 +13,32 @@ The game will always try to load a `.diff` variant file for every single pack. F
 * [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_pac_PACK.bt)
 * [Reference Implementation (FF16Tools, C#)](https://github.com/Nenkai/FF16Tools)
 
+## Behavior
+
+The game holds a map of all the files in the game, which means that every single pack's entries are merged into this map (meaning it is possible to add any sort of content in any pack).
+
+Packs can contain a "general directory name" in its header, meaning that every file is a sub-directory of it. For instance `0007` has it as `nxd`, so a file entry such as `access.nxd` maps to `nxd/access.nxd`.
+
+The pack itself may contain nested packs such as the ones in the `chara/cXXXX/pack` folders. When these do get loaded, files in it will also get merged into this one unique map, which is the reason why all paths under the nested pack follows the same global paths.
+
+!!! example
+
+    `chara/c7045/pack/c7045.pac` contains `animation/chara/c7045/skeleton/body/body.skl`.
+
+    Instead of being mounted as `chara/c7045/pack/animation/chara/c7045/skeleton/body/body.skl`
+
+    It will be mounted as `animation/chara/c7045/skeleton/body/body.skl` due to pack merging.
+
+### Data Chunks
+
+Packs can store compressed [GDeflate](https://github.com/microsoft/DirectStorage/blob/main/GDeflate/README.md) chunks that can house multiple files. The rules are:
+
+* Files that are not compressed are stored raw.
+* Files that are smaller than `0x100000` (1Mb) are stored in shared chunks - chunks that contain multiple chunks. Shared chunks are not bigger than `0x400000` (4 Megabytes) **when decompressed**.
+* Files that are bigger than `0x2000000` (32Mb) are stored in multiple unique chunks. These chunks are split into `0x80000` (512Kb) parts **when decompressed**.
+
+---
+
 ## Header
 
 ```c

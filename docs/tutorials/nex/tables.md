@@ -224,7 +224,7 @@ icon: material/table
 * `questcharalayout`
 * `questdefaulttalksequence`
 * `questcutscene`
-* `questsequence` - Quest states/stages
+* `questsequence` - Quest sequences/parts. Grouped by `quest` ids
 * `questreportjump` - Fast travel to NPC for task sequence completion
 * `simpleevent`
 * `simpleeventpartylocationset`
@@ -243,6 +243,9 @@ icon: material/table
 * `orchestrion` - Hideaway orchestrion/bgm listing
 * `simpleeventbgmvolume` - Unknown, used alongside resultcompletemessage
 * `soundreverbparam` - Used for reverb line of dialogue (i.e hooded man speaks to clive)
+
+### Stage Replay
+* `replay` - Stage Replay Mode
 
 ### Hall of Virtue/Training Tables
 * `trainingenemy`
@@ -282,7 +285,6 @@ icon: material/table
 * `difficultylevel` - Difficulty settings
 * `guidancecameraparam` - Camera guiding, i.e used when petting torgal
 * `moviedata` - Defines available cutscene/movie assets in the game
-* `replay` - Stage Replay Mode
 * `speaker` - Defines names for entities, used for ingame enemy names for instance
 * `speakerset`
 * `loadingimage` - Loading screen images/background
