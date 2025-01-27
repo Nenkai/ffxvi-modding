@@ -780,7 +780,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Battle Tables">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cutscene-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cutscene Tables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cutscene Tables">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -907,9 +916,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#questcutscene-tables" class="md-nav__link">
+  <a href="#quest-tables" class="md-nav__link">
     <span class="md-ellipsis">
-      Quest/Cutscene Tables
+      Quest Tables
     </span>
   </a>
   
@@ -1763,7 +1772,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Battle Tables">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cutscene-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cutscene Tables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cutscene Tables">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1890,9 +1908,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#questcutscene-tables" class="md-nav__link">
+  <a href="#quest-tables" class="md-nav__link">
     <span class="md-ellipsis">
-      Quest/Cutscene Tables
+      Quest Tables
     </span>
   </a>
   
@@ -2043,10 +2061,14 @@
 <ul>
 <li><code>attackparam</code> - Defines values &amp; parameters for attacks</li>
 <li><code>charatimelinevariation</code></li>
+<li><code>combo</code></li>
 <li><code>command</code></li>
+<li><code>commandactionset</code></li>
 <li><code>customaction</code></li>
 <li><code>fatalattack</code></li>
 <li><code>jumpparam</code> - Defines jumping (field or battle) parameters</li>
+<li><code>playermode</code></li>
+<li><code>playercommandbuilder</code></li>
 <li><code>phoenixshiftmove</code> - Phoenix shift parameters</li>
 <li><code>skill</code> - Links a UI Skill/Ability to a <code>command</code>, otherwise largely UI related parameters</li>
 <li><code>shotcharge</code> - Charging fire &amp; other abilities</li>
@@ -2091,6 +2113,7 @@
 <li><code>battlemessage</code> - Enemy ability messages i.e casts</li>
 <li><code>battlescoreachieveddifficulty</code></li>
 <li><code>battlelayoutinfo</code> - ? Seen triggered when staggering</li>
+<li><code>bnpcreactiontype</code></li>
 <li><code>buddycommand</code> - Torgal controls</li>
 <li><code>buff</code></li>
 <li><code>chancedowndamagerate</code> - Stagger?</li>
@@ -2109,6 +2132,22 @@
 <li><code>spreaddroptable</code></li>
 <li><code>stagerank</code> - Fired on abttle end</li>
 <li><code>uidamagepopup</code></li>
+</ul>
+<h3 id="cutscene-tables">Cutscene Tables<a class="headerlink" href="#cutscene-tables" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>cutsceneset</code></li>
+<li><code>scenariocutscene</code> (Id 0-10000 and 1000000-1099999)</li>
+<li><code>scenariocutscenetimeline</code></li>
+<li><code>levelcutscene</code> (Id 10000-19999 and 2000000-2099999)</li>
+<li><code>levelcutscenetimeline</code></li>
+<li><code>levelevent</code> (Id 60000-69999)</li>
+<li><code>leveleventtimeline</code></li>
+<li><code>synopsis</code> (Id 70000-79999)</li>
+<li><code>synopsistimeline</code></li>
+<li><code>battleevent</code> (Id 80000-89999)</li>
+<li><code>battleeventtimeline</code></li>
+<li><code>questcutscene</code> (Id 4000000-4099999)</li>
+<li><code>questcutscenetimeline</code></li>
 </ul>
 <h4 id="death">Death<a class="headerlink" href="#death" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2261,7 +2300,7 @@
 <li><code>partyobstacle</code></li>
 <li><code>partywarpposition</code></li>
 </ul>
-<h3 id="questcutscene-tables">Quest/Cutscene Tables<a class="headerlink" href="#questcutscene-tables" title="Permanent link">&para;</a></h3>
+<h3 id="quest-tables">Quest Tables<a class="headerlink" href="#quest-tables" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>defaulttalk</code></li>
 <li><code>destinationmarkerparam</code> - Sets a destination marker</li>
@@ -2269,7 +2308,6 @@
 <li><code>quest</code> - Defines all quests in the game (main/side)</li>
 <li><code>questcharalayout</code></li>
 <li><code>questdefaulttalksequence</code></li>
-<li><code>questcutscene</code></li>
 <li><code>questsequence</code> - Quest sequences/parts. Grouped by <code>quest</code> ids</li>
 <li><code>questreportjump</code> - Fast travel to NPC for task sequence completion</li>
 <li><code>simpleevent</code></li>
