@@ -12,10 +12,14 @@ icon: material/table
 
 * `attackparam` - Defines values & parameters for attacks
 * `charatimelinevariation`
+* `combo`
 * `command`
+* `commandactionset`
 * `customaction`
 * `fatalattack`
 * `jumpparam` - Defines jumping (field or battle) parameters
+* `playermode`
+* `playercommandbuilder`
 * `phoenixshiftmove` - Phoenix shift parameters
 * `skill` - Links a UI Skill/Ability to a `command`, otherwise largely UI related parameters
 * `shotcharge` - Charging fire & other abilities
@@ -56,6 +60,7 @@ icon: material/table
 * `battlemessage` - Enemy ability messages i.e casts
 * `battlescoreachieveddifficulty`
 * `battlelayoutinfo` - ? Seen triggered when staggering
+* `bnpcreactiontype`
 * `buddycommand` - Torgal controls
 * `buff`
 * `chancedowndamagerate` - Stagger?
@@ -74,6 +79,21 @@ icon: material/table
 * `spreaddroptable`
 * `stagerank` - Fired on abttle end
 * `uidamagepopup`
+
+### Cutscene Tables
+* `cutsceneset`
+* `scenariocutscene` (Id 0-10000 and 1000000-1099999)
+* `scenariocutscenetimeline`
+* `levelcutscene` (Id 10000-19999 and 2000000-2099999)
+* `levelcutscenetimeline`
+* `levelevent` (Id 60000-69999)
+* `leveleventtimeline`
+* `synopsis` (Id 70000-79999)
+* `synopsistimeline`
+* `battleevent` (Id 80000-89999)
+* `battleeventtimeline`
+* `questcutscene` (Id 4000000-4099999)
+* `questcutscenetimeline`
 
 #### Death
 * `deadparam`
@@ -216,14 +236,13 @@ icon: material/table
 * `partyobstacle`
 * `partywarpposition`
 
-### Quest/Cutscene Tables
+### Quest Tables
 * `defaulttalk`
 * `destinationmarkerparam` - Sets a destination marker
 * `maindefaulttalksequence`
 * `quest` - Defines all quests in the game (main/side)
 * `questcharalayout`
 * `questdefaulttalksequence`
-* `questcutscene`
 * `questsequence` - Quest sequences/parts. Grouped by `quest` ids
 * `questreportjump` - Fast travel to NPC for task sequence completion
 * `simpleevent`

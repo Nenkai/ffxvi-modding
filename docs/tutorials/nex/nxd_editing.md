@@ -8,8 +8,8 @@ Nex files are pretty much the database of the game. Originally in Excel form, SQ
 
 !!! tip
 
-    * Some tables are described [here](tables.md)
-    * Refer to the [table layouts here](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts) for the column value types. Note: this has been mapped mostly manually. **Please contribute!** Many columns are still unknown.
+    * Some tables are described [here](tables.md) - **highly recommended to read, especially the union bit**
+    * Refer to the [table layouts here](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts) for the column value types. Note: this has been mapped mostly manually. **Please contribute!** Many columns are still unknown. **There may be comments about some columns in each layout; recommended to read**
 
 ## Requirements
 
