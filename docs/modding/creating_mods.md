@@ -53,7 +53,8 @@ Once you have modded assets you'd like to mod into the game:
 !!! info "Template/Sample Mod"
     :material-download: An example mod (pre-1.1.0) can be found [here](https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip). This changes the bottom-left text of the main title screen to add "Hello World".
 
-!!! warning "Nested `.pac` files
+
+!!! warning "Nested `.pac` files"
 
     If you want to repack nested `.pac` files, ensure that you pass the `--no-compress` argument to FF16Tools. These packs are placed in memory directly and accessed in-place, therefore they must be uncompressed.
 
