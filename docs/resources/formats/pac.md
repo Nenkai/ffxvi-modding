@@ -84,12 +84,12 @@ struct
     uint64_t DecompressedFileSize <format=hex>;
     // To GDeflate compressed data (if compressed). 
     // If UseMultipleChunks is used, points to a header (see DirectStorageMultiChunkHeader)
-    uint64_t DataOffset <format=hex>; 
-    uint64_t ChunkDefOffset <format=hex>;
-    uint64_t FileNameOffset <format=hex>;
+    uint64_t DataOffset; 
+    uint64_t ChunkDefOffsetOrPathLength; // This is path length instead if the file is empty. Used for nested packs.
+    uint64_t FileNameOffset;
     uint32_t FileNameHash; // FNV Hash, NOT FNV1A
     uint32_t CRC32Checksum; // Of the decompressed data
-    uint32_t Empty;
+    uint32_t IsEmpty;
     uint32_t ChunkHeaderSize <format=hex>; // 0x18 if UseSharedChunk, variable if UseMultipleChunks
 } FileInfo; // size: 0x48
 ```
