@@ -8,9 +8,38 @@ icon: material/table
 
     This is far from complete considering there are over 800 tables.
 
+??? tip "About `DLCFlags` column"
+
+    This is used to 'hide' or 'show' columns depending on dlc entitlement. **TLDR: `10020` = Echoes of the Fallen, `10030` = The Rising Tide.**
+     
+    When the nex database is loaded, `dlcentitlement` is fetched & entitlement verified to check for listed dlcs and sets global's bit flags. Unlock bit 2 = `dlcentitlement`   id 2, Unlock bit 4 = `dlcentitlement` id 3
+
+    Then, `dlcentitlement` (1019), `dlcitem` (1009) and `dlcpathlist` (1021) are marked as whitelisted rows, where all rows are available regardless of `DLCFlags`.
+
+    Finally the game goes a specific set of `DLCFlags`. For each `DLCFlags`, the game goes through all tables and each row. In order:
+
+    * `10080` - Unknown, included by default
+    * `10040` - Unknown, included by default
+    * `10092` - Unknown, included by default
+    * `10010` - If dlc unlock bits is 1 (always 1 by default).
+    * `10060` - Unknown, included by default
+    * `10020` - If dlc unlock bits has 2 (Echoes of the Fallen)
+    * `10070` - Unknown, included by default
+    * `10030` - If dlc unlock bits has 4 (The Rising Tide)
+    * `10050` - Unknown, included by default
+
+    Handling happens at `sub_140805C00` (ffxvi.exe 1.0.1 steam). Signature: `48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 44 0F B6 81`
+
+??? tip "About `Comment` column"
+
+    This would normally contain row 'names' or columns which was stripped by SQEX for release. More importantly it may have been used by them to better display row links in excel by using this column as a name.
+
+    `FF16Tools` may automatically include comments which may be defined in `.layout` files. **Please contribute!**
+
 ### Ability/Movement Tables
 
 * `attackparam` - Defines values & parameters for attacks
+* `charatimeline` - Defines chara timeline files (*.tlb), which defines the timelines for each move.
 * `charatimelinevariation`
 * `combo`
 * `command`

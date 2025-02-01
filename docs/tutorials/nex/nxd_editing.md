@@ -26,6 +26,11 @@ FF16Tools.CLI nxd-to-sqlite -i <path to directory with nxd>
 
 This will convert all the `.nxd`'s in a directory to a SQLite database you can open with **SQLiteStudio**.
 
+!!! tip
+
+    More information is available in the [Tables](tables.md) page.
+
+
 ---
 
 ### Converting back to Nex

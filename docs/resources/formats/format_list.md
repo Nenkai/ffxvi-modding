@@ -29,6 +29,10 @@ icon: material/file-find
 * `.gwb`
 * `.tera` - Map Terrain Binarry
 * `.aml` - Map Timeline
+
+## Character
+* `.tlb` - Character Move/Attack/Action Timelines - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_tlb_FileCharaTimeLine.bt)
+
 ## Models/Textures
 
 * `.mdl` - Model - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mdl_Model.bt)
@@ -78,7 +82,7 @@ icon: material/file-find
 
 ## Cutscenes
 
-* `csb` - Cutscene Binary
+* `csb` - Cutscene Binary - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_csb_CutsceneBinary.bt)
 
 ## Localization
 * `.pzd` - Panzer Localization - [010 Editor Template](https://github.com/KillzXGaming/FF16-010-Templates/blob/main/PZD.bt)
