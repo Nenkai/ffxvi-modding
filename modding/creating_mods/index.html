@@ -1564,6 +1564,9 @@
 <p class="admonition-title">Template/Sample Mod</p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> An example mod (pre-1.1.0) can be found <a href="https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip">here</a>. This changes the bottom-left text of the main title screen to add "Hello World".</p>
 </div>
+<p>!!! warning "Nested <code>.pac</code> files</p>
+<div class="highlight"><pre><span></span><code>If you want to repack nested `.pac` files, ensure that you pass the `--no-compress` argument to FF16Tools. These packs are placed in memory directly and accessed in-place, therefore they must be uncompressed.
+</code></pre></div>
 <p>If you have successfully gotten your mod to work, congratulations!</p>
 <hr />
 <h2 id="creating-mods-for-manual-installation">Creating Mods for Manual Installation<a class="headerlink" href="#creating-mods-for-manual-installation" title="Permanent link">&para;</a></h2>
