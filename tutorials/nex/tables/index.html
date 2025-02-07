@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.2">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -2367,7 +2367,7 @@
 <li><code>quest</code> - Defines all quests in the game (main/side)</li>
 <li><code>questcharalayout</code></li>
 <li><code>questdefaulttalksequence</code></li>
-<li><code>questsequence</code> - Quest sequences/parts. Grouped by <code>quest</code> ids</li>
+<li><code>questsequence</code> - Quest sequences/parts. Grouped by <code>quest</code> ids. Essentially the current state for a <code>quest</code>.</li>
 <li><code>questreportjump</code> - Fast travel to NPC for task sequence completion</li>
 <li><code>simpleevent</code></li>
 <li><code>simpleeventpartylocationset</code></li>
@@ -2475,26 +2475,29 @@
 <ul>
 <li><code>0</code> = ?</li>
 <li><code>17</code> = attackparamid</li>
-<li><code>23</code> = questcharalayoutbnpc</li>
+<li><code>23</code> = bnpcbase</li>
 <li><code>25</code> = directorbankitemid</li>
 <li><code>41</code> = ?</li>
 <li><code>42</code> = command</li>
 <li><code>46</code> = defaulttalk</li>
-<li><code>50</code> = questcharalayoutenpc</li>
+<li><code>50</code> = enpcbase</li>
 <li><code>55</code> = layoutnamedinstance</li>
-<li><code>58</code> = customaction (?)</li>
-<li><code>79</code> = ?</li>
-<li><code>82</code> = ? (not an id to any table?)</li>
+<li><code>58</code> = attacktype (link between equipitem &amp; atktype)</li>
+<li><code>79</code> = quest</li>
+<li><code>82</code> = questsequence</li>
 <li><code>99</code> = itemshopbase</li>
 <li><code>100</code> = smithshopbase</li>
+<li><code>105</code> = charatimelinevariation</li>
 <li><code>114</code> = sidequestbattledirector</li>
 <li><code>124</code> = item</li>
 <li><code>127</code> = levelcutscene</li>
 <li><code>131</code> = partytalk</li>
 <li><code>135</code> = droptable</li>
-<li><code>143</code> = ?</li>
+<li><code>138</code> = behavioreventactionset</li>
+<li><code>143</code> = buff</li>
 <li><code>146</code> = bgmmode</li>
 <li><code>147</code> = placename</li>
+<li><code>177</code> = equipitem</li>
 <li><code>192</code> = cutsceneset</li>
 <li><code>204</code> = questprogress</li>
 <li><code>256</code> = partymember</li>
@@ -2502,49 +2505,70 @@
 <li><code>266</code> = Icon Id?</li>
 <li><code>273</code> = worldmapanchor</li>
 <li><code>277</code> = usersituation</li>
+<li><code>282</code> = levelevent</li>
 <li><code>314</code> = bgmselect</li>
 <li><code>316</code> = moviedata</li>
 <li><code>317</code> = gamemap</li>
 <li><code>330</code> = ?</li>
 <li><code>359</code> = missionbattledirector</li>
-<li><code>373</code> = ?</li>
+<li><code>366</code> = normalcameraparam</li>
+<li><code>373</code> = astralprojection</li>
 <li><code>375</code> = mapdirectorsequence</li>
-<li><code>382</code> = ?</li>
+<li><code>382</code> = directorfaketargetsettings</li>
 <li><code>399</code> = directoractorlist</li>
 <li><code>403</code> = behaviormovesequence (or behaviormoveset)</li>
 <li><code>428</code> = ?</li>
-<li><code>454</code> = directorchangebgmparam</li>
+<li><code>454</code> = battletag</li>
 <li><code>458</code> = usersituationflag</li>
 <li><code>484</code> = shopchronicle</li>
 <li><code>486</code> = ?</li>
-<li><code>487</code> = ?</li>
+<li><code>487</code> = letterlist (not an actual game table)</li>
 <li><code>488</code> = shoppastsight</li>
 <li><code>491</code> = ?</li>
 <li><code>494</code> = battleblockdirector</li>
+<li><code>496</code> = caption</li>
 <li><code>502</code> = stageshopbase</li>
-<li><code>517</code> = ?</li>
+<li><code>517</code> = collectionlist (not an actual game table)</li>
 <li><code>523</code> = shoplore</li>
+<li><code>524</code> = battletalk</li>
 <li><code>528</code> = ?</li>
-<li><code>530</code> = ?</li>
-<li><code>545</code> = ?</li>
+<li><code>530</code> = tutorialdirector</li>
+<li><code>539</code> = behaviorwaitparam</li>
+<li><code>545</code> = tutorial</li>
 <li><code>557</code> = directorcondition</li>
 <li><code>577</code> = ?</li>
 <li><code>568</code> = directoractormonitor</li>
+<li><code>639</code> = behavioreventactionsequence</li>
 <li><code>649</code> = ?</li>
+<li><code>653</code> = behaviormoverailparam</li>
 <li><code>655</code> = mapdirectorsequence</li>
 <li><code>664</code> = captionfreeword</li>
+<li><code>665</code> = directorforwardmoveparam</li>
+<li><code>668</code> = questcharalayoutbnpc</li>
+<li><code>700</code> = systemassisttimertalkitem</li>
+<li><code>706</code> = layoutenpcinstance</li>
 <li><code>719</code> = shopmythril</li>
+<li><code>722</code> = behaviorlinkmovetarget</li>
+<li><code>793</code> = telemetryobject</li>
 <li><code>818</code> = shopfixedpaletteexit</li>
 <li><code>831</code> = cutsceneconnect</li>
 <li><code>841</code> = questcutscene</li>
+<li><code>843</code> = mainpartytalksequence</li>
+<li><code>844</code> = questpartytalksequence</li>
 <li><code>845</code> = maindefaulttalksequence</li>
 <li><code>846</code> = questdefaulttalksequence</li>
 <li><code>847</code> = questsimpleventsequence</li>
+<li><code>848</code> = mainsimpleeventsequence</li>
 <li><code>854</code> = behavioreventdirector</li>
 <li><code>856</code> = simpleevent</li>
-<li><code>889</code> = ?</li>
+<li><code>884</code> = simpleeventmarkerpoint</li>
+<li><code>889</code> = orchestrionlist (not an actual game table)</li>
+<li><code>917</code> = simpleeventlightpreset</li>
+<li><code>932</code> = questcharalayoutenpc</li>
+<li><code>934</code> = directorshipswingparameter</li>
 <li><code>935</code> = directormovecustomspeedparam</li>
 <li><code>942</code> = simpleeventselect</li>
+<li><code>943</code> = simpleeventsequencerandomset</li>
 <li><code>957</code> = shopquestcounter</li>
 <li><code>976</code> = shopfixedpaletteaccess</li>
 <li><code>977</code> = shopfixedpalettewarp</li>
@@ -2553,12 +2577,16 @@
 <li><code>989</code> = icondiscovery</li>
 <li><code>998</code> = shopfamevalue</li>
 <li><code>1011</code> = ?</li>
-<li><code>1027</code> = ?</li>
+<li><code>1012</code> = loresynopsysreference</li>
+<li><code>1027</code> = envvoice</li>
 <li><code>1044</code> = ?</li>
+<li><code>1079</code> = lorecutmreference</li>
+<li><code>1080</code> = lorecutqreference</li>
 <li><code>1047</code> = abysseffect</li>
 <li><code>1138</code> = fieldmapobelisk</li>
 <li><code>1144</code> = dlcentitlement</li>
 <li><code>1174</code> = patchdlcversion</li>
+<li><code>1186</code> = simpleeventlightpresetselect</li>
 <li><code>1249</code> = abyssboostparam</li>
 <li><code>1255</code> = ?</li>
 </ul>
@@ -2712,7 +2740,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.5090c770.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f13b1293.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
