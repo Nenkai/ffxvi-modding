@@ -89,6 +89,9 @@ nav:
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md
 
+    - Misc:
+      - Maps: resources/maps.md
+      
     - Other:
       - Command Line Arguments: resources/other/command_line_args.md
       - Save Files: resources/other/save_files.md
