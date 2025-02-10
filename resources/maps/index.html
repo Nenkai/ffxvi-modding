@@ -1589,10 +1589,12 @@
 <h1 id="game-maps"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 19-6-2.11V5l6 2.11M20.5 3h-.16L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5a.5.5 0 0 0 .5.5c.05 0 .11 0 .16-.03L9 18.9l6 2.1 5.64-1.9c.21-.1.36-.25.36-.48V3.5a.5.5 0 0 0-.5-.5"/></svg></span> Game Maps<a class="headerlink" href="#game-maps" title="Permanent link">&para;</a></h1>
 <p>Game Maps are defined in the <a href="../../tutorials/nex/tables/"><code>gamemap</code></a> Nex table and will point to files located in the <code>map</code> folder.</p>
 <p>The main file is file is always the <code>.mpb</code>, which presumably stands for <strong>M</strong>a<strong>p</strong> <strong>B</strong>inary.</p>
-<p><code>gamemap</code> may also point to:
-* <code>layoutsetting</code>, which is used to control which files aside from the <code>.mpb</code> file is loaded.
-* <code>mapdirector</code>, which controls some behavior on the map (battles and more).
-* (and more)</p>
+<p><code>gamemap</code> may also point to:</p>
+<ul>
+<li><code>layoutsetting</code>, which is used to control which files aside from the <code>.mpb</code> file is loaded.</li>
+<li><code>mapdirector</code>, which controls some behavior on the map (battles and more).</li>
+<li>(and more)</li>
+</ul>
 <h2 id="map-binary">Map Binary<a class="headerlink" href="#map-binary" title="Permanent link">&para;</a></h2>
 <p>The <code>.mpb</code> contains all the entities linked to a map file. More precisely, it holds a basic tree of all entities present in a map.</p>
 <ul>
