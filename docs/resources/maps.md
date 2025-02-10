@@ -9,6 +9,7 @@ Game Maps are defined in the [`gamemap`](../tutorials/nex/tables.md) Nex table a
 The main file is file is always the `.mpb`, which presumably stands for **M**a**p** **B**inary.
 
 `gamemap` may also point to:
+
 * `layoutsetting`, which is used to control which files aside from the `.mpb` file is loaded.
 * `mapdirector`, which controls some behavior on the map (battles and more).
 * (and more)
