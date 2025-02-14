@@ -110,7 +110,7 @@ icon: material/table
 * `uidamagepopup`
 
 ### Cutscene Tables
-* `cutsceneset`
+* `cutsceneset` - Defines an actual cutscene, not just a conversation between two entities (`simpleevent`)
 * `scenariocutscene` (Id 0-10000 and 1000000-1099999)
 * `scenariocutscenetimeline`
 * `levelcutscene` (Id 10000-19999 and 2000000-2099999)
@@ -124,6 +124,11 @@ icon: material/table
 * `questcutscene` (Id 4000000-4099999)
 * `questcutscenetimeline`
 
+!!! tip
+    Some ids will point directly to PZD/Localization entries in the `nxd/text` folder.
+    
+    For example, `questcutscene` id 4000200 -> `nxd/text/cutq/cutq4000200.pzd`.
+    
 #### Death
 * `deadparam`
 * `corpsebase`
@@ -250,6 +255,11 @@ icon: material/table
 * `skincolor`
 * `weaponskincategory` - Arete Stone 'Appearance' Menu, weapon skins. Number of rows will match `c8001`, body folder.
 
+!!! tip
+
+    For paths, refer to the `body` and `head` keys. So `180100101` = `1801 001 01` => `c1801`, `b001`, `_1`.
+
+
 ### Physics Tables
 * `ragdollparam`
 
@@ -274,7 +284,7 @@ icon: material/table
 * `questdefaulttalksequence`
 * `questsequence` - Quest sequences/parts. Grouped by `quest` ids. Essentially the current state for a `quest`.
 * `questreportjump` - Fast travel to NPC for task sequence completion
-* `simpleevent`
+* `simpleevent` - Defines a regular discussion/event between clive/NPC
 * `simpleeventpartylocationset`
 * `simpleeventlocationoffset`
 * `useimportantitemstodo` - Giving items to NPCs
@@ -371,7 +381,9 @@ These tables are known to not be used at all (at least in retail builds).
 
 Union codes are used by columns that can reference other tables. They usually appear right before the actual ID columns.
 
-* `0` = ?
+* `0` = value argument
+* `3` = action
+* `15` = result
 * `17` = attackparamid
 * `23` = bnpcbase
 * `25` = directorbankitemid
@@ -386,6 +398,7 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `99` = itemshopbase
 * `100` = smithshopbase
 * `105` = charatimelinevariation
+* `112` = equipment_index (not an actual table, but 0 = sword, etc)
 * `114` = sidequestbattledirector
 * `124` = item
 * `127` = levelcutscene
@@ -397,18 +410,23 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `147` = placename
 * `177` = equipitem
 * `192` = cutsceneset
+* `198` = transition
 * `204` = questprogress
+* `208` = summonmode
 * `256` = partymember
 * `260` = scenariocutscene
 * `266` = Icon Id?
 * `273` = worldmapanchor
 * `277` = usersituation
 * `282` = levelevent
+* `312` = battleevent
 * `314` = bgmselect
 * `316` = moviedata
 * `317` = gamemap
 * `330` = ?
+* `344` = normalcameraparam2 (same as normalcameraparam?)
 * `359` = missionbattledirector
+* `363` = uicolor
 * `366` = normalcameraparam
 * `373` = astralprojection
 * `375` = mapdirectorsequence
@@ -419,7 +437,7 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `454` = battletag
 * `458` = usersituationflag
 * `484` = shopchronicle
-* `486` = ?
+* `486` = layoutgroup (entity group ids from map binary/mpb)
 * `487` = letterlist (not an actual game table)
 * `488` = shoppastsight
 * `491` = ?
@@ -429,13 +447,14 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `517` = collectionlist (not an actual game table)
 * `523` = shoplore
 * `524` = battletalk
-* `528` = ?
+* `528` = howto
 * `530` = tutorialdirector
 * `539` = behaviorwaitparam
 * `545` = tutorial
 * `557` = directorcondition
-* `577` = ?
 * `568` = directoractormonitor
+* `577` = mapdirectorflag
+* `632` = skill
 * `639` = behavioreventactionsequence
 * `649` = ?
 * `653` = behaviormoverailparam
@@ -443,10 +462,14 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `664` = captionfreeword
 * `665` = directorforwardmoveparam
 * `668` = questcharalayoutbnpc
+* `692` = smobdirector
 * `700` = systemassisttimertalkitem
 * `706` = layoutenpcinstance
 * `719` = shopmythril
 * `722` = behaviorlinkmovetarget
+* `742` = telemetryobjectset,
+* `758` = telemetrypropertyvalue,
+* `791` = letter
 * `793` = telemetryobject
 * `818` = shopfixedpaletteexit
 * `831` = cutsceneconnect
@@ -459,14 +482,17 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `848` = mainsimpleeventsequence
 * `854` = behavioreventdirector
 * `856` = simpleevent
+* `861` = synopsis
 * `884` = simpleeventmarkerpoint
 * `889` = orchestrionlist (not an actual game table)
+* `890` = orchestrion
 * `917` = simpleeventlightpreset
 * `932` = questcharalayoutenpc
 * `934` = directorshipswingparameter
 * `935` = directormovecustomspeedparam
 * `942` = simpleeventselect
 * `943` = simpleeventsequencerandomset
+* `945` = cutsceneconnectquestseqarg
 * `957` = shopquestcounter
 * `976` = shopfixedpaletteaccess
 * `977` = shopfixedpalettewarp
@@ -478,9 +504,9 @@ Union codes are used by columns that can reference other tables. They usually ap
 * `1012` = loresynopsysreference
 * `1027` = envvoice
 * `1044` = ?
+* `1047` = abysseffect
 * `1079` = lorecutmreference
 * `1080` = lorecutqreference
-* `1047` = abysseffect
 * `1138` = fieldmapobelisk
 * `1144` = dlcentitlement
 * `1174` = patchdlcversion

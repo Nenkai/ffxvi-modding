@@ -63,15 +63,6 @@ nav:
     - Creating Mods: modding/creating_mods.md
     - Mod Loader Internals: modding/mod_loader.md
     - Mod Loader API: modding/mod_loader_api.md
-  - Tutorials:
-    - Extracting Files: tutorials/file_extraction.md
-
-    - Nex (NXD):
-      - Database Editing: tutorials/nex/nxd_editing.md
-      - Tables: tutorials/nex/tables.md
-
-    - Textures:
-      - Extracting Textures: tutorials/textures/texture_extraction.md
 
   - Modder Resources:
     - Asset Paths: resources/asset_paths.md
@@ -99,6 +90,18 @@ nav:
       
     - Updates:
       - Update List: resources/updates/updates.md
+
+  - Tutorials:
+    - Extracting Files: tutorials/file_extraction.md
+
+    - Nex (NXD):
+      - Database Editing: tutorials/nex/nxd_editing.md
+      - Tables: tutorials/nex/tables.md
+
+    - Textures:
+      - Extracting Textures: tutorials/textures/texture_extraction.md
+
+
       
 markdown_extensions:
   - toc:

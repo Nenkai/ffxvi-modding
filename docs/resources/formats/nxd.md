@@ -10,10 +10,11 @@ These files are located in the `nxd` folder. (`0007` packs).
 
 Unlike `exd`, there are **no column metadata** whatsoever. No names, no cell fields. All had to be manually mapped.
 
-* [.exd Documentation](https://xiv.dev/game-data/file-formats/excel#excel-data-.exd)
+* [.exd Documentation](https://xiv.dev/game-data/file-formats/excel#excel-data-.exd) (FF14)
 * [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_nxd_NXDF.bt)
 * [Reference Implementation (FF16Tools, C#)](https://github.com/Nenkai/FF16Tools)
 * [Table Layouts](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts)
+* [Database Table Editing](../../tutorials/nex/nxd_editing.md)
 
 *Additionally*, row data itself can contain nested structures or arrays.
 
