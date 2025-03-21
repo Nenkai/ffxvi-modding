@@ -35,25 +35,23 @@ This will convert all the `.nxd`'s in a directory to a SQLite database you can o
 
 ## Editing
 
-### Method 1: Live Nex Editor
+??? tip "Method 1: Live Nex Editor"
 
-You can use the [Live Nex Editor](https://www.nexusmods.com/finalfantasy16/mods/289) to edit nex rows while the game is running.
+    You can use the [Live Nex Editor](https://www.nexusmods.com/finalfantasy16/mods/289) to edit nex rows while the game is running.
 
-!!! note
+    !!! note
 
-    If you need to add/remove rows, or edit strings/resize arrays, you will need to refer to **Method 2** instead.
+        If you need to add/remove rows, or edit strings/resize arrays, you will need to refer to **Method 2** instead.
 
-### Method 2: Converting back to Nex
+??? tip "Method 2: Converting back to Nex"
 
-```
-FF16Tools.CLI sqlite-to-nxd -i <path to sqlite file>
-```
+    ```
+    FF16Tools.CLI sqlite-to-nxd -i <path to sqlite file>
+    ```
 
-!!! tip
+    !!! tip
 
-    You can provide the `-t` argument to only convert certain tables. for instance, `-t equipitem command` will only save `equipitem.nxd` and `command.nxd`.
-
----
+        You can provide the `-t` argument to only convert certain tables. for instance, `-t equipitem command` will only save `equipitem.nxd` and `command.nxd`.
 
 !!! note
 
