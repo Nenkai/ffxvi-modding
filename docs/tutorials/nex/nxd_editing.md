@@ -53,6 +53,8 @@ FF16Tools.CLI sqlite-to-nxd -i <path to sqlite file>
 
     You can provide the `-t` argument to only convert certain tables. for instance, `-t equipitem command` will only save `equipitem.nxd` and `command.nxd`.
 
+---
+
 !!! note
 
     * Always check the [Changelog](https://github.com/Nenkai/FF16Tools/blob/master/NEX_CHANGELOG.md) for updated table column names.
