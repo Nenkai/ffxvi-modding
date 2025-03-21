@@ -33,7 +33,17 @@ This will convert all the `.nxd`'s in a directory to a SQLite database you can o
 
 ---
 
-### Converting back to Nex
+## Editing
+
+### Method 1: Live Nex Editor
+
+You can use the [Live Nex Editor](https://www.nexusmods.com/finalfantasy16/mods/289) to edit nex rows while the game is running.
+
+!!! note
+
+    If you need to add/remove rows, or edit strings/resize arrays, you will need to refer to **Method 2** instead.
+
+### Method 2: Converting back to Nex
 
 ```
 FF16Tools.CLI sqlite-to-nxd -i <path to sqlite file>
