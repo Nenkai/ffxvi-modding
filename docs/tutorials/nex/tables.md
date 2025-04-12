@@ -36,6 +36,12 @@ icon: material/table
 
     `FF16Tools` may automatically include comments which may be defined in `.layout` files. **Please contribute!**
 
+??? tip "VFX Audio Ids"
+
+    Some tables may refer to a "VFX Audio Id". These refer to entries present within `.vatb` files.
+
+    `.vatb` or VFX Audio Table Binary simply maps specified ids to a VFX & Audio file combination. The game simply search through the currently registered vatb files for a matching id.
+
 ### Ability/Movement Tables
 
 * `attackparam` - Defines values & parameters for attacks

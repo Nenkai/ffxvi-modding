@@ -15,7 +15,7 @@ icon: material/file-find
 ## Map/Levels
 
 * `.mpb` - Map Binary (main file, loading all other map files) - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mpb_MapBinary.bt)
-* `.vatb`
+* `.vatb` - VFX Audio Table Binary - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_vatb_VFXAudioTable.bt)
 * `.ssb` - Stage Set Binary
 * `.tnb` - Tanebi (??)
 * `.vglb`
