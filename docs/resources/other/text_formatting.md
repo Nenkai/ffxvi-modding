@@ -1,4 +1,8 @@
-# Text Formatting
+---
+icon: material/format-font
+---
+
+# :material-format-font: Text Formatting
 
 !!! note
 

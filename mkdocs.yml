@@ -79,12 +79,16 @@ nav:
       - Format List: resources/formats/format_list.md
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md
+      - .magic/.dep: resources/formats/dep_magic.md
+      - .vatb - VFX Audio Table: resources/formats/vatb.md
 
     - Misc:
       - Maps: resources/maps.md
       
     - Other:
       - Command Line Arguments: resources/other/command_line_args.md
+      - Debugging: resources/other/debugging.md
+      - Loading Unpacked: resources/other/loading_unpacked.md
       - Save Files: resources/other/save_files.md
       - Text Formatting: resources/other/text_formatting.md
       
