@@ -42,6 +42,8 @@ icon: material/table
 
     `.vatb` or VFX Audio Table Binary simply maps specified ids to a VFX & Audio file combination. The game simply search through the currently registered vatb files for a matching id.
 
+You can find more comments in each table's [layout](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts) definition.
+
 ### Ability/Movement Tables
 
 * `attackparam` - Defines values & parameters for attacks
@@ -59,6 +61,7 @@ icon: material/table
 * `skill` - Links a UI Skill/Ability to a `command`, otherwise largely UI related parameters
 * `shotcharge` - Charging fire & other abilities
 * `summonpartspattern`
+* `summonparts`
 * `systemmove`
 
 ### Active Time Lore
@@ -111,7 +114,6 @@ icon: material/table
 * `guardresult`
 * `hitvfx`
 * `spreaddroptable` - Drops on field enemy killed
-* `spreaddroptable`
 * `stagerank` - Fired on abttle end
 * `uidamagepopup`
 
@@ -140,6 +142,23 @@ icon: material/table
 * `corpsebase`
 * `corpsestay`
 * `deadeffect`
+
+#### Director Tables
+
+Note: Union Id 48 (directortype) may select one of these.
+
+* `mapdirector`
+* `tutorialdirector`
+* `systemassistdirector`
+* `fieldeventdirector`
+* `smobdirector` - Defines hunts
+* `sidequestbattledirector`
+* `missionbattledirector`
+* `battledirector`
+* `behavioreventdirector`
+* `battleblockdirector`
+* `fixedpalettedirector`
+* `abyssgatedirector`
 
 ### Crafting/Shop Tables
 * `recipe`
@@ -222,9 +241,6 @@ icon: material/table
 * `item` - Items. (internally, this table is used when the id being fetched is < 100000).
 * `useitem` - Usable items (potions, etc).
 
-### Hunt/Mark Tables
-* `smobdirector` - Defines hunts
-
 ### Map/Level Tables
 
 * `astralprojection` - Aether Floods
@@ -236,7 +252,6 @@ icon: material/table
 * `gamemap` - Defines all the levels/maps in the game and which master map file `.mpb` they point to.
 * `gimmickitemdrop` - Item Pickups on field
 * `layoutsettings`
-* `mapdirector`
 * `mapdirectormodule`
 * `mapdirectorsequenceset`
 * `physicsobjectsound`
@@ -248,16 +263,21 @@ icon: material/table
 
 * `animpacexistface`
 * `animpacexisthead`
+* `body`
 * `characterskinid` - Defines the skin ids, used for `characterskincategory`. Can only be two enabled rows.
 * `characterskincategory` - Arete Stone 'Appearance' Menu, every character. Hardcoded to id 0-4 (each character). There can only be two skins due to table design. (read `characterskincategory.layout` for more information).
 * `characterskinmodelparam` - Points skins to a `modelcoordinate` row.
 * `colorcoordinate`
-* `eid`
+* `eid` - Links certain ids to model joints (refer to comments in eid.layout)
 * `eyecolor`
+* `face`
 * `footwetness` - Points to additional parts in each model (.mdl) file
 * `haircolor`
+* `head`
+* `mastsparam`
 * `model` - Defines models in the game, usually pointed to by entity tables
 * `modelcoordinate` - Coordinates/links models into their respective parts (body/face/head) & more.
+* `partadditionaldataparam`
 * `skincolor`
 * `weaponskincategory` - Arete Stone 'Appearance' Menu, weapon skins. Number of rows will match `c8001`, body folder.
 
@@ -329,9 +349,11 @@ icon: material/table
 
 ### UI Tables (Misc)
 * `uiaddon` - Defines assets to use for UIs along with additional parameters (character input & more)
+* `uiarray` - Defines ui lists for (hardcoded) ui situations
 * `uiannounce` - Defines alerts/errors with a red banner i.e 'Unable to craft', 'Insufficient materials'
 * `uicolor`
 * `uifocusinfo`
+* `uimenu`
 * `uipadguide` - Controller Settings
 * `uisummonaction`
 * `uitooltip`
@@ -387,15 +409,21 @@ These tables are known to not be used at all (at least in retail builds).
 
 Union codes are used by columns that can reference other tables. They usually appear right before the actual ID columns.
 
+!!! note
+
+    May be behind, check the [enum list](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files/Nex/NexEnums.cs) here for an updated list.
+
 * `0` = value argument
 * `3` = action
 * `15` = result
 * `17` = attackparamid
 * `23` = bnpcbase
 * `25` = directorbankitemid
+* `27` = eid
 * `41` = ?
 * `42` = command
 * `46` = defaulttalk
+* `48` = type of director
 * `50` = enpcbase
 * `55` = layoutnamedinstance
 * `58` = attacktype (link between equipitem & atktype)
