@@ -77,7 +77,7 @@ nav:
 
     - Formats:
       - Format List: resources/formats/format_list.md
-      - .ccb - Chara Collision: resources/formats/pac.md
+      - .ccb - Chara Collision: resources/formats/ccb.md
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md
       - .magic/.dep: resources/formats/dep_magic.md
