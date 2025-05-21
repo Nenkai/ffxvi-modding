@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -911,7 +911,32 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.12 5h13.75l-.94-1h-12zm15.42.23c.29.34.46.77.46 1.27V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6.5c0-.5.17-.93.46-1.27l1.38-1.68C5.12 3.21 5.53 3 6 3h12c.47 0 .88.21 1.15.55zM6 18h6v-3H6z"/></svg>
   
   <span class="md-ellipsis">
-    .pac - Pack
+    .ccb - Chara Collision
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../resources/formats/pac/" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.12 5h13.75l-.94-1h-12zm15.42.23c.29.34.46.77.46 1.27V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6.5c0-.5.17-.93.46-1.27l1.38-1.68C5.12 3.21 5.53 3 6 3h12c.47 0 .88.21 1.15.55zM6 18h6v-3H6z"/></svg>
+  
+  <span class="md-ellipsis">
+    .ccb - Chara Collision
     
   </span>
   
@@ -1619,6 +1644,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#director-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Director Tables
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1683,15 +1717,6 @@
   <a href="#item-tables" class="md-nav__link">
     <span class="md-ellipsis">
       Item Tables
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#huntmark-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hunt/Mark Tables
     </span>
   </a>
   
@@ -2057,6 +2082,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#director-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Director Tables
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2121,15 +2155,6 @@
   <a href="#item-tables" class="md-nav__link">
     <span class="md-ellipsis">
       Item Tables
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#huntmark-tables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hunt/Mark Tables
     </span>
   </a>
   
@@ -2351,6 +2376,7 @@
 <p>Some tables may refer to a "VFX Audio Id". These refer to entries present within <code>.vatb</code> files.</p>
 <p><code>.vatb</code> or VFX Audio Table Binary simply maps specified ids to a VFX &amp; Audio file combination. The game simply search through the currently registered vatb files for a matching id.</p>
 </details>
+<p>You can find more comments in each table's <a href="https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Nex/Layouts">layout</a> definition.</p>
 <h3 id="abilitymovement-tables">Ability/Movement Tables<a class="headerlink" href="#abilitymovement-tables" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>attackparam</code> - Defines values &amp; parameters for attacks</li>
@@ -2368,6 +2394,7 @@
 <li><code>skill</code> - Links a UI Skill/Ability to a <code>command</code>, otherwise largely UI related parameters</li>
 <li><code>shotcharge</code> - Charging fire &amp; other abilities</li>
 <li><code>summonpartspattern</code></li>
+<li><code>summonparts</code></li>
 <li><code>systemmove</code></li>
 </ul>
 <h3 id="active-time-lore">Active Time Lore<a class="headerlink" href="#active-time-lore" title="Permanent link">&para;</a></h3>
@@ -2424,7 +2451,6 @@
 <li><code>guardresult</code></li>
 <li><code>hitvfx</code></li>
 <li><code>spreaddroptable</code> - Drops on field enemy killed</li>
-<li><code>spreaddroptable</code></li>
 <li><code>stagerank</code> - Fired on abttle end</li>
 <li><code>uidamagepopup</code></li>
 </ul>
@@ -2455,6 +2481,22 @@
 <li><code>corpsebase</code></li>
 <li><code>corpsestay</code></li>
 <li><code>deadeffect</code></li>
+</ul>
+<h4 id="director-tables">Director Tables<a class="headerlink" href="#director-tables" title="Permanent link">&para;</a></h4>
+<p>Note: Union Id 48 (directortype) may select one of these.</p>
+<ul>
+<li><code>mapdirector</code></li>
+<li><code>tutorialdirector</code></li>
+<li><code>systemassistdirector</code></li>
+<li><code>fieldeventdirector</code></li>
+<li><code>smobdirector</code> - Defines hunts</li>
+<li><code>sidequestbattledirector</code></li>
+<li><code>missionbattledirector</code></li>
+<li><code>battledirector</code></li>
+<li><code>behavioreventdirector</code></li>
+<li><code>battleblockdirector</code></li>
+<li><code>fixedpalettedirector</code></li>
+<li><code>abyssgatedirector</code></li>
 </ul>
 <h3 id="craftingshop-tables">Crafting/Shop Tables<a class="headerlink" href="#craftingshop-tables" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2544,10 +2586,6 @@
 <li><code>item</code> - Items. (internally, this table is used when the id being fetched is &lt; 100000).</li>
 <li><code>useitem</code> - Usable items (potions, etc).</li>
 </ul>
-<h3 id="huntmark-tables">Hunt/Mark Tables<a class="headerlink" href="#huntmark-tables" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>smobdirector</code> - Defines hunts</li>
-</ul>
 <h3 id="maplevel-tables">Map/Level Tables<a class="headerlink" href="#maplevel-tables" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>astralprojection</code> - Aether Floods</li>
@@ -2559,7 +2597,6 @@
 <li><code>gamemap</code> - Defines all the levels/maps in the game and which master map file <code>.mpb</code> they point to.</li>
 <li><code>gimmickitemdrop</code> - Item Pickups on field</li>
 <li><code>layoutsettings</code></li>
-<li><code>mapdirector</code></li>
 <li><code>mapdirectormodule</code></li>
 <li><code>mapdirectorsequenceset</code></li>
 <li><code>physicsobjectsound</code></li>
@@ -2571,16 +2608,21 @@
 <ul>
 <li><code>animpacexistface</code></li>
 <li><code>animpacexisthead</code></li>
+<li><code>body</code></li>
 <li><code>characterskinid</code> - Defines the skin ids, used for <code>characterskincategory</code>. Can only be two enabled rows.</li>
 <li><code>characterskincategory</code> - Arete Stone 'Appearance' Menu, every character. Hardcoded to id 0-4 (each character). There can only be two skins due to table design. (read <code>characterskincategory.layout</code> for more information).</li>
 <li><code>characterskinmodelparam</code> - Points skins to a <code>modelcoordinate</code> row.</li>
 <li><code>colorcoordinate</code></li>
-<li><code>eid</code></li>
+<li><code>eid</code> - Links certain ids to model joints (refer to comments in eid.layout)</li>
 <li><code>eyecolor</code></li>
+<li><code>face</code></li>
 <li><code>footwetness</code> - Points to additional parts in each model (.mdl) file</li>
 <li><code>haircolor</code></li>
+<li><code>head</code></li>
+<li><code>mastsparam</code></li>
 <li><code>model</code> - Defines models in the game, usually pointed to by entity tables</li>
 <li><code>modelcoordinate</code> - Coordinates/links models into their respective parts (body/face/head) &amp; more.</li>
+<li><code>partadditionaldataparam</code></li>
 <li><code>skincolor</code></li>
 <li><code>weaponskincategory</code> - Arete Stone 'Appearance' Menu, weapon skins. Number of rows will match <code>c8001</code>, body folder.</li>
 </ul>
@@ -2661,9 +2703,11 @@
 <h3 id="ui-tables-misc">UI Tables (Misc)<a class="headerlink" href="#ui-tables-misc" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>uiaddon</code> - Defines assets to use for UIs along with additional parameters (character input &amp; more)</li>
+<li><code>uiarray</code> - Defines ui lists for (hardcoded) ui situations</li>
 <li><code>uiannounce</code> - Defines alerts/errors with a red banner i.e 'Unable to craft', 'Insufficient materials'</li>
 <li><code>uicolor</code></li>
 <li><code>uifocusinfo</code></li>
+<li><code>uimenu</code></li>
 <li><code>uipadguide</code> - Controller Settings</li>
 <li><code>uisummonaction</code></li>
 <li><code>uitooltip</code></li>
@@ -2717,6 +2761,10 @@
 </ul>
 <h2 id="union-codes">Union Codes<a class="headerlink" href="#union-codes" title="Permanent link">&para;</a></h2>
 <p>Union codes are used by columns that can reference other tables. They usually appear right before the actual ID columns.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>May be behind, check the <a href="https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files/Nex/NexEnums.cs">enum list</a> here for an updated list.</p>
+</div>
 <ul>
 <li><code>0</code> = value argument</li>
 <li><code>3</code> = action</li>
@@ -2724,9 +2772,11 @@
 <li><code>17</code> = attackparamid</li>
 <li><code>23</code> = bnpcbase</li>
 <li><code>25</code> = directorbankitemid</li>
+<li><code>27</code> = eid</li>
 <li><code>41</code> = ?</li>
 <li><code>42</code> = command</li>
 <li><code>46</code> = defaulttalk</li>
+<li><code>48</code> = type of director</li>
 <li><code>50</code> = enpcbase</li>
 <li><code>55</code> = layoutnamedinstance</li>
 <li><code>58</code> = attacktype (link between equipitem &amp; atktype)</li>
@@ -3000,10 +3050,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
