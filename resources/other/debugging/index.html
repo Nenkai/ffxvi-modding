@@ -1254,6 +1254,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#bypassing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bypassing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bypassing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#x64dbg" class="md-nav__link">
     <span class="md-ellipsis">
       x64dbg
@@ -1261,13 +1271,27 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#cheat-engine" class="md-nav__link">
     <span class="md-ellipsis">
       Cheat Engine
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ida" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1728,6 +1752,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#bypassing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bypassing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bypassing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#x64dbg" class="md-nav__link">
     <span class="md-ellipsis">
       x64dbg
@@ -1735,13 +1769,27 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#cheat-engine" class="md-nav__link">
     <span class="md-ellipsis">
       Cheat Engine
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ida" class="md-nav__link">
+    <span class="md-ellipsis">
+      IDA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1770,12 +1818,40 @@
 
 
 <h1 id="debugging"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 12h-4v-2h4m0 6h-4v-2h4m6-6h-2.81a6 6 0 0 0-1.82-1.96L17 4.41 15.59 3l-2.17 2.17a6 6 0 0 0-2.83 0L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20z"/></svg></span> Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h1>
-<p>FFXVI has a rudimentary anti-debugging mechanism (in non-denuvo versions). <code>IsDebuggerPresent()</code> is present on the entrypoint and will immediately return if a debugger is attached.</p>
-<p>Another anti-debug mechanism is used after the splash screen (which may involve <code>HeapFlags</code> detection - needs more research).</p>
-<h2 id="x64dbg">x64dbg<a class="headerlink" href="#x64dbg" title="Permanent link">&para;</a></h2>
-<p>ScyllaHide's Hide from PEB -&gt; <code>BeingDebugged</code> and <code>HeapFlags</code> is enough to hide the debugger.</p>
-<h2 id="cheat-engine">Cheat Engine<a class="headerlink" href="#cheat-engine" title="Permanent link">&para;</a></h2>
+<p>FFXVI has a rudimentary anti-debugging mechanism.</p>
+<p>There's are three distinct anti-debugging checks:</p>
+<ul>
+<li>App entrypoint has a <code>IsDebuggerPresent</code> check and will immediately return if <code>true</code></li>
+<li>App update loop (which returns whether false on whether to end the game loop) has <code>IsDebuggerPresent</code>, if flagged, the function returns <code>false</code> and the game will shut down.</li>
+<li>App update loop capturer checks after above check, it checks if the following module handles are loaded in the process and does the same flagging if <code>true</code>: <ul>
+<li><a href="https://devblogs.microsoft.com/pix/">Pix</a> (<code>winPixGpuCapturer.dll</code>)</li>
+<li><a href="https://developer.nvidia.com/nsight-graphics">Nvidia Nsight Graphics</a> (<code>Nvda.Graphics.Interception.dll</code>)</li>
+<li><a href="https://www.intel.com/content/www/us/en/developer/tools/graphics-performance-analyzers/overview.html">Intel Graphics Performance Analyzers</a> (<code>capture-x64.dll</code>/<code>d3d12-state-tracker-x64.dll</code>) </li>
+<li><a href="https://renderdoc.org/">RenderDoc</a> (<code>renderdoc.dll</code>) + GUID check with <code>d3d12Device-&gt;QueryInterface({ 0xa7aa6116, 0x9c8d, 0x4bba, { 0x90, 0x83, 0xb4, 0xd8, 0x16, 0xb7, 0x1b, 0x78 } })</code></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The mod loader as of 1.2.0 disarms the anti-debug checks.</p>
+</div>
+<h2 id="bypassing">Bypassing<a class="headerlink" href="#bypassing" title="Permanent link">&para;</a></h2>
+<p>Use the mod loader to disable anti-debug checks.</p>
+<h3 id="x64dbg">x64dbg<a class="headerlink" href="#x64dbg" title="Permanent link">&para;</a></h3>
+<p>ScyllaHide's Hide from PEB -&gt; <code>BeingDebugged</code> and <code>HeapFlags</code> is enough to hide the debugger. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Without <code>HeapFlags</code>, the game appears to get stuck without showing the main window for some reason when starting rather than attaching. </p>
+<p><strong>It may need more research.</strong></p>
+</div>
+<h3 id="cheat-engine">Cheat Engine<a class="headerlink" href="#cheat-engine" title="Permanent link">&para;</a></h3>
 <p>Use the VEH debugger. Settings -&gt; Debugger Options -&gt; Use VEH debugger. This also works on Denuvo protected versions of the game.</p>
+<h3 id="ida">IDA<a class="headerlink" href="#ida" title="Permanent link">&para;</a></h3>
+<p>Use the mod loader and attach. </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Starting the process and nopping <code>IsDebuggerPresent</code> causes the same issue where the game gets stuck without showing the main window.</p>
+</div>
 
 
 
