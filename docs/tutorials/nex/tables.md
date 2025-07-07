@@ -381,13 +381,17 @@ Note: Union Id 48 (directortype) may select one of these.
 These tables are known to not be used at all (at least in retail builds).
 
 * `attackelement`
+* `attackmove`
 * `achievement`
 * `actorstate`
 * `actorstateset`
 * `aiactionselectorcondition`
 * `animalgroupid`
 * `areatype`
-* `bardssonglist`
+* `autoattackcombo`
+* `battlecondition`
+* `battlecutscene`
+* `battlecutscenetimeline`
 * `contentdynamicparam`
 * `footstep`
 * `gamemapfieldtype`

@@ -63,6 +63,9 @@ nav:
     - Creating Mods: modding/creating_mods.md
     - Mod Loader Internals: modding/mod_loader.md
     - Mod Loader API: modding/mod_loader_api.md
+    - Framework:
+      - ImGui API: modding/framework/imgui_api.md
+      - Nex API: modding/framework/nex_api.md
 
   - Modder Resources:
     - Asset Paths: resources/asset_paths.md
