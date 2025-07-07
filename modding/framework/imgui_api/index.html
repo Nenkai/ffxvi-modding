@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://nenkai.github.io/ffxvi-modding/resources/other/save_files/">
+        <link rel="canonical" href="https://nenkai.github.io/ffxvi-modding/modding/framework/imgui_api/">
       
       
-        <link rel="prev" href="../loading_unpacked/">
+        <link rel="prev" href="../../mod_loader_api/">
       
       
-        <link rel="next" href="../text_formatting/">
+        <link rel="next" href="../nex_api/">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Save Files - FINAL FANTASY XVI Modding</title>
+        <title>ImGui API - FINAL FANTASY XVI Modding</title>
       
     
     
@@ -61,11 +61,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Save Files - FINAL FANTASY XVI Modding" >
+        <meta  property="og:title"  content="ImGui API - FINAL FANTASY XVI Modding" >
       
         <meta  property="og:description"  content="FINAL FANTASY XVI - Modding" >
       
-        <meta  property="og:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/resources/other/save_files.png" >
+        <meta  property="og:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/modding/framework/imgui_api.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -73,15 +73,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://nenkai.github.io/ffxvi-modding/resources/other/save_files/" >
+        <meta  property="og:url"  content="https://nenkai.github.io/ffxvi-modding/modding/framework/imgui_api/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Save Files - FINAL FANTASY XVI Modding" >
+        <meta  name="twitter:title"  content="ImGui API - FINAL FANTASY XVI Modding" >
       
         <meta  name="twitter:description"  content="FINAL FANTASY XVI - Modding" >
       
-        <meta  name="twitter:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/resources/other/save_files.png" >
+        <meta  name="twitter:image"  content="https://nenkai.github.io/ffxvi-modding/assets/images/social/modding/framework/imgui_api.png" >
       
     
     
@@ -113,7 +113,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#save-files" class="md-skip">
+        <a href="#imgui-overlay-api" class="md-skip">
           Skip to content
         </a>
       
@@ -146,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Save Files
+              ImGui API
             
           </span>
         </div>
@@ -286,11 +286,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../modding/installing_mods/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../installing_mods/" class="md-tabs__link">
           
   
   
@@ -306,13 +308,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../asset_paths/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../resources/asset_paths/" class="md-tabs__link">
           
   
   
@@ -414,26 +414,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -446,7 +451,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Mod Management
@@ -460,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modding/installing_mods/" class="md-nav__link">
+      <a href="../../installing_mods/" class="md-nav__link">
         
   
   
@@ -485,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modding/creating_mods/" class="md-nav__link">
+      <a href="../../creating_mods/" class="md-nav__link">
         
   
   
@@ -510,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modding/mod_loader/" class="md-nav__link">
+      <a href="../../mod_loader/" class="md-nav__link">
         
   
   
@@ -535,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modding/mod_loader_api/" class="md-nav__link">
+      <a href="../../mod_loader_api/" class="md-nav__link">
         
   
   
@@ -557,26 +562,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
             
   
   
@@ -589,7 +599,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Framework
@@ -600,10 +610,34 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../modding/framework/imgui_api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 8h4V4h12v12h-4v4H4zm12 0v6h2V6h-8v2zM6 12v6h8v-6z"/></svg>
+  
+  <span class="md-ellipsis">
+    ImGui API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -616,6 +650,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texturesimages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textures/Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bindings-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bindings Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bindings Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-new-bindings-why-not-use-imguinet-or-hexanetimgui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why new bindings? Why not use ImGuiNet or Hexa.NET.ImGui?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      C Bindings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-bindings_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      C# Bindings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -628,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../modding/framework/nex_api/" class="md-nav__link">
+      <a href="../nex_api/" class="md-nav__link">
         
   
   
@@ -665,31 +794,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -702,7 +826,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Modder Resources
@@ -716,7 +840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../asset_paths/" class="md-nav__link">
+      <a href="../../../resources/asset_paths/" class="md-nav__link">
         
   
   
@@ -747,20 +871,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -787,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ids/character_ids/" class="md-nav__link">
+      <a href="../../../resources/ids/character_ids/" class="md-nav__link">
         
   
   
@@ -812,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ids/bnpc_ids/" class="md-nav__link">
+      <a href="../../../resources/ids/bnpc_ids/" class="md-nav__link">
         
   
   
@@ -837,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ids/enpc_ids/" class="md-nav__link">
+      <a href="../../../resources/ids/enpc_ids/" class="md-nav__link">
         
   
   
@@ -862,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ids/gamemap_ids/" class="md-nav__link">
+      <a href="../../../resources/ids/gamemap_ids/" class="md-nav__link">
         
   
   
@@ -887,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ids/item_ids/" class="md-nav__link">
+      <a href="../../../resources/ids/item_ids/" class="md-nav__link">
         
   
   
@@ -912,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ids/equip_item_ids/" class="md-nav__link">
+      <a href="../../../resources/ids/equip_item_ids/" class="md-nav__link">
         
   
   
@@ -951,20 +1072,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   
@@ -991,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../formats/format_list/" class="md-nav__link">
+      <a href="../../../resources/formats/format_list/" class="md-nav__link">
         
   
   
@@ -1016,7 +1134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../formats/ccb/" class="md-nav__link">
+      <a href="../../../resources/formats/ccb/" class="md-nav__link">
         
   
   
@@ -1041,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../formats/pac/" class="md-nav__link">
+      <a href="../../../resources/formats/pac/" class="md-nav__link">
         
   
   
@@ -1066,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../formats/nxd/" class="md-nav__link">
+      <a href="../../../resources/formats/nxd/" class="md-nav__link">
         
   
   
@@ -1091,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../formats/dep_magic/" class="md-nav__link">
+      <a href="../../../resources/formats/dep_magic/" class="md-nav__link">
         
   
   
@@ -1116,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../formats/vatb/" class="md-nav__link">
+      <a href="../../../resources/formats/vatb/" class="md-nav__link">
         
   
   
@@ -1155,20 +1273,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1195,7 +1310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../maps/" class="md-nav__link">
+      <a href="../../../resources/maps/" class="md-nav__link">
         
   
   
@@ -1225,31 +1340,26 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -1262,7 +1372,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Other
@@ -1276,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../command_line_args/" class="md-nav__link">
+      <a href="../../../resources/other/command_line_args/" class="md-nav__link">
         
   
   
@@ -1301,7 +1411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../debugging/" class="md-nav__link">
+      <a href="../../../resources/other/debugging/" class="md-nav__link">
         
   
   
@@ -1326,7 +1436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loading_unpacked/" class="md-nav__link">
+      <a href="../../../resources/other/loading_unpacked/" class="md-nav__link">
         
   
   
@@ -1348,34 +1458,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7z"/></svg>
-  
-  <span class="md-ellipsis">
-    Save Files
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../resources/other/save_files/" class="md-nav__link">
         
   
   
@@ -1388,59 +1474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
-    <span class="md-ellipsis">
-      XML
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="XML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#serialization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Serialization
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deserialization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deserialization
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1453,7 +1486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../text_formatting/" class="md-nav__link">
+      <a href="../../../resources/other/text_formatting/" class="md-nav__link">
         
   
   
@@ -1492,20 +1525,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
   
@@ -1532,7 +1562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../updates/updates/" class="md-nav__link">
+      <a href="../../../resources/updates/updates/" class="md-nav__link">
         
   
   
@@ -1844,28 +1874,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
+  <a href="#quick-guide" class="md-nav__link">
     <span class="md-ellipsis">
-      XML
+      Quick Guide
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="XML">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#texturesimages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Textures/Images
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bindings-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bindings Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bindings Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#serialization" class="md-nav__link">
+  <a href="#why-new-bindings-why-not-use-imguinet-or-hexanetimgui" class="md-nav__link">
     <span class="md-ellipsis">
-      Serialization
+      Why new bindings? Why not use ImGuiNet or Hexa.NET.ImGui?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      C Bindings
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deserialization" class="md-nav__link">
+  <a href="#c-bindings_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Deserialization
+      C# Bindings
     </span>
   </a>
   
@@ -1892,7 +1964,7 @@
 
 
   
-    <a href="https://github.com/Nenkai/ffxvi-modding/edit/master/docs/resources/other/save_files.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Nenkai/ffxvi-modding/edit/master/docs/modding/framework/imgui_api.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1900,28 +1972,141 @@
   
 
 
-<h1 id="save-files"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9H5V5h10m-3 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3m5-16H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7z"/></svg></span> Save Files<a class="headerlink" href="#save-files" title="Permanent link">&para;</a></h1>
-<p>Saves are saved as binary, no steam id check, encrypted &amp; hash checked.</p>
+<h1 id="imgui-overlay-api"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 8h4V4h12v12h-4v4H4zm12 0v6h2V6h-8v2zM6 12v6h8v-6z"/></svg></span> ImGui Overlay API<a class="headerlink" href="#imgui-overlay-api" title="Permanent link">&para;</a></h1>
+<p>The framework exposes a ImGui overlay for use by other mods. </p>
+<p>While ImGui is pretty straightforward to use, here are some guides to get started:</p>
 <ul>
-<li><a href="https://github.com/Nenkai/FF16Tools">FF16Tools</a> can unpack and repack them.</li>
-<li><a href="https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Save">FF16Tools.Files</a> - relevant library code.</li>
-<li><a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FaithSaveFile_Sub.bt">010 Editor Template</a></li>
+<li><a href="https://pthom.github.io/imgui_manual_online/manual/imgui_manual.html">Interactive Manual/API Reference</a></li>
 </ul>
-<h2 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">&para;</a></h2>
-<p>It is possible to serialize/deserialize saves as XML. Simply hook the following signature and change <code>asXml</code> to true. The XML will be within the png file, after unpack.</p>
-<p>Signature (ffxvi.exe, steam, 1.0.1):</p>
-<h3 id="serialization">Serialization<a class="headerlink" href="#serialization" title="Permanent link">&para;</a></h3>
+<h3 id="quick-guide">Quick Guide<a class="headerlink" href="#quick-guide" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Grab <code>IImGuiSupport</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">_imGuiSupport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetController</span><span class="o">&lt;</span><span class="n">IImGuiSupport</span><span class="o">&gt;</span><span class="p">();</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">_imGuiSupport</span><span class="p">.</span><span class="n">TryGetTarget</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">IImGuiSupport</span><span class="w"> </span><span class="n">imGuiSupport</span><span class="p">))</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">_logger</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;[{_modConfig.ModId}] Could not get IImGuiSupport.&quot;</span><span class="p">);</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Inherit from <code>IImGuiComponent</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyImGuiComponent</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IImGuiComponent</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="c1">// If this is enabled, this will also render while the ImGui overlay is currently hidden</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">IsOverlay</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RenderMenu</span><span class="p">(</span><span class="n">IImGui</span><span class="w"> </span><span class="n">imgui</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="c1">// Write code to render menu entries here.</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="c1">// By default, FF16Framework will render a top menu bar which you can add elements to.</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imgui</span><span class="p">.</span><span class="n">BeginMenu</span><span class="p">(</span><span class="s">&quot;MyModName&quot;</span><span class="p">))</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">&quot;Menu Item 1&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">&quot;Menu Item 2&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">&quot;Menu Item 3&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">EndMenu</span><span class="p">();</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiSupport</span><span class="w"> </span><span class="n">imguiSupport</span><span class="p">,</span><span class="w"> </span><span class="n">IImGui</span><span class="w"> </span><span class="n">imgui</span><span class="p">)</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="c1">// Insert code to render anything here.</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imgui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;my_window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">_windowOpen</span><span class="p">,</span><span class="w"> </span><span class="n">ImGuiWindowFlags</span><span class="p">.</span><span class="n">ImGuiWindowFlags_None</span><span class="p">))</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">        </span><span class="n">imgui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Register your component to the ImGui system:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// category is the top menu entry which this component will render menu items to.</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// name is only used for sorting purposes.</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// If your component needs to render a menu, it should always render a sub-group, for clarity.</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// Example:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">// Tools</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">// -&gt; MyModName &lt;- This is where RenderMenu starts.</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">//   -&gt; Menu Item 1</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">//   -&gt; Menu Item 2</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">//   -&gt; Menu Item 3</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">imguiSupport</span><span class="p">.</span><span class="n">AddComponent</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PhotoModeMenu</span><span class="p">(),</span><span class="w"> </span><span class="n">category</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Tools&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MyModName&quot;</span><span class="p">);</span>
+</code></pre></div></p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The user may choose to not load ImGui based on the framework settings. If you are running logic that needs to run depending on the overlay, ensure to check that <code>ImGuiSupport.IsOverlayLoaded</code> is <code>true</code>.</p>
+</div>
+<p>That's all you should needed to render something on screen.</p>
+<h3 id="texturesimages"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> Textures/Images<a class="headerlink" href="#texturesimages" title="Permanent link">&para;</a></h3>
+<p>If you need to render textures, you should:</p>
 <ul>
-<li><code>sub_140796D58 - SerializeSave(__int64 a1, __int64 a2, __int64 a3, char* fileName, bool asXml)</code> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 48 89 91
+<li>Grab a <code>IImGuiTextureManager</code> instance</li>
+<li>Pass it to your component. On <code>Render</code>, load the texture using <code>IImGuiTextureManager.LoadImage</code>. Make sure to only do this once and not every frame!</li>
+<li>Pass the newly added image's <code>TexId</code> to <code>IImGui.Image</code>, etc.</li>
+<li>Make sure to dispose of these textures when you don't need to use them anymore (closing window, etc).</li>
+</ul>
+<h2 id="bindings-details"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.78 15.3 6 6 2.11-2.16-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11 7.41-7.4L8.5 9.96l-.72.7-1.45-1.41v2.86l-.7.7-3.52-3.56.7-.7h2.81l-1.4-1.41 3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4-.71.71 1.79 1.78 1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5 2.67-2.67c.28.47.42.97.42 1.6 0 1.92-1.55 3.47-3.5 3.47"/></svg></span> Bindings Details<a class="headerlink" href="#bindings-details" title="Permanent link">&para;</a></h2>
+<p>The ImGui bindings have been built using a fork of <a href="https://github.com/Nenkai/dear_bindings">dear-bindings</a> with the following configuration:</p>
+<ul>
+<li>Built with Freetype (and PlutoSVG for svg font/emoji support)</li>
+<li>DX9/11/12 backend support</li>
+<li>Compiled as Release, with asserts enabled</li>
+</ul>
+<p>The bindings have been generated using <a href="https://github.com/Nenkai/FF16Framework/tree/imgui/ImGuiInterfaceGenerator">ImGuiInterfaceGenerator</a>, which works by massaging the output of <a href="https://github.com/dotnet/ClangSharp">ClangSharpPInvokeGenerator</a> into an interface (for Reloaded and mods), and the implementation/actual bindings for the framework.</p>
+<h3 id="why-new-bindings-why-not-use-imguinet-or-hexanetimgui">Why new bindings? Why not use <a href="https://github.com/ImGuiNET/ImGui.NET">ImGuiNet</a> or <a href="https://github.com/HexaEngine/Hexa.NET.ImGui">Hexa.NET.ImGui</a>?<a class="headerlink" href="#why-new-bindings-why-not-use-imguinet-or-hexanetimgui" title="Permanent link">&para;</a></h3>
+<p>The goal was to expose ImGui to other mods. That implies using Reloaded-II's <a href="https://reloaded-project.github.io/Reloaded-II/DependencyInjection_Publisher/">IExports</a> in order to export ImGui itself which meant interfacing nearly the entirety of it. The final output consists of really three files:</p>
+<ul>
+<li><code>IImGui.cs</code>, which is what is exported through Reloaded-II</li>
+<li><code>ImGui.cs</code>, which is the implementation for the interface that sits with the framework</li>
+<li><code>ImGuiMethods.cs</code>, which holds all the native structs and methods used for interop between the framework and ImGui.</li>
+</ul>
+<p>On top of this, updating ImGui without breakage would be severely compromised without interfacing; structures would break across breaking changes from upstream ImGui.</p>
+<p>What was also considered is:</p>
+<ul>
+<li>Allowing mods to use their own ImGui instance: but judged as too much hassle and possibly too performance consuming.</li>
+<li>Provide a custom api for some interface handling, but ultimately too limiting for mod makers</li>
+</ul>
+<p>The current way is not without its flaws, but it should be reasonably feasible to fill interfaces (and provide polyfills if needed) if ImGui is updated in the future. It does require bindings to be diffed and may still be a lot of work though.</p>
+<hr />
+<h2 id="building">Building<a class="headerlink" href="#building" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You only need this if you intend to maintain the bindings.</p>
+</div>
+<h3 id="c-bindings">C Bindings<a class="headerlink" href="#c-bindings" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Clone <code>imgui</code> to own folder, specific tag.</li>
+<li>Clone dear-bindings to own folder, NEXT TO imgui. Important!</li>
+<li>Install python/requirements for dear-bindings</li>
+<li>Run <code>BuildAllBindings.bat</code></li>
+<li>Edit examples/ImGuiLib</li>
+<li>Install vcpkg, ImGuiLib properties &gt; vcpkg -&gt; Use Vcpkg Manifest should be on Yes</li>
+<li>When compiling with Win32, Add a source file to the source folder. It should have:</li>
+<li>(Hack) remove extern in <code>dcimgui_impl_win32.h</code> such that it looks like this:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">CIMGUI_IMPL_API</span><span class="w"> </span><span class="n">LRESULT</span><span class="w"> </span><span class="n">cImGui_ImplWin32_WndProcHandler</span><span class="p">(</span><span class="n">HWND</span><span class="w"> </span><span class="n">hWnd</span><span class="p">,</span><span class="w"> </span><span class="n">UINT</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">WPARAM</span><span class="w"> </span><span class="n">wParam</span><span class="p">,</span><span class="w"> </span><span class="n">LPARAM</span><span class="w"> </span><span class="n">lParam</span><span class="p">);</span>
 </code></pre></div></li>
-</ul>
-<h3 id="deserialization">Deserialization<a class="headerlink" href="#deserialization" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>sub_140796C94 - DeserializeSave(__int64 a1, __int64 a2, char* fileName, bool asXml, __int64 a5)</code> 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>48 89 5C 24 ? 55 56 57 48 81 EC ? ? ? ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 84 24 ? ? ? ? 48 8B AC 24
-</code></pre></div></li>
-</ul>
+<li>Compile.</li>
+</ol>
+<h3 id="c-bindings_1">C# Bindings<a class="headerlink" href="#c-bindings_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Install ClangSharpPInvokeGenerator with <code>dotnet tool install --global ClangSharpPInvokeGenerator --version 20.1.2</code></li>
+<li>
+<p>Run <code>generate_dotnet_bindings.bat</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may also need to add <code>#include &lt;Windows.h&gt;</code> above <code>CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);</code>     temporarily in <code>dcimgui_impl_win32.h</code></p>
+<p>And <code>#include &lt;d3d11.h&gt;</code> to <code>dcimgui_impl_dx11.h</code> so that the bindings generation works.</p>
+</div>
+</li>
+</ol>
+<p>You may also need to adjust hardcoded paths I left in for plutosvg because I couldn't get Visual Studio/vcpkg to detect plutosvg as it should.</p>
 
 
 
@@ -1962,7 +2147,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../loading_unpacked/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loading Unpacked">
+          <a href="../../mod_loader_api/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mod Loader API">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1972,20 +2157,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Loading Unpacked
+                Mod Loader API
               </div>
             </div>
           </a>
         
         
           
-          <a href="../text_formatting/" class="md-footer__link md-footer__link--next" aria-label="Next: Text Formatting">
+          <a href="../nex_api/" class="md-footer__link md-footer__link--next" aria-label="Next: Nex API">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Text Formatting
+                Nex API
               </div>
             </div>
             <div class="md-footer__button md-icon">
