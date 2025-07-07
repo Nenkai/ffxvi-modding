@@ -85,7 +85,9 @@ If you need to render textures, you should:
 * Pass the newly added image's `TexId` to `IImGui.Image`, etc.
 * Make sure to dispose of these textures when you don't need to use them anymore (closing window, etc).
 
-## :material-hammer-wrench: Bindings Details
+---
+
+## :material-information-slab-box: Bindings Details
 
 The ImGui bindings have been built using a fork of [dear-bindings](https://github.com/Nenkai/dear_bindings) with the following configuration:
 
@@ -114,7 +116,7 @@ The current way is not without its flaws, but it should be reasonably feasible t
 
 ---
 
-## Building
+## :material-hammer-wrench: Building Bindings
 
 !!! note
     You only need this if you intend to maintain the bindings.
