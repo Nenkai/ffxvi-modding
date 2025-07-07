@@ -2014,7 +2014,7 @@
 <a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiSupport</span><span class="w"> </span><span class="n">imguiSupport</span><span class="p">,</span><span class="w"> </span><span class="n">IImGui</span><span class="w"> </span><span class="n">imgui</span><span class="p">)</span>
 <a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="p">{</span>
 <a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="c1">// Insert code to render anything here.</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imgui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;my_window&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">_windowOpen</span><span class="p">,</span><span class="w"> </span><span class="n">ImGuiWindowFlags</span><span class="p">.</span><span class="n">ImGuiWindowFlags_None</span><span class="p">))</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imgui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">&quot;MyWindow&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">_windowOpen</span><span class="p">,</span><span class="w"> </span><span class="n">ImGuiWindowFlags</span><span class="p">.</span><span class="n">ImGuiWindowFlags_None</span><span class="p">))</span>
 <a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">        </span><span class="p">{</span>
 <a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
 <a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">        </span><span class="p">}</span>
@@ -2044,6 +2044,9 @@
 <p>The user may choose to not load ImGui based on the framework settings. If you are running logic that needs to run depending on the overlay, ensure to check that <code>ImGuiSupport.IsOverlayLoaded</code> is <code>true</code>.</p>
 </div>
 <p>That's all you should needed to render something on screen.</p>
+<figure>
+<p><a class="glightbox" href="../imgui_api_menu.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../imgui_api_menu.jpg" width="600" /></a></p>
+</figure>
 <h3 id="texturesimages"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/></svg></span> Textures/Images<a class="headerlink" href="#texturesimages" title="Permanent link">&para;</a></h3>
 <p>If you need to render textures, you should:</p>
 <ul>
