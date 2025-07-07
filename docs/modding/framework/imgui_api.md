@@ -46,7 +46,7 @@ public class MyImGuiComponent : IImGuiComponent
     public void Render(IImGuiSupport imguiSupport, IImGui imgui)
     {
         // Insert code to render anything here.
-        if (imgui.Begin("my_window", ref _windowOpen, ImGuiWindowFlags.ImGuiWindowFlags_None))
+        if (imgui.Begin("MyWindow", ref _windowOpen, ImGuiWindowFlags.ImGuiWindowFlags_None))
         {
             imgui.Text("Hello World!");
         }
@@ -75,6 +75,10 @@ imguiSupport.AddComponent(new PhotoModeMenu(), category: "Tools", name: "MyModNa
     The user may choose to not load ImGui based on the framework settings. If you are running logic that needs to run depending on the overlay, ensure to check that `ImGuiSupport.IsOverlayLoaded` is `true`.
 
 That's all you should needed to render something on screen.
+
+<figure markdown>
+  ![Image title](imgui_api_menu.jpg){ width="600" }
+</figure>
 
 ### :material-image: Textures/Images
 
