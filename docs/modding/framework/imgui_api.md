@@ -2,6 +2,10 @@
 icon: material/window-restore
 ---
 
+!!! warning
+
+    This hasn't been released yet sadly. FF16Framework's ImGui hook has hit a roadblock where it crashes with Frame Gen & other overlays. [Please contribute if you think you can solve it](https://github.com/Nenkai/FF16Framework/tree/imgui).
+
 # :material-window-restore: ImGui Overlay API
 
 The framework exposes a ImGui overlay for use by other mods. 
