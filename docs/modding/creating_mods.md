@@ -9,7 +9,7 @@ icon: material/folder-plus
 Once you have modded assets you'd like to mod into the game:
 
 1. First, follow the [Reloaded II Creating Mods tutorial](https://reloaded-project.github.io/Reloaded-II/CreatingMods/) for general information about creating a mod for Reloaded-II.
-2. Set the `FINAL FANTASY XVI Mod Loader as a dependency`. Reloaded-II will prompt you to set mod dependencies when creating the mod.
+2. Set the `FINAL FANTASY XVI Mod Loader` as a dependency. Reloaded-II will prompt you to set mod dependencies when creating the mod.
 3. Your mod's assets must be contained within the `FFXVI/data` folder. Example:
 
 !!! example "Example (Mod Loader >= 1.1.0)"

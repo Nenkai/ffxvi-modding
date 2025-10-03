@@ -67,6 +67,10 @@ nav:
       - ImGui API: modding/framework/imgui_api.md
       - Nex API: modding/framework/nex_api.md
 
+    - FFT - The Ivalice Chronicles:
+      - Installing Mods: modding/installing_mods_fft.md
+      - Creating Mods: modding/creating_mods_fft.md
+
   - Modder Resources:
     - Asset Paths: resources/asset_paths.md
     
