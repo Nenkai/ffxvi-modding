@@ -57,4 +57,4 @@ To remove mods, you can either:
 
 ## Final Fantasy Hacktics Discord
 
-For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/xpXa8VEV2k).
+For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/DCRyr9DYFT).
