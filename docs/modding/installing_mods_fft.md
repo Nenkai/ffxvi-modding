@@ -30,6 +30,8 @@ If you are familiar with FFXVI Modding, the process is roughly the same, otherwi
     !!! warning
         **You should also register the classic version otherwise switching between modes may not work. The executable name is `FFT_classic.exe`**. You should also rename the application names (in Edit Application) for both to make sure to distinguish them. (They are technically different games, so this setup is required)
 
+        You should always start the Enhanced version from Reloaded-II as the Classic version always expect command line arguments for game settings.
+
 5. Drag & Drop `fftivc.utility.modloader.7z` to Reloaded-II. You may need to restart Reloaded-II to be able to drag-drop (as Windows disallows drag-drop on elevated processes).
 6. In Reloaded-II make sure to tick on the checkbox next to `FINAL FANTASY TACTICS - The Ivalice Chronicles Mod Loader` to enable it.
 7. Launch the game through Reloaded-II using 'Launch Application'.
