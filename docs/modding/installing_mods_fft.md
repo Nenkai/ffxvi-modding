@@ -54,3 +54,7 @@ To remove mods, you can either:
 
 * Disable all mods in Reloaded-II **except** the Mod Loader.
 * Delete any `modded` .pac files in the game's `data/` folders.
+
+## Final Fantasy Hacktics Discord
+
+For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/xpXa8VEV2k).

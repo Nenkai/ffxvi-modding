@@ -44,3 +44,7 @@ Once you have modded assets you'd like to mod into the game:
     :material-download: A sample mod can be found [here](https://github.com/Nenkai/fftivc.utility.modloader/releases/download/1.0.0/fftivc.test.samplemod.zip). This does various test changes to the title menus for both versions.
 
 If you have successfully gotten your mod to work, congratulations!
+
+## Final Fantasy Hacktics Discord
+
+For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/xpXa8VEV2k).
