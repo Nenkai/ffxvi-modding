@@ -4,7 +4,9 @@ icon: material/folder-download
 
 # FINAL FANTASY TACTICS Mod Manager
 
-The Reloaded II mod manager combined with the FINAL FANTASY TACTICS Mod Loader is the primary way to manage mods for FFT. (If you are familiar with FFXVI Modding, the process is roughly the same.) 
+The Reloaded II mod manager combined with the FINAL FANTASY TACTICS Mod Loader is the primary way to manage mods for FFT. 
+
+If you are familiar with FFXVI Modding, the process is roughly the same, otherwise, you can get started here.
 
 ---
 
