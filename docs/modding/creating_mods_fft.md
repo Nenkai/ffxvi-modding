@@ -22,13 +22,14 @@ Once you have modded assets you'd like to mod into the game:
      .
      ├─ fftivc.<category>.<mymodname>/
      │  └─ FFTIVC/
-     │     ├─ enhanced/ # (1)!
-     │     │   ├─ nxd/ui.en.nxd
-     │     │   ├─ ui/ffto/title/texture/ui_title_top_bg_uitx.tex
-     │     │   ...
-     │     │
-     │     ├─ classic/ # (2)! Classic Version.
-     │     └─ combined/ # (3)!
+     │     └─ data
+     │        ├─ enhanced/ # (1)!
+     │        │   ├─ nxd/ui.en.nxd
+     │        │   ├─ ui/ffto/title/texture/ui_title_top_bg_uitx.tex
+     │        │   ...
+     │        │
+     │        ├─ classic/ # (2)! Classic Version.
+     │        └─ combined/ # (3)!
      │
      ├─ ModConfig.json
      └─ ...
