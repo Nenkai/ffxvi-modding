@@ -6,6 +6,8 @@ icon: material/folder-plus
 
 ## Creating Mods for the FFTIVC Mod Loader
 
+First, extract the game files using FF16Tools. Refer to [this page](https://ffhacktics.com/wiki/FFT/TIC/PAC_Files) for more information about files.
+
 Once you have modded assets you'd like to mod into the game:
 
 1. First, follow the [Reloaded II Creating Mods tutorial](https://reloaded-project.github.io/Reloaded-II/CreatingMods/) for general information about creating a mod for Reloaded-II.
@@ -31,11 +33,11 @@ Once you have modded assets you'd like to mod into the game:
      ├─ ModConfig.json
      └─ ...
      ```
-    
+
     1.  Files in this folder will apply to the Enhanced Version.
-    
+
     2.  Files in this folder will apply to the Classic Version.
-    
+
     3.  Files in this folder will go in both enhanced and classic.
 
 !!! info "Template/Sample Mod"
