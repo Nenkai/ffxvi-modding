@@ -61,6 +61,8 @@ Use [this tool](https://ffhacktics.com/smf/index.php?topic=13375.0) to extract `
 
 Once edited, files belong to `system/ffto/g2d/tex_<fileIndex>.bin`.
 
+You can also use `system/ffto/g2d.<en/jp>` in the case of locale g2ds in classic, though it does not seem that classic uses it at all.
+
 ## Final Fantasy Hacktics Discord
 
 For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/DCRyr9DYFT).
