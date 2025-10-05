@@ -26,10 +26,11 @@ Once you have modded assets you'd like to mod into the game:
      │        ├─ enhanced/ # (1)!
      │        │   ├─ nxd/ui.en.nxd
      │        │   ├─ ui/ffto/title/texture/ui_title_top_bg_uitx.tex
+     │        │   ├─ system/ffto/g2d/tex_<fileIndex>.bin # (2)!
      │        │   ...
      │        │
-     │        ├─ classic/ # (2)! Classic Version.
-     │        └─ combined/ # (3)!
+     │        ├─ classic/ # (3)!
+     │        └─ combined/ # (4)!
      │
      ├─ ModConfig.json
      └─ ...
@@ -37,14 +38,28 @@ Once you have modded assets you'd like to mod into the game:
 
     1.  Files in this folder will apply to the Enhanced Version.
 
-    2.  Files in this folder will apply to the Classic Version.
+    2. Overrides a certain file in `g2d.dat`. 
+    
+        **Must follow the `tex_<fileIndex>.bin` scheme.**
+    
+        The `.bin` extension is not a requirement and can be anything else.
 
-    3.  Files in this folder will go in both enhanced and classic.
+        More info in another section below.
+
+    3.  Files in this folder will apply to the Classic Version.
+
+    4.  Files in this folder will go in both enhanced and classic.
 
 !!! info "Template/Sample Mod"
     :material-download: A sample mod can be found [here](https://github.com/Nenkai/fftivc.utility.modloader/releases/download/1.0.0/fftivc.test.samplemod.zip). This does various test changes to the title menus for both versions.
 
 If you have successfully gotten your mod to work, congratulations!
+
+## G2D.dat Texture Modding
+
+Use [this tool](https://ffhacktics.com/smf/index.php?topic=13375.0) to extract `g2d.dat`.
+
+Once edited, files belong to `system/ffto/g2d/tex_<fileIndex>.bin`.
 
 ## Final Fantasy Hacktics Discord
 
