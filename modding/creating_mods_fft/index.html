@@ -803,6 +803,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#g2ddat-texture-modding" class="md-nav__link">
+    <span class="md-ellipsis">
+      G2D.dat Texture Modding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#final-fantasy-hacktics-discord" class="md-nav__link">
     <span class="md-ellipsis">
       Final Fantasy Hacktics Discord
@@ -1928,6 +1937,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#g2ddat-texture-modding" class="md-nav__link">
+    <span class="md-ellipsis">
+      G2D.dat Texture Modding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#final-fantasy-hacktics-discord" class="md-nav__link">
     <span class="md-ellipsis">
       Final Fantasy Hacktics Discord
@@ -1980,17 +1998,24 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│<span class="w">        </span>├─<span class="w"> </span>enhanced/<span class="w"> </span><span class="c1"># (1)!</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│<span class="w">        </span>│<span class="w">   </span>├─<span class="w"> </span>nxd/ui.en.nxd
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│<span class="w">        </span>│<span class="w">   </span>├─<span class="w"> </span>ui/ffto/title/texture/ui_title_top_bg_uitx.tex
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│<span class="w">        </span>│<span class="w">   </span>...
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│<span class="w">        </span>│
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│<span class="w">        </span>├─<span class="w"> </span>classic/<span class="w"> </span><span class="c1"># (2)! Classic Version.</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│<span class="w">        </span>└─<span class="w"> </span>combined/<span class="w"> </span><span class="c1"># (3)!</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├─<span class="w"> </span>ModConfig.json
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>└─<span class="w"> </span>...
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│<span class="w">        </span>│<span class="w">   </span>├─<span class="w"> </span>system/ffto/g2d/tex_&lt;fileIndex&gt;.bin<span class="w"> </span><span class="c1"># (2)!</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│<span class="w">        </span>│<span class="w">   </span>...
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│<span class="w">        </span>│
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│<span class="w">        </span>├─<span class="w"> </span>classic/<span class="w"> </span><span class="c1"># (3)!</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│<span class="w">        </span>└─<span class="w"> </span>combined/<span class="w"> </span><span class="c1"># (4)!</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>├─<span class="w"> </span>ModConfig.json
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>└─<span class="w"> </span>...
 </code></pre></div><p></p>
 <ol>
 <li>
 <p>Files in this folder will apply to the Enhanced Version.</p>
+</li>
+<li>
+<p>Overrides a certain file in <code>g2d.dat</code>. </p>
+<p><strong>Must follow the <code>tex_&lt;fileIndex&gt;.bin</code> scheme.</strong></p>
+<p>The <code>.bin</code> extension is not a requirement and can be anything else.</p>
+<p>More info in another section below.</p>
 </li>
 <li>
 <p>Files in this folder will apply to the Classic Version.</p>
@@ -2005,6 +2030,9 @@
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"></path></svg></span> A sample mod can be found <a href="https://github.com/Nenkai/fftivc.utility.modloader/releases/download/1.0.0/fftivc.test.samplemod.zip">here</a>. This does various test changes to the title menus for both versions.</p>
 </div>
 <p>If you have successfully gotten your mod to work, congratulations!</p>
+<h2 id="g2ddat-texture-modding">G2D.dat Texture Modding<a class="headerlink" href="#g2ddat-texture-modding" title="Permanent link">¶</a></h2>
+<p>Use <a href="https://ffhacktics.com/smf/index.php?topic=13375.0">this tool</a> to extract <code>g2d.dat</code>.</p>
+<p>Once edited, files belong to <code>system/ffto/g2d/tex_&lt;fileIndex&gt;.bin</code>.</p>
 <h2 id="final-fantasy-hacktics-discord">Final Fantasy Hacktics Discord<a class="headerlink" href="#final-fantasy-hacktics-discord" title="Permanent link">¶</a></h2>
 <p>For more tactics related modding, refer to the Final Fantasy Hacktics Community <a href="https://ffhacktics.com/">website</a> and <a href="https://discord.gg/DCRyr9DYFT">discord</a>.</p>
 
