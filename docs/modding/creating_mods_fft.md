@@ -125,12 +125,28 @@ The mod loader should function correctly across game updates. When it comes to m
 
 ---
 
+### :material-file-move: File Access Logging
+
+The mod loader offers an option to display files that the game loads (actual files, g2d files and fftpack). Right click the loader in Reloaded-II and hit Configure.
+
+---
+
+### :material-bug-check: Anti-Anti-Debug
+
+The mod loader disarms the primitive [anti-debugging](../resources/other/debugging.md) that the game uses.
+
+---
+
 ### :material-api: Modding API
 
 A [modding API](mod_loader_api_fft.md) is exposed.
 
 ---
 
+## Publishing Mods & Guidelines
+
+[Nexus Mods](https://www.nexusmods.com/games/finalfantasytacticstheivalicechronicles/) is the primary website to publish mods.
+
 ## :simple-discord: Final Fantasy Hacktics Discord
 
-For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/DCRyr9DYFT).
+For more tactics related modding & guidance, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/DCRyr9DYFT).
