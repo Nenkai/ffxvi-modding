@@ -836,6 +836,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod-file-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mod File Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Frameworks
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1961,6 +2003,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod-file-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mod File Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Frameworks
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2001,6 +2085,8 @@
 </ol>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">¶</a></h2>
 <p>Refer to the <a href="https://reloaded-project.github.io/Reloaded-II/DependencyInjection_Consumer/">Dependencies Consumption documentation</a> to understand the concept behind shared libraries.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">¶</a></h2>
+<h3 id="mod-file-management">Mod File Management<a class="headerlink" href="#mod-file-management" title="Permanent link">¶</a></h3>
 <p>In your mod's constructor, grab a reference to <code>IFFTOModPackManager</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Fetch IFFTOModPackManager to add files</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetController</span><span class="o">&lt;</span><span class="n">IFFTOModPackManager</span><span class="o">&gt;</span><span class="p">()</span><span class="o">?.</span><span class="n">TryGetTarget</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">IFFTOModPackManager</span><span class="w"> </span><span class="n">modPackManager</span><span class="o">!</span><span class="p">))</span>
@@ -2019,6 +2105,29 @@
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
 </code></pre></div>
 <p>Changes will be applied to pack files once the mod loader has loaded all other mods, including yours.</p>
+<hr>
+<h3 id="table-management"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.7 13.35-1 1-2.05-2.05 1-1c.21-.22.56-.22.77 0l1.28 1.28c.22.21.22.56 0 .77M12 18.94l6.07-6.06 2.05 2.05L14.06 21H12zM4 2h14a2 2 0 0 1 2 2v4.17L16.17 12H12v4.17L10.17 18H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 4v4h6V6zm8 0v4h6V6zm-8 6v4h6v-4z"></path></svg></span>  Table Management<a class="headerlink" href="#table-management" title="Permanent link">¶</a></h3>
+<p>Used to alter hardcoded tables through an interface, which is intended to be used for greater compatibility between mods (rather than a single code mod doing memory patches)</p>
+<p>Controllers:</p>
+<ul>
+<li><code>IFFTOAbilityDataManager</code></li>
+<li><code>IFFTOItemDataManager</code></li>
+<li><code>IFFTOJobCommandDataManager</code></li>
+</ul>
+<p>Example TODO.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Not all hardcoded tables are currently supported, but the mod loader can be extended to support more. <a href="https://github.com/Nenkai/fftivc.utility.modloader">Feel free to contribute!</a></p>
+</div>
+<hr>
+<h2 id="other-frameworks">Other Frameworks<a class="headerlink" href="#other-frameworks" title="Permanent link">¶</a></h2>
+<ul>
+<li><a href="https://www.nexusmods.com/finalfantasy16/mods/138">FaithFramework</a> (<a href="https://github.com/Nenkai/FaithFramework">Github</a>), for:<ul>
+<li><a href="../framework/nex_api/">Editing Nex Tables at Runtime</a></li>
+<li><a href="../framework/imgui_api/">ImGui Interface overlay for Mods</a> (currently broken with overlays, please contribute!)</li>
+</ul>
+</li>
+</ul>
 
 
 
