@@ -22,6 +22,10 @@ This API can be leveraged to create file mods through your own C# code.
 
 Refer to the [Dependencies Consumption documentation](https://reloaded-project.github.io/Reloaded-II/DependencyInjection_Consumer/) to understand the concept behind shared libraries.
 
+## Features
+
+### Mod File Management
+
 In your mod's constructor, grab a reference to `IFFTOModPackManager`:
 
 ```csharp
@@ -43,3 +47,30 @@ if (modPackManager.RemoveModdedFile(FFTOGameMode.<GameType>, "path to file"))
 ```
 
 Changes will be applied to pack files once the mod loader has loaded all other mods, including yours.
+
+---
+
+### :material-table-edit:  Table Management
+
+Used to alter hardcoded tables through an interface, which is intended to be used for greater compatibility between mods (rather than a single code mod doing memory patches)
+
+Controllers:
+
+* `IFFTOAbilityDataManager`
+* `IFFTOItemDataManager`
+* `IFFTOJobCommandDataManager`
+
+Example TODO.
+
+!!! tip 
+    
+    Not all hardcoded tables are currently supported, but the mod loader can be extended to support more. [Feel free to contribute!](https://github.com/Nenkai/fftivc.utility.modloader)
+
+---
+
+## Other Frameworks
+
+* [FaithFramework](https://www.nexusmods.com/finalfantasy16/mods/138) ([Github](https://github.com/Nenkai/FaithFramework)), for:
+    * [Editing Nex Tables at Runtime](framework/nex_api.md)
+    * [ImGui Interface overlay for Mods](framework/imgui_api.md) (currently broken with overlays, please contribute!)
+
