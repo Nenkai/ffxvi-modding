@@ -22,16 +22,21 @@ Once you have modded assets you'd like to mod into the game:
      .
      ├─ fftivc.<category>.<mymodname>/
      │  └─ FFTIVC/
-     │     └─ data
-     │        ├─ enhanced/ # (1)!
-     │        │   ├─ fftpack/... # (2)!
-     │        │   ├─ nxd/ui.en.nxd
-     │        │   ├─ system/ffto/g2d/tex_<fileIndex>.bin # (3)!
-     │        │   ├─ ui/ffto/title/texture/ui_title_top_bg_uitx.tex
-     │        │   ...
-     │        │
-     │        ├─ classic/ # (4)!
-     │        └─ combined/ # (5)!
+     │     ├─ data/
+     │     │  ├─ enhanced/ # (1)!
+     │     │  │   ├─ fftpack/... # (2)!
+     │     │  │   ├─ nxd/ui.en.nxd
+     │     │  │   ├─ system/ffto/g2d/tex_<fileIndex>.bin # (3)!
+     │     │  │   ├─ ui/ffto/title/texture/ui_title_top_bg_uitx.tex
+     │     │  │   ...
+     │     │  │
+     │     │  ├─ classic/ # (4)!
+     │     │  └─ combined/ # (5)!
+     │     │
+     │     └─ tables/ # (6)!
+     │        └─ enhanced/ 
+     │            ├─ AbilityData.xml
+     │            ...
      │
      ├─ ModConfig.json
      └─ ...
@@ -53,12 +58,14 @@ Once you have modded assets you'd like to mod into the game:
 
     5.  Files in this folder will go in both enhanced and classic.
 
+    6. Refer to the [Hardcoded Table Editing](#material-table-edit-hardcoded-table-editing) section.
+
 !!! info "Template/Sample Mod"
     :material-download: A sample mod can be found [here](https://github.com/Nenkai/fftivc.utility.modloader/releases/download/1.0.0/fftivc.test.samplemod.zip). This does various test changes to the title menus for both versions.
 
 If you have successfully gotten your mod to work, congratulations!
 
-## G2D (Graphics2D) Texture Modding
+## :material-image-edit: G2D (Graphics2D) Texture Modding
 
 Use [this tool](https://ffhacktics.com/smf/index.php?topic=13375.0) to extract `g2d.dat`.
 
@@ -66,7 +73,7 @@ Once edited, files belong to `system/ffto/g2d/tex_<fileIndex>.bin`.
 
 You can also use `system/ffto/g2d.<en/jp>` in the case of locale g2ds in classic, though it does not seem that classic uses it at all.
 
-## FFTPack modding
+## :material-package-variant-plus: FFTPack modding
 
 **NOTE: Requires loader version 1.2.0 or later**.
 
@@ -80,6 +87,31 @@ The loader allows bypassing this behavior so that a file inserted in `fftpack/` 
 
 ---
 
-## Final Fantasy Hacktics Discord
+## :material-table-edit: Hardcoded Table Editing
+
+**NOTE: Requires loader version 1.3.0 or later**.
+
+Some core game tables that are located and hardcoded in the executable can be edited using certain files that the mod loader exposes.
+
+You can edit:
+* Abilities - `TableData/AbilityData.xml`
+* Items - `TableData/ItemData.xml`
+* JobCommands  (Skill Sets) - `TableData/JobCommandData.xml`
+
+Head to the mod loader's folder to find these files. Additional documentation is provided in these files within the XMLs themselves for how to use. Essentially, copy these files to your mod's `FFTIVC/tables/<enhanced/classic/combined>/` edit them, and only leave what you've edited.
+
+!!! tip 
+    
+    Not all hardcoded tables are currently supported, but the mod loader can be extended to support more. [Feel free to contribute!](https://github.com/Nenkai/fftivc.utility.modloader)
+
+## :material-file-excel-box: Nex Merging
+
+When editing Nex files (.nxd), the mod loader will keep track of the cells you've edited, and merge them with table changes made by other mods, then build the final table. This allows multiple mods to edit the same table with less conflicts.
+
+## :material-update: Game Updates
+
+The mod loader should function correctly across game updates. When it comes to mods, you should always check if the game updated a file that you previously touched, **otherwise your mod may be undoing legitimate changes**! If this is the case, reaaply your changes with the updated vanilla game files.
+
+## :simple-discord: Final Fantasy Hacktics Discord
 
 For more tactics related modding, refer to the Final Fantasy Hacktics Community [website](https://ffhacktics.com/) and [discord](https://discord.gg/DCRyr9DYFT).
