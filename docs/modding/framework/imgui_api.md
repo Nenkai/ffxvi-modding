@@ -4,7 +4,9 @@ icon: material/window-restore
 
 !!! warning
 
-    This hasn't been released yet sadly. FF16Framework's ImGui hook has hit a roadblock where it crashes with Frame Gen & other overlays. [Please contribute if you think you can solve it](https://github.com/Nenkai/FF16Framework/tree/imgui).
+    This hasn't been released yet sadly. FF16Framework's ImGui hook has hit a roadblock where it crashes with Frame Gen & other overlays that hijacks the DX12 swapchain. [Please contribute if you think you can solve it](https://github.com/Nenkai/FF16Framework/tree/imgui).
+
+    It may be wise to take inspiration from REFramework.
 
 # :material-window-restore: ImGui Overlay API
 
