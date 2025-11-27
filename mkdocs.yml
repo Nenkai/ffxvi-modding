@@ -113,6 +113,11 @@ nav:
 
     - Textures:
       - Extracting Textures: tutorials/textures/texture_extraction.md
+    
+    - Timelines:
+      - Introduction: tutorials/timelines/introduction.md
+      - Common Elements: tutorials/timelines/common_elements.md
+      - Character Timelines & Elements: tutorials/timelines/chara_timelines.md
 
 
       
