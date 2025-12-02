@@ -126,34 +126,49 @@ The current way is not without its flaws, but it should be reasonably feasible t
 
 ---
 
-## :material-hammer-wrench: Building Bindings
+## :material-hammer-wrench: Building Bindings/Interface
 
 !!! note
     You only need this if you intend to maintain the bindings.
 
-### C Bindings
+### Step 1: C Bindings
 
-1. Clone `imgui` to own folder, specific tag.
-2. Clone dear-bindings to own folder, NEXT TO imgui. Important!
+1. Clone [`imgui`](https://github.com/ocornut/imgui) to own folder. Then `git checkout` a specific tag, such as the latest **docking** tag i.e `v1.92.5-docking`
+2. Clone [dear-bindings](https://github.com/Nenkai/dear_bindings) (fork) to own folder, NEXT TO imgui. Important!
+    * You may need to rebase if you are updating bindings.
 3. Install python/requirements for dear-bindings
 4. Run `BuildAllBindings.bat`
-5. Edit examples/ImGuiLib
-6. Install vcpkg, ImGuiLib properties > vcpkg -> Use Vcpkg Manifest should be on Yes
-7. When compiling with Win32, Add a source file to the source folder. It should have:
-8. (Hack) remove extern in `dcimgui_impl_win32.h` such that it looks like this:
+5. Open `examples/Examples.sln`. The one project we will be editing is **ImGuiLib**.
+6. Install vcpkg. Nowadays Visual Studio has an install option for it, which may be default too.
+7. Enable vcpkg. Open `Developer Command Prompt for VS` with Administrator permissions, and run `vcpkg integrate install`.
+    * To be sure, ImGuiLib properties > vcpkg -> Use Vcpkg Manifest should be on Yes
+8. (Hack) remove `extern` for `cImGui_ImplWin32_WndProcHandler` in `dcimgui_impl_win32.h` such that it looks like this:
 ```cpp
 CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 ```
-9. Compile.
+9. Compile as Release (only ImGuiLib!). You should get `ImGuiLib.dll` and `ImGuiLib.pdb`.
 
-### C# Bindings
+!!! warning
+
+    You may also need to adjust hardcoded include paths I left in for plutosvg because I couldn't get Visual Studio/vcpkg to detect plutosvg as it should.
+
+### Step 2: C# Bindings
 
 1. Install ClangSharpPInvokeGenerator with `dotnet tool install --global ClangSharpPInvokeGenerator --version 20.1.2`
 2. Run `generate_dotnet_bindings.bat`.
 
     !!! note
-        You may also need to add `#include <Windows.h>` above `CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);`     temporarily in `dcimgui_impl_win32.h`
+        * You need to add `#include <Windows.h>` above `CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);`     temporarily in `dcimgui_impl_win32.h`
+        * And `#include <d3d11.h>` to `dcimgui_impl_dx11.h` so that the bindings generation works.
 
-        And `#include <d3d11.h>` to `dcimgui_impl_dx11.h` so that the bindings generation works.
+3. The `generated` folder will have `.cs` files with bindings once done.
 
-You may also need to adjust hardcoded paths I left in for plutosvg because I couldn't get Visual Studio/vcpkg to detect plutosvg as it should.
+### Step 3: ImGuiInterfaceGenerator
+
+The framework has a `ImGuiInterfaceGenerator` project. Compile and run it, the first argument to the folder should be the path to the `generated` folder.
+
+Once you run it, you will have `ImGui.cs`, `IImGui.cs` and `ImGuiMethods.cs` files in that project's `generated` folder. They will be in their distinct folders ready to copy to the actual framework folder.
+
+If you are updating bindings you may need to diff changes and provide polyfills if needed.
+
+Copy all the `.dll`+`.pdb` files created previously to `FF16Framework.Native.Binaries`. Update licenses if needed.
