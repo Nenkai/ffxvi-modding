@@ -757,22 +757,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-bindings" class="md-nav__link">
+  <a href="#building-bindingsinterface" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building Bindings
+        Building Bindings/Interface
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Building Bindings">
+    <nav class="md-nav" aria-label="Building Bindings/Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#c-bindings" class="md-nav__link">
+  <a href="#step-1-c-bindings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C Bindings
+        Step 1: C Bindings
       
     </span>
   </a>
@@ -780,10 +780,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-bindings_1" class="md-nav__link">
+  <a href="#step-2-c-bindings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C# Bindings
+        Step 2: C# Bindings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-imguiinterfacegenerator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: ImGuiInterfaceGenerator
       
     </span>
   </a>
@@ -2481,22 +2492,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-bindings" class="md-nav__link">
+  <a href="#building-bindingsinterface" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Building Bindings
+        Building Bindings/Interface
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Building Bindings">
+    <nav class="md-nav" aria-label="Building Bindings/Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#c-bindings" class="md-nav__link">
+  <a href="#step-1-c-bindings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C Bindings
+        Step 1: C Bindings
       
     </span>
   </a>
@@ -2504,10 +2515,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#c-bindings_1" class="md-nav__link">
+  <a href="#step-2-c-bindings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C# Bindings
+        Step 2: C# Bindings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-imguiinterfacegenerator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: ImGuiInterfaceGenerator
       
     </span>
   </a>
@@ -2656,38 +2678,57 @@
 </ul>
 <p>The current way is not without its flaws, but it should be reasonably feasible to fill interfaces (and provide polyfills if needed) if ImGui is updated in the future. It does require bindings to be diffed and may still be a lot of work though.</p>
 <hr>
-<h2 id="building-bindings"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.78 15.3 6 6 2.11-2.16-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11 7.41-7.4L8.5 9.96l-.72.7-1.45-1.41v2.86l-.7.7-3.52-3.56.7-.7h2.81l-1.4-1.41 3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4-.71.71 1.79 1.78 1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5 2.67-2.67c.28.47.42.97.42 1.6 0 1.92-1.55 3.47-3.5 3.47"></path></svg></span> Building Bindings<a class="headerlink" href="#building-bindings" title="Permanent link">¶</a></h2>
+<h2 id="building-bindingsinterface"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.78 15.3 6 6 2.11-2.16-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11 7.41-7.4L8.5 9.96l-.72.7-1.45-1.41v2.86l-.7.7-3.52-3.56.7-.7h2.81l-1.4-1.41 3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4-.71.71 1.79 1.78 1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5 2.67-2.67c.28.47.42.97.42 1.6 0 1.92-1.55 3.47-3.5 3.47"></path></svg></span> Building Bindings/Interface<a class="headerlink" href="#building-bindingsinterface" title="Permanent link">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You only need this if you intend to maintain the bindings.</p>
 </div>
-<h3 id="c-bindings">C Bindings<a class="headerlink" href="#c-bindings" title="Permanent link">¶</a></h3>
+<h3 id="step-1-c-bindings">Step 1: C Bindings<a class="headerlink" href="#step-1-c-bindings" title="Permanent link">¶</a></h3>
 <ol>
-<li>Clone <code>imgui</code> to own folder, specific tag.</li>
-<li>Clone dear-bindings to own folder, NEXT TO imgui. Important!</li>
+<li>Clone <a href="https://github.com/ocornut/imgui"><code>imgui</code></a> to own folder. Then <code>git checkout</code> a specific tag, such as the latest <strong>docking</strong> tag i.e <code>v1.92.5-docking</code></li>
+<li>Clone <a href="https://github.com/Nenkai/dear_bindings">dear-bindings</a> (fork) to own folder, NEXT TO imgui. Important!<ul>
+<li>You may need to rebase if you are updating bindings.</li>
+</ul>
+</li>
 <li>Install python/requirements for dear-bindings</li>
 <li>Run <code>BuildAllBindings.bat</code></li>
-<li>Edit examples/ImGuiLib</li>
-<li>Install vcpkg, ImGuiLib properties &gt; vcpkg -&gt; Use Vcpkg Manifest should be on Yes</li>
-<li>When compiling with Win32, Add a source file to the source folder. It should have:</li>
-<li>(Hack) remove extern in <code>dcimgui_impl_win32.h</code> such that it looks like this:
+<li>Open <code>examples/Examples.sln</code>. The one project we will be editing is <strong>ImGuiLib</strong>.</li>
+<li>Install vcpkg. Nowadays Visual Studio has an install option for it, which may be default too.</li>
+<li>Enable vcpkg. Open <code>Developer Command Prompt for VS</code> with Administrator permissions, and run <code>vcpkg integrate install</code>.<ul>
+<li>To be sure, ImGuiLib properties &gt; vcpkg -&gt; Use Vcpkg Manifest should be on Yes</li>
+</ul>
+</li>
+<li>(Hack) remove <code>extern</code> for <code>cImGui_ImplWin32_WndProcHandler</code> in <code>dcimgui_impl_win32.h</code> such that it looks like this:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">CIMGUI_IMPL_API</span><span class="w"> </span><span class="n">LRESULT</span><span class="w"> </span><span class="n">cImGui_ImplWin32_WndProcHandler</span><span class="p">(</span><span class="n">HWND</span><span class="w"> </span><span class="n">hWnd</span><span class="p">,</span><span class="w"> </span><span class="n">UINT</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">WPARAM</span><span class="w"> </span><span class="n">wParam</span><span class="p">,</span><span class="w"> </span><span class="n">LPARAM</span><span class="w"> </span><span class="n">lParam</span><span class="p">);</span>
 </code></pre></div></li>
-<li>Compile.</li>
+<li>Compile as Release (only ImGuiLib!). You should get <code>ImGuiLib.dll</code> and <code>ImGuiLib.pdb</code>.</li>
 </ol>
-<h3 id="c-bindings_1">C# Bindings<a class="headerlink" href="#c-bindings_1" title="Permanent link">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You may also need to adjust hardcoded include paths I left in for plutosvg because I couldn't get Visual Studio/vcpkg to detect plutosvg as it should.</p>
+</div>
+<h3 id="step-2-c-bindings">Step 2: C# Bindings<a class="headerlink" href="#step-2-c-bindings" title="Permanent link">¶</a></h3>
 <ol>
 <li>Install ClangSharpPInvokeGenerator with <code>dotnet tool install --global ClangSharpPInvokeGenerator --version 20.1.2</code></li>
 <li>
 <p>Run <code>generate_dotnet_bindings.bat</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You may also need to add <code>#include &lt;Windows.h&gt;</code> above <code>CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);</code>     temporarily in <code>dcimgui_impl_win32.h</code></p>
-<p>And <code>#include &lt;d3d11.h&gt;</code> to <code>dcimgui_impl_dx11.h</code> so that the bindings generation works.</p>
+<ul>
+<li>You need to add <code>#include &lt;Windows.h&gt;</code> above <code>CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);</code>     temporarily in <code>dcimgui_impl_win32.h</code></li>
+<li>And <code>#include &lt;d3d11.h&gt;</code> to <code>dcimgui_impl_dx11.h</code> so that the bindings generation works.</li>
+</ul>
 </div>
 </li>
+<li>
+<p>The <code>generated</code> folder will have <code>.cs</code> files with bindings once done.</p>
+</li>
 </ol>
-<p>You may also need to adjust hardcoded paths I left in for plutosvg because I couldn't get Visual Studio/vcpkg to detect plutosvg as it should.</p>
+<h3 id="step-3-imguiinterfacegenerator">Step 3: ImGuiInterfaceGenerator<a class="headerlink" href="#step-3-imguiinterfacegenerator" title="Permanent link">¶</a></h3>
+<p>The framework has a <code>ImGuiInterfaceGenerator</code> project. Compile and run it, the first argument to the folder should be the path to the <code>generated</code> folder.</p>
+<p>Once you run it, you will have <code>ImGui.cs</code>, <code>IImGui.cs</code> and <code>ImGuiMethods.cs</code> files in that project's <code>generated</code> folder. They will be in their distinct folders ready to copy to the actual framework folder.</p>
+<p>If you are updating bindings you may need to diff changes and provide polyfills if needed.</p>
+<p>Copy all the <code>.dll</code>+<code>.pdb</code> files created previously to <code>FF16Framework.Native.Binaries</code>. Update licenses if needed.</p>
 
 
 
