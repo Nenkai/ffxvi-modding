@@ -34,8 +34,8 @@ if (!_imGuiShell.TryGetTarget(out IImGuiShell imGuiShell))
 4. Create a component inheriting from `IImGuiComponent` decorated with the `ImGuiMenu`:
 ```csharp
 // category is the top menu entry which this component will render menu items to.
-// name is only used for sorting purposes.
-// If your component needs to render a menu, it should always render a sub-group, for clarity.
+// priority is only used for sorting purposes.
+// owner should be your mod name. This is used as final sorting (alphabetically) across mods, when the same priority is used.
 [ImGuiMenu(Category = "Other", Priority = 0, Owner = "MyImGuiMod")]
 public class MyImGuiComponent : IImGuiComponent
 {
