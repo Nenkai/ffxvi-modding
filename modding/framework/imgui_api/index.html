@@ -728,84 +728,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#bindings-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bindings Details
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Bindings Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#why-new-bindings-why-not-use-imguinet-or-hexanetimgui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why new bindings? Why not use ImGuiNet or Hexa.NET.ImGui?
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-bindingsinterface" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Building Bindings/Interface
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Building Bindings/Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-c-bindings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: C Bindings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-c-bindings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: C# Bindings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-imguiinterfacegenerator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: ImGuiInterfaceGenerator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2463,84 +2385,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#bindings-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bindings Details
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Bindings Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#why-new-bindings-why-not-use-imguinet-or-hexanetimgui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why new bindings? Why not use ImGuiNet or Hexa.NET.ImGui?
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-bindingsinterface" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Building Bindings/Interface
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Building Bindings/Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-c-bindings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: C Bindings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-c-bindings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: C# Bindings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-imguiinterfacegenerator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 3: ImGuiInterfaceGenerator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2566,11 +2410,6 @@
   
 
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This hasn't been released yet sadly. FF16Framework's ImGui hook has hit a roadblock where it crashes with Frame Gen &amp; other overlays that hijacks the DX12 swapchain. <a href="https://github.com/Nenkai/FF16Framework/tree/imgui">Please contribute if you think you can solve it</a>.</p>
-<p>It may be wise to take inspiration from REFramework.</p>
-</div>
 <h1 id="imgui-overlay-api"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 8h4V4h12v12h-4v4H4zm12 0v6h2V6h-8v2zM6 12v6h8v-6z"></path></svg></span> ImGui Overlay API<a class="headerlink" href="#imgui-overlay-api" title="Permanent link">¶</a></h1>
 <p>The framework exposes a ImGui overlay for use by other mods. </p>
 <p>While ImGui is pretty straightforward to use, here are some guides to get started:</p>
@@ -2579,62 +2418,90 @@
 </ul>
 <h3 id="quick-guide">Quick Guide<a class="headerlink" href="#quick-guide" title="Permanent link">¶</a></h3>
 <ol>
+<li>Install the <a href="https://www.nuget.org/packages/NenTools.ImGui.Interfaces/">NenTools.ImGui.Interfaces</a> &amp; <a href="https://www.nuget.org/packages/NenTools.ImGui.Abstractions/">NenTools.ImGui.Abstractions</a> NuGet packages into your mod project.</li>
+<li>Add <code>ff16.utility.framework</code> as a mod dependency in your ModConfig in <code>ModDependencies</code>. You may also use the Reloaded-II UI (Edit Mod) to add it.</li>
 <li>
-<p>Grab <code>IImGuiSupport</code>:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">_imGuiSupport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetController</span><span class="o">&lt;</span><span class="n">IImGuiSupport</span><span class="o">&gt;</span><span class="p">();</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">_imGuiSupport</span><span class="p">.</span><span class="n">TryGetTarget</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">IImGuiSupport</span><span class="w"> </span><span class="n">imGuiSupport</span><span class="p">))</span>
+<p>In your code, grab <code>IImGui</code> and <code>IImGuiSupport</code>:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">_imGui</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetController</span><span class="o">&lt;</span><span class="n">IImGui</span><span class="o">&gt;</span><span class="p">();</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">_imGui</span><span class="p">.</span><span class="n">TryGetTarget</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">IImGui</span><span class="w"> </span><span class="n">imGui</span><span class="p">))</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">_logger</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$"[{_modConfig.ModId}] Could not get IImGuiSupport."</span><span class="p">);</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">_logger</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$"[{_modConfig.ModId}] Could not get IImGui."</span><span class="p">);</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="p">;</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">_imGuiShell</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetController</span><span class="o">&lt;</span><span class="n">IImGuiShell</span><span class="o">&gt;</span><span class="p">();</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">_imGuiShell</span><span class="p">.</span><span class="n">TryGetTarget</span><span class="p">(</span><span class="k">out</span><span class="w"> </span><span class="n">IImGuiShell</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">))</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">{</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="n">_logger</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$"[{_modConfig.ModId}] Could not get IImGuiShell."</span><span class="p">);</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">}</span>
 </code></pre></div><p></p>
 </li>
 <li>
-<p>Inherit from <code>IImGuiComponent</code>:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyImGuiComponent</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IImGuiComponent</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="c1">// If this is enabled, this will also render while the ImGui overlay is currently hidden</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">IsOverlay</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RenderMenu</span><span class="p">(</span><span class="n">IImGui</span><span class="w"> </span><span class="n">imgui</span><span class="p">)</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="c1">// Write code to render menu entries here.</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="c1">// By default, FF16Framework will render a top menu bar which you can add elements to.</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imgui</span><span class="p">.</span><span class="n">BeginMenu</span><span class="p">(</span><span class="s">"MyModName"</span><span class="p">))</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">"Menu Item 1"</span><span class="p">);</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">"Menu Item 2"</span><span class="p">);</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">"Menu Item 3"</span><span class="p">);</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">EndMenu</span><span class="p">();</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiSupport</span><span class="w"> </span><span class="n">imguiSupport</span><span class="p">,</span><span class="w"> </span><span class="n">IImGui</span><span class="w"> </span><span class="n">imgui</span><span class="p">)</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="c1">// Insert code to render anything here.</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">imgui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"MyWindow"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">_windowOpen</span><span class="p">,</span><span class="w"> </span><span class="n">ImGuiWindowFlags</span><span class="p">.</span><span class="n">ImGuiWindowFlags_None</span><span class="p">))</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">        </span><span class="n">imgui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
+<p>Create a component inheriting from <code>IImGuiComponent</code> decorated with the <code>ImGuiMenu</code>:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// category is the top menu entry which this component will render menu items to.</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1">// name is only used for sorting purposes.</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">// If your component needs to render a menu, it should always render a sub-group, for clarity.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="na">[ImGuiMenu(Category = "Other", Priority = 0, Owner = "MyImGuiMod")]</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyImGuiComponent</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IImGuiComponent</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">{</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="c1">// If this is enabled, this will also render while the ImGui overlay is currently hidden</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">IsOverlay</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="n">IImGui</span><span class="w"> </span><span class="n">_imgui</span><span class="p">;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">MyImGuiComponent</span><span class="p">(</span><span class="n">IImGui</span><span class="w"> </span><span class="n">imgui</span><span class="p">)</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="n">_imgui</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imgui</span><span class="p">;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RenderMenu</span><span class="p">()</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="c1">// Write code to render menu entries here.</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="c1">// By default, the shell will render a top menu bar which you can add elements to.</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_imgui</span><span class="p">.</span><span class="n">BeginMenu</span><span class="p">(</span><span class="s">"MyModSubMenu"</span><span class="p">))</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">            </span><span class="n">_imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">"Menu Item 1"</span><span class="p">);</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">            </span><span class="n">_imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">"Menu Item 2"</span><span class="p">);</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">            </span><span class="n">_imgui</span><span class="p">.</span><span class="n">MenuItem</span><span class="p">(</span><span class="s">"Menu Item 3"</span><span class="p">);</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">            </span><span class="n">imgui</span><span class="p">.</span><span class="n">EndMenu</span><span class="p">();</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="w">        </span><span class="p">}</span>
 <a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="p">}</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiShell</span><span class="w"> </span><span class="n">imguiShell</span><span class="p">)</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">        </span><span class="c1">// Insert code to render anything here.</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_imgui</span><span class="p">.</span><span class="n">Begin</span><span class="p">(</span><span class="s">"MyWindow"</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">_windowOpen</span><span class="p">,</span><span class="w"> </span><span class="n">ImGuiWindowFlags</span><span class="p">.</span><span class="n">ImGuiWindowFlags_None</span><span class="p">))</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">            </span><span class="n">_imgui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">);</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="w">        </span><span class="n">_imgui</span><span class="p">.</span><span class="n">End</span><span class="p">();</span>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="p">}</span>
 </code></pre></div><p></p>
 </li>
 <li>
 <p>Register your component to the ImGui system:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// category is the top menu entry which this component will render menu items to.</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// name is only used for sorting purposes.</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// If your component needs to render a menu, it should always render a sub-group, for clarity.</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// Example:</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">// Tools</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">// -&gt; MyModName &lt;- This is where RenderMenu starts.</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">//   -&gt; Menu Item 1</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">//   -&gt; Menu Item 2</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">//   -&gt; Menu Item 3</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">imguiSupport</span><span class="p">.</span><span class="n">AddComponent</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PhotoModeMenu</span><span class="p">(),</span><span class="w"> </span><span class="n">category</span><span class="p">:</span><span class="w"> </span><span class="s">"Tools"</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"MyModName"</span><span class="p">);</span>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">imguiShell</span><span class="p">.</span><span class="n">AddComponent</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">MyImGuiComponent</span><span class="p">(</span><span class="n">_imGui</span><span class="p">));</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1">// The render order will look like the following:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// File</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">//   ...</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1">// Tools</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">//   ...</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">// Other</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1">//   (MyImGuiComponent - Priority: 0, Owner: "MyImGuiMod")</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1">//     --&gt; This is where MyImGuiComponent.RenderMenu() is called. &lt;--</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1">//       -&gt; MyModSubMenu</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="c1">//         -&gt; Menu Item 1</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1">//         -&gt; Menu Item 2</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1">//         -&gt; Menu Item 3</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1">//   (some other mod component - Priority: 0, Owner: "OtherModName")</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1">//     ...</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1">//   (some component you registered - Priority: 1, Owner: "MyImGuiMod")</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="c1">//     ...</span>
 </code></pre></div><p></p>
 </li>
 </ol>
@@ -2649,86 +2516,64 @@
 <h3 id="texturesimages"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"></path></svg></span> Textures/Images<a class="headerlink" href="#texturesimages" title="Permanent link">¶</a></h3>
 <p>If you need to render textures, you should:</p>
 <ul>
-<li>Grab a <code>IImGuiTextureManager</code> instance</li>
-<li>Pass it to your component. On <code>Render</code>, load the texture using <code>IImGuiTextureManager.LoadImage</code>. Make sure to only do this once and not every frame!</li>
+<li>Grab a <code>IImGuiTextureManager</code> instance from <code>IImGuiShell</code></li>
+<li>Pass it to your component. On <code>Render</code>, load the texture using <code>IImGuiTextureManager.LoadImage</code>. <strong>Make sure to only do this once and not every frame!</strong> You may choose to queue image loads or synchronously load images.</li>
 <li>Pass the newly added image's <code>TexId</code> to <code>IImGui.Image</code>, etc.</li>
-<li>Make sure to dispose of these textures when you don't need to use them anymore (closing window, etc).</li>
+<li>Make sure to dispose of these textures when you don't need to use them anymore (closing window, etc). Texture/Image lifetime disposal is entirely up to you.</li>
 </ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">private</span><span class="w"> </span><span class="n">IQueuedImGuiImage</span><span class="o">?</span><span class="w"> </span><span class="n">_iconImage</span><span class="p">;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">private</span><span class="w"> </span><span class="n">CancellationTokenSource</span><span class="w"> </span><span class="n">_loadCts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CancellationTokenSource</span><span class="p">();</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiShell</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">{</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsOpen</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="n">UnloadResourcesIfNeeded</span><span class="p">();</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="c1">// Queue an image for load. It won't load immediately, </span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_iconImage</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetDirectoryForModId</span><span class="p">(</span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModId</span><span class="p">);</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">        </span><span class="c1">// Queue an image to be loaded from disk. ImageSharp handles this and supports various formats.</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="n">_iconImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">QueueImageLoad</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w">    </span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModIcon</span><span class="p">),</span><span class="w"> </span><span class="n">ct</span><span class="p">:</span><span class="w"> </span><span class="n">_loadCts</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="c1">// Display it if it's loaded.</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">IsLoaded</span><span class="p">)</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="n">_imGui</span><span class="p">.</span><span class="n">Image</span><span class="p">(</span><span class="n">_imGui</span><span class="p">.</span><span class="n">CreateTextureRef</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">TexId</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">Width</span><span class="p">,</span><span class="w"> </span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">Height</span><span class="p">));</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">    </span><span class="c1">// You may also choose to load an image directly off a path without queueing it</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">    </span><span class="c1">// This is a blocking operation though as the file has to be loaded and will lock the game until it's done.</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">LoadImage</span><span class="p">(</span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">    </span><span class="c1">// You can also load from a RGBA buffer.</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">LoadImage</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="c1">// Updating textures is also supported.</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">QueueUpdateImage</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="n">bytes</span><span class="p">);</span><span class="w"> </span><span class="c1">// Buffer is expected to match the dimensions of the current image.</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span><span class="w"> </span><span class="c1">// From image path, blocking.</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="p">}</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="c1">// Ensure to dispose of the image off the GPU.</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="c1">// You should call this when you are closing a window.</span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="c1">// (You may choose to persist it to cache it too, that's also fine)</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">UnloadResourcesIfNeeded</span><span class="p">()</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="p">{</span>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="w">    </span><span class="n">_iconImage</span><span class="o">?.</span><span class="n">Image</span><span class="o">?.</span><span class="n">Dispose</span><span class="p">();</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="w">    </span><span class="n">_iconImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">;</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="p">}</span>
+</code></pre></div>
+</div>
 <hr>
-<h2 id="bindings-details"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14c0 .53-.21 1.04-.59 1.41-.37.38-.88.59-1.41.59H5c-.53 0-1.04-.21-1.41-.59C3.21 20.04 3 19.53 3 19V5c0-1.11.89-2 2-2m6 6h2V7h-2zm3 8v-2h-1v-4h-3v2h1v2h-1v2z"></path></svg></span> Bindings Details<a class="headerlink" href="#bindings-details" title="Permanent link">¶</a></h2>
-<p>The ImGui bindings have been built using a fork of <a href="https://github.com/Nenkai/dear_bindings">dear-bindings</a> with the following configuration:</p>
-<ul>
-<li>Built with Freetype (and PlutoSVG for svg font/emoji support)</li>
-<li>DX9/11/12 backend support</li>
-<li>Compiled as Release, with asserts enabled</li>
-</ul>
-<p>The bindings have been generated using <a href="https://github.com/Nenkai/FF16Framework/tree/imgui/ImGuiInterfaceGenerator">ImGuiInterfaceGenerator</a>, which works by massaging the output of <a href="https://github.com/dotnet/ClangSharp">ClangSharpPInvokeGenerator</a> into an interface (for Reloaded and mods), and the implementation/actual bindings for the framework.</p>
-<h3 id="why-new-bindings-why-not-use-imguinet-or-hexanetimgui">Why new bindings? Why not use <a href="https://github.com/ImGuiNET/ImGui.NET">ImGuiNet</a> or <a href="https://github.com/HexaEngine/Hexa.NET.ImGui">Hexa.NET.ImGui</a>?<a class="headerlink" href="#why-new-bindings-why-not-use-imguinet-or-hexanetimgui" title="Permanent link">¶</a></h3>
-<p>The goal was to expose ImGui to other mods. That implies using Reloaded-II's <a href="https://reloaded-project.github.io/Reloaded-II/DependencyInjection_Publisher/">IExports</a> in order to export ImGui itself which meant interfacing nearly the entirety of it. The final output consists of really three files:</p>
-<ul>
-<li><code>IImGui.cs</code>, which is what is exported through Reloaded-II</li>
-<li><code>ImGui.cs</code>, which is the implementation for the interface that sits with the framework</li>
-<li><code>ImGuiMethods.cs</code>, which holds all the native structs and methods used for interop between the framework and ImGui.</li>
-</ul>
-<p>On top of this, updating ImGui without breakage would be severely compromised without interfacing; structures would break across breaking changes from upstream ImGui.</p>
-<p>What was also considered is:</p>
-<ul>
-<li>Allowing mods to use their own ImGui instance: but judged as too much hassle and possibly too performance consuming.</li>
-<li>Provide a custom api for some interface handling, but ultimately too limiting for mod makers</li>
-</ul>
-<p>The current way is not without its flaws, but it should be reasonably feasible to fill interfaces (and provide polyfills if needed) if ImGui is updated in the future. It does require bindings to be diffed and may still be a lot of work though.</p>
-<hr>
-<h2 id="building-bindingsinterface"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.78 15.3 6 6 2.11-2.16-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11 7.41-7.4L8.5 9.96l-.72.7-1.45-1.41v2.86l-.7.7-3.52-3.56.7-.7h2.81l-1.4-1.41 3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4-.71.71 1.79 1.78 1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5 2.67-2.67c.28.47.42.97.42 1.6 0 1.92-1.55 3.47-3.5 3.47"></path></svg></span> Building Bindings/Interface<a class="headerlink" href="#building-bindingsinterface" title="Permanent link">¶</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You only need this if you intend to maintain the bindings.</p>
-</div>
-<h3 id="step-1-c-bindings">Step 1: C Bindings<a class="headerlink" href="#step-1-c-bindings" title="Permanent link">¶</a></h3>
-<ol>
-<li>Clone <a href="https://github.com/ocornut/imgui"><code>imgui</code></a> to own folder. Then <code>git checkout</code> a specific tag, such as the latest <strong>docking</strong> tag i.e <code>v1.92.5-docking</code></li>
-<li>Clone <a href="https://github.com/Nenkai/dear_bindings">dear-bindings</a> (fork) to own folder, NEXT TO imgui. Important!<ul>
-<li>You may need to rebase if you are updating bindings.</li>
-</ul>
-</li>
-<li>Install python/requirements for dear-bindings</li>
-<li>Run <code>BuildAllBindings.bat</code></li>
-<li>Open <code>examples/Examples.sln</code>. The one project we will be editing is <strong>ImGuiLib</strong>.</li>
-<li>Install vcpkg. Nowadays Visual Studio has an install option for it, which may be default too.</li>
-<li>Enable vcpkg. Open <code>Developer Command Prompt for VS</code> with Administrator permissions, and run <code>vcpkg integrate install</code>.<ul>
-<li>To be sure, ImGuiLib properties &gt; vcpkg -&gt; Use Vcpkg Manifest should be on Yes</li>
-</ul>
-</li>
-<li>(Hack) remove <code>extern</code> for <code>cImGui_ImplWin32_WndProcHandler</code> in <code>dcimgui_impl_win32.h</code> such that it looks like this:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">CIMGUI_IMPL_API</span><span class="w"> </span><span class="n">LRESULT</span><span class="w"> </span><span class="n">cImGui_ImplWin32_WndProcHandler</span><span class="p">(</span><span class="n">HWND</span><span class="w"> </span><span class="n">hWnd</span><span class="p">,</span><span class="w"> </span><span class="n">UINT</span><span class="w"> </span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">WPARAM</span><span class="w"> </span><span class="n">wParam</span><span class="p">,</span><span class="w"> </span><span class="n">LPARAM</span><span class="w"> </span><span class="n">lParam</span><span class="p">);</span>
-</code></pre></div></li>
-<li>Compile as Release (only ImGuiLib!). You should get <code>ImGuiLib.dll</code> and <code>ImGuiLib.pdb</code>.</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>You may also need to adjust hardcoded include paths I left in for plutosvg because I couldn't get Visual Studio/vcpkg to detect plutosvg as it should.</p>
-</div>
-<h3 id="step-2-c-bindings">Step 2: C# Bindings<a class="headerlink" href="#step-2-c-bindings" title="Permanent link">¶</a></h3>
-<ol>
-<li>Install ClangSharpPInvokeGenerator with <code>dotnet tool install --global ClangSharpPInvokeGenerator --version 20.1.2</code></li>
-<li>
-<p>Run <code>generate_dotnet_bindings.bat</code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>You need to add <code>#include &lt;Windows.h&gt;</code> above <code>CIMGUI_IMPL_API LRESULT cImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);</code>     temporarily in <code>dcimgui_impl_win32.h</code></li>
-<li>And <code>#include &lt;d3d11.h&gt;</code> to <code>dcimgui_impl_dx11.h</code> so that the bindings generation works.</li>
-</ul>
-</div>
-</li>
-<li>
-<p>The <code>generated</code> folder will have <code>.cs</code> files with bindings once done.</p>
-</li>
-</ol>
-<h3 id="step-3-imguiinterfacegenerator">Step 3: ImGuiInterfaceGenerator<a class="headerlink" href="#step-3-imguiinterfacegenerator" title="Permanent link">¶</a></h3>
-<p>The framework has a <code>ImGuiInterfaceGenerator</code> project. Compile and run it, the first argument to the folder should be the path to the <code>generated</code> folder.</p>
-<p>Once you run it, you will have <code>ImGui.cs</code>, <code>IImGui.cs</code> and <code>ImGuiMethods.cs</code> files in that project's <code>generated</code> folder. They will be in their distinct folders ready to copy to the actual framework folder.</p>
-<p>If you are updating bindings you may need to diff changes and provide polyfills if needed.</p>
-<p>Copy all the <code>.dll</code>+<code>.pdb</code> files created previously to <code>FF16Framework.Native.Binaries</code>. Update licenses if needed.</p>
+<p><strong>For more info, refer to <a href="https://github.com/Nenkai/NenTools.ImGui">NenTools.ImGui</a>.</strong></p>
 
 
 
