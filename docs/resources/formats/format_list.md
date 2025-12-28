@@ -14,7 +14,7 @@ icon: material/file-find
 
 ## Map/Levels
 
-* `.mpb` - Map Binary (main file, loading all other map files) - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mpb_MapBinary.bt)
+* `.mpb` - [Map Binary](../maps.md) (main file, loading all other map files) - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mpb_MapBinary.bt)
 * `.vatb` - VFX Audio Table Binary - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_vatb_VFXAudioTable.bt)
 * `.ssb` - Stage Set Binary
 * `.tnb` - Tanebi (??)
@@ -25,13 +25,19 @@ icon: material/file-find
 * `.emcb`
 * `.sndenv` - Sound Environment
 * `.sndmap` - Sound Map
-* `.gid`
+* `.gid` - Global Illumination (?) Data
+* `.gtex` - ?
+* `.nmb` - ?
+* `.psb` - ?
+* `.srb` - ?
+* `.plb` - ?
 * `.gwb`
 * `.tera` - Map Terrain Binarry
 * `.aml` - Map Timeline
 
 ## Character
 * `.tlb` - Character Move/Attack/Action Timelines - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_tlb_FileCharaTimeLine.bt)
+* `.magic` - [Template/Preset spells](dep_magic.md)
 
 ## Models/Textures
 
@@ -81,7 +87,6 @@ icon: material/file-find
 * `.mab`
 
 ## Cutscenes
-
 * `csb` - Cutscene Binary - [010 Editor Template](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_csb_CutsceneBinary.bt)
 
 ## Localization
