@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1573,6 +1573,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#grid-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid System
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2394,6 +2405,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#grid-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid System
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2420,12 +2442,13 @@
 
 
 <h1 id="game-maps"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 19-6-2.11V5l6 2.11M20.5 3h-.16L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5a.5.5 0 0 0 .5.5c.05 0 .11 0 .16-.03L9 18.9l6 2.1 5.64-1.9c.21-.1.36-.25.36-.48V3.5a.5.5 0 0 0-.5-.5"></path></svg></span> Game Maps<a class="headerlink" href="#game-maps" title="Permanent link">¶</a></h1>
-<p>Game Maps are defined in the <a href="../../tutorials/nex/tables/"><code>gamemap</code></a> Nex table and will point to files located in the <code>map</code> folder.</p>
+<p>Game Maps are defined in the <a href="../../tutorials/nex/tables/"><code>GameMap</code></a> Nex table and will point to files located in the <code>map</code> folder.</p>
 <p>The main file is file is always the <code>.mpb</code>, which presumably stands for <strong>M</strong>a<strong>p</strong> <strong>B</strong>inary.</p>
-<p><code>gamemap</code> may also point to:</p>
+<p><code>GameMap</code> may also point to:</p>
 <ul>
-<li><code>layoutsetting</code>, which is used to control which files aside from the <code>.mpb</code> file is loaded.</li>
-<li><code>mapdirector</code>, which controls some behavior on the map (battles and more).</li>
+<li><code>LayoutSetting</code>, which is used to control which files aside from the <code>.mpb</code> file is loaded.</li>
+<li><code>MapDirector</code>, which controls some behavior on the map (battles and more).</li>
+<li><code>MapSetting</code>, containing the dimensions of the map's grid cell (see below)</li>
 <li>(and more)</li>
 </ul>
 <h2 id="map-binary">Map Binary<a class="headerlink" href="#map-binary" title="Permanent link">¶</a></h2>
@@ -2446,10 +2469,12 @@
 </ul>
 <p>All entities that point to files are done so by path references. For instance, a Model entity will usually point to a model file in the <code>env</code> folder i.e <code>env/bgparts/common/accessory/g01/model/b0_acce_g01_barrel02.mdl</code>.</p>
 <p>Every <code>Group</code> and <code>Entity</code> are identified by a unique Id, also known as <code>LayoutInstances</code> referenced across many Nex tables.</p>
-<p>Furthermore, each <code>Group</code> and <code>Entity</code> may point to a <code>placement</code> row in Nex, which can control whether the entity is active depending on <code>usersituation</code> flags specified in <code>placement</code>.</p>
+<p>Furthermore, each <code>Group</code> and <code>Entity</code> may point to a <code>Placement</code> row in Nex, which can control whether the entity is active depending on <code>UserSituation</code> flags specified in <code>Placement</code>.</p>
 <h2 id="entities">Entities<a class="headerlink" href="#entities" title="Permanent link">¶</a></h2>
 <p>All entities have a <strong>Position</strong>, <strong>Rotation</strong> and <strong>Scale</strong> on the map, aswell as additional data depending on the type of entity.</p>
 <p>More information in the <a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_mpb_MapBinary.bt">010 Editor template</a></p>
+<h2 id="grid-system">Grid System<a class="headerlink" href="#grid-system" title="Permanent link">¶</a></h2>
+<p>It is known that the game divides the map into sections. The section/cell size is determined by the first row in the <code>MapSettings</code> Nex table.</p>
 
 
 
@@ -2601,10 +2626,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   

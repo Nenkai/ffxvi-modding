@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -711,6 +711,17 @@
     <span class="md-ellipsis">
       
         Quick Guide
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonts
       
     </span>
   </a>
@@ -2375,6 +2386,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fonts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#texturesimages" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2418,7 +2440,7 @@
 </ul>
 <h3 id="quick-guide">Quick Guide<a class="headerlink" href="#quick-guide" title="Permanent link">¶</a></h3>
 <ol>
-<li>Install the <a href="https://www.nuget.org/packages/NenTools.ImGui.Interfaces/">NenTools.ImGui.Interfaces</a> &amp; <a href="https://www.nuget.org/packages/NenTools.ImGui.Abstractions/">NenTools.ImGui.Abstractions</a> NuGet packages into your mod project.</li>
+<li>Install the <a href="https://www.nuget.org/packages/NenTools.ImGui.Interfaces/">NenTools.ImGui.Interfaces</a> NuGet package into your mod project.</li>
 <li>Add <code>ff16.utility.framework</code> as a mod dependency in your ModConfig in <code>ModDependencies</code>. You may also use the Reloaded-II UI (Edit Mod) to add it.</li>
 <li>
 <p>In your code, grab <code>IImGui</code> and <code>IImGuiSupport</code>:
@@ -2455,7 +2477,7 @@
 <a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="n">_imgui</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imgui</span><span class="p">;</span>
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RenderMenu</span><span class="p">()</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">RenderMenu</span><span class="p">(</span><span class="n">IImGuiShell</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">)</span>
 <a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="p">{</span>
 <a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="c1">// Write code to render menu entries here.</span>
 <a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="c1">// By default, the shell will render a top menu bar which you can add elements to.</span>
@@ -2513,6 +2535,31 @@
 <figure>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../imgui_api_menu.jpg" data-desc-position="bottom"><img alt="Image title" src="../imgui_api_menu.jpg" width="600"></a></p>
 </figure>
+<h3 id="fonts"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 8h3v12h1v1h-4v-1h1v-3h-4l-1.5 3H14v1h-4v-1h1zm1 1-3.5 7H18zM5 3h5c1.11 0 2 .89 2 2v11H9v-5H6v5H3V5c0-1.11.89-2 2-2m1 2v4h3V5z"></path></svg></span> Fonts<a class="headerlink" href="#fonts" title="Permanent link">¶</a></h3>
+<p>You may register your own font, or use one that was provided by another mod if specified.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Registering a font</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">_imGuiShell</span><span class="p">.</span><span class="n">FontManager</span><span class="p">.</span><span class="n">AddFontTTF</span><span class="p">(</span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModId</span><span class="p">,</span><span class="w"> </span><span class="s">"Roboto-Medium"</span><span class="p">,</span><span class="w"> </span><span class="n">robotoFontPath</span><span class="p">,</span><span class="w"> </span><span class="mf">15.0f</span><span class="p">,</span><span class="w"> </span><span class="n">_imGui</span><span class="p">.</span><span class="n">ImFontAtlas_GetGlyphRangesDefault</span><span class="p">(</span><span class="n">io</span><span class="p">.</span><span class="n">Fonts</span><span class="p">));</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">// ... in your render code</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">// Getting a font</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">IImFontInstance</span><span class="o">?</span><span class="w"> </span><span class="n">fontInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_imGuiShell</span><span class="p">.</span><span class="n">FontManager</span><span class="p">.</span><span class="n">GetFont</span><span class="p">(</span><span class="s">"Roboto-Medium"</span><span class="p">);</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fontInstance</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">{</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="c1">// Using the font</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="n">_imGui</span><span class="p">.</span><span class="n">PushFontFloat</span><span class="p">(</span><span class="n">fontInstance</span><span class="p">.</span><span class="n">Font</span><span class="p">);</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="n">_imGui</span><span class="p">.</span><span class="n">Text</span><span class="p">(</span><span class="s">"Hello world!"</span><span class="p">);</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="n">_imGui</span><span class="p">.</span><span class="n">PopFont</span><span class="p">();</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">}</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">// Removing it</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_imGuiShell</span><span class="p">.</span><span class="n">FontManager</span><span class="p">.</span><span class="n">RemoveFont</span><span class="p">(</span><span class="s">"Roboto-Medium"</span><span class="p">))</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">{</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="c1">// .. Font removed</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="p">}</span>
+</code></pre></div>
+</div>
 <h3 id="texturesimages"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m8.5 13.5 2.5 3 3.5-4.5 4.5 6H5m16 1V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"></path></svg></span> Textures/Images<a class="headerlink" href="#texturesimages" title="Permanent link">¶</a></h3>
 <p>If you need to render textures, you should:</p>
 <ul>
@@ -2523,53 +2570,53 @@
 </ul>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">private</span><span class="w"> </span><span class="n">IQueuedImGuiImage</span><span class="o">?</span><span class="w"> </span><span class="n">_iconImage</span><span class="p">;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">private</span><span class="w"> </span><span class="n">CancellationTokenSource</span><span class="w"> </span><span class="n">_loadCts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CancellationTokenSource</span><span class="p">();</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiShell</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">)</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">{</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsOpen</span><span class="p">)</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="n">UnloadResourcesIfNeeded</span><span class="p">();</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="c1">// Queue an image for load. It won't load immediately, </span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_iconImage</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetDirectoryForModId</span><span class="p">(</span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModId</span><span class="p">);</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">        </span><span class="c1">// Queue an image to be loaded from disk. ImageSharp handles this and supports various formats.</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">        </span><span class="n">_iconImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">QueueImageLoad</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w">    </span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModIcon</span><span class="p">),</span><span class="w"> </span><span class="n">ct</span><span class="p">:</span><span class="w"> </span><span class="n">_loadCts</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="c1">// Display it if it's loaded.</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">IsLoaded</span><span class="p">)</span>
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="n">_imGui</span><span class="p">.</span><span class="n">Image</span><span class="p">(</span><span class="n">_imGui</span><span class="p">.</span><span class="n">CreateTextureRef</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">TexId</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">Width</span><span class="p">,</span><span class="w"> </span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">Height</span><span class="p">));</span>
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">    </span><span class="c1">// You may also choose to load an image directly off a path without queueing it</span>
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">    </span><span class="c1">// This is a blocking operation though as the file has to be loaded and will lock the game until it's done.</span>
-<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">LoadImage</span><span class="p">(</span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span>
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">    </span><span class="c1">// You can also load from a RGBA buffer.</span>
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">LoadImage</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>
-<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="c1">// Updating textures is also supported.</span>
-<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">QueueUpdateImage</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span>
-<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="n">bytes</span><span class="p">);</span><span class="w"> </span><span class="c1">// Buffer is expected to match the dimensions of the current image.</span>
-<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span><span class="w"> </span><span class="c1">// From image path, blocking.</span>
-<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="p">}</span>
-<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>
-<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="c1">// Ensure to dispose of the image off the GPU.</span>
-<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="c1">// You should call this when you are closing a window.</span>
-<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="c1">// (You may choose to persist it to cache it too, that's also fine)</span>
-<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">UnloadResourcesIfNeeded</span><span class="p">()</span>
-<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a><span class="p">{</span>
-<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="w">    </span><span class="n">_iconImage</span><span class="o">?.</span><span class="n">Image</span><span class="o">?.</span><span class="n">Dispose</span><span class="p">();</span>
-<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="w">    </span><span class="n">_iconImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">;</span>
-<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">private</span><span class="w"> </span><span class="n">IQueuedImGuiImage</span><span class="o">?</span><span class="w"> </span><span class="n">_iconImage</span><span class="p">;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">private</span><span class="w"> </span><span class="n">CancellationTokenSource</span><span class="w"> </span><span class="n">_loadCts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CancellationTokenSource</span><span class="p">();</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Render</span><span class="p">(</span><span class="n">IImGuiShell</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">{</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">IsOpen</span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="n">UnloadResourcesIfNeeded</span><span class="p">();</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="k">return</span><span class="p">;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="c1">// Queue an image for load. It won't load immediately, </span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_iconImage</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="kt">string</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_modLoader</span><span class="p">.</span><span class="n">GetDirectoryForModId</span><span class="p">(</span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModId</span><span class="p">);</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">        </span><span class="c1">// Queue an image to be loaded from disk. ImageSharp handles this and supports various formats.</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">        </span><span class="n">_iconImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">QueueImageLoad</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="w">    </span><span class="n">_modConfig</span><span class="p">.</span><span class="n">ModIcon</span><span class="p">),</span><span class="w"> </span><span class="n">ct</span><span class="p">:</span><span class="w"> </span><span class="n">_loadCts</span><span class="p">.</span><span class="n">Token</span><span class="p">);</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">    </span><span class="c1">// Display it if it's loaded.</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">IsLoaded</span><span class="p">)</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">        </span><span class="n">_imGui</span><span class="p">.</span><span class="n">Image</span><span class="p">(</span><span class="n">_imGui</span><span class="p">.</span><span class="n">CreateTextureRef</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">TexId</span><span class="p">),</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Vector2</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">Width</span><span class="p">,</span><span class="w"> </span><span class="n">_iconImage</span><span class="p">.</span><span class="n">Image</span><span class="p">.</span><span class="n">Height</span><span class="p">));</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">    </span><span class="c1">// You may also choose to load an image directly off a path without queueing it</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">    </span><span class="c1">// This is a blocking operation though as the file has to be loaded and will lock the game until it's done.</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">LoadImage</span><span class="p">(</span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">    </span><span class="c1">// You can also load from a RGBA buffer.</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">    </span><span class="kt">var</span><span class="w"> </span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">LoadImage</span><span class="p">(</span><span class="n">bytes</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="w">    </span><span class="c1">// Updating textures is also supported.</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">QueueUpdateImage</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="n">bytes</span><span class="p">);</span><span class="w"> </span><span class="c1">// Buffer is expected to match the dimensions of the current image.</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="w">    </span><span class="n">imGuiShell</span><span class="p">.</span><span class="n">TextureManager</span><span class="p">.</span><span class="n">Update</span><span class="p">(</span><span class="n">_iconImage</span><span class="p">,</span><span class="w"> </span><span class="s">"&lt;my path&gt;"</span><span class="p">);</span><span class="w"> </span><span class="c1">// From image path, blocking.</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="p">}</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="c1">// Ensure to dispose of the image off the GPU.</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="c1">// You should call this when you are closing a window.</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="c1">// (You may choose to persist it to cache it too, that's also fine)</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">UnloadResourcesIfNeeded</span><span class="p">()</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="p">{</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">    </span><span class="n">_iconImage</span><span class="o">?.</span><span class="n">Image</span><span class="o">?.</span><span class="n">Dispose</span><span class="p">();</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">    </span><span class="n">_iconImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">;</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 <hr>
@@ -2725,10 +2772,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.footer", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.action.edit", "content.code.annotate", "header.autohide"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   
