@@ -12,7 +12,7 @@ While ImGui is pretty straightforward to use, here are some guides to get starte
 
 ### Quick Guide
 
-1. Install the [NenTools.ImGui.Interfaces](<https://www.nuget.org/packages/NenTools.ImGui.Interfaces/>) & [NenTools.ImGui.Abstractions](https://www.nuget.org/packages/NenTools.ImGui.Abstractions/) NuGet packages into your mod project.
+1. Install the [NenTools.ImGui.Interfaces](<https://www.nuget.org/packages/NenTools.ImGui.Interfaces/>) NuGet package into your mod project.
 2. Add `ff16.utility.framework` as a mod dependency in your ModConfig in `ModDependencies`. You may also use the Reloaded-II UI (Edit Mod) to add it.
 3. In your code, grab `IImGui` and `IImGuiSupport`:
 ```csharp
@@ -49,7 +49,7 @@ public class MyImGuiComponent : IImGuiComponent
         _imgui = imgui;
     }
 
-    public void RenderMenu()
+    public void RenderMenu(IImGuiShell imGuiShell)
     {
         // Write code to render menu entries here.
         // By default, the shell will render a top menu bar which you can add elements to.
@@ -107,6 +107,35 @@ That's all you should needed to render something on screen.
 <figure markdown>
   ![Image title](imgui_api_menu.jpg){ width="600" }
 </figure>
+
+### :material-format-font: Fonts
+
+You may register your own font, or use one that was provided by another mod if specified.
+
+!!! example
+
+    ```csharp
+    // Registering a font
+    _imGuiShell.FontManager.AddFontTTF(_modConfig.ModId, "Roboto-Medium", robotoFontPath, 15.0f, _imGui.ImFontAtlas_GetGlyphRangesDefault(io.Fonts));
+
+    // ... in your render code
+    // Getting a font
+    IImFontInstance? fontInstance = _imGuiShell.FontManager.GetFont("Roboto-Medium");
+    if (fontInstance is not null)
+    {
+        // Using the font
+        _imGui.PushFontFloat(fontInstance.Font);
+        _imGui.Text("Hello world!");
+        _imGui.PopFont();
+    }
+    
+    // Removing it
+    if (_imGuiShell.FontManager.RemoveFont("Roboto-Medium"))
+    {
+        // .. Font removed
+    }
+    ```
+
 
 ### :material-image: Textures/Images
 
