@@ -2734,6 +2734,11 @@
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"></path></svg></span> A sample mod can be found <a href="https://github.com/Nenkai/fftivc.utility.modloader/releases/download/1.0.0/fftivc.test.samplemod.zip">here</a>. This does various test changes to the title menus for both versions.</p>
 </div>
 <p>If you have successfully gotten your mod to work, congratulations!</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Reloaded-II also supports code-based mods, both with <a href="https://reloaded-project.github.io/Reloaded-II/DevelopmentEnvironmentSetup/">.NET (C#)</a> or <a href="https://reloaded-project.github.io/Reloaded-II/NativeMods/">Native</a>.</p>
+<p>If you are going this path to implement something that the game does not support, **you are strongly recommended to implement this to the <a href="https://github.com/Nenkai/fftivc.utility.modloader">mod loader</a>, or <a href="https://github.com/Nenkai/FaithFramework">FaithFramework</a> so that other mods may also benefit from it!</p>
+</div>
 <h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">¶</a></h2>
 <h3 id="g2d-graphics2d-texture-modding"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22.7 14.3-1 1-2-2 1-1c.1-.1.2-.2.4-.2.1 0 .3.1.4.2l1.3 1.3c.1.2.1.5-.1.7M13 19.9V22h2.1l6.1-6.1-2-2zM21 5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h6v-1.9l1.1-1.1H5l3.5-4.5 2.5 3 3.5-4.5 1.6 2.1 4.9-5z"></path></svg></span> G2D (Graphics2D) Texture Modding<a class="headerlink" href="#g2d-graphics2d-texture-modding" title="Permanent link">¶</a></h3>
 <p>Use <a href="https://ffhacktics.com/smf/index.php?topic=13375.0">this tool</a> to extract <code>g2d.dat</code>.</p>
@@ -2760,6 +2765,7 @@
 <li>Abilities - <code>TableData/AbilityData.xml</code></li>
 <li>Items - <code>TableData/ItemData.xml</code></li>
 <li>JobCommands  (Skill Sets) - <code>TableData/JobCommandData.xml</code></li>
+<li>and more.</li>
 </ul>
 <p>Head to the mod loader's folder to find these files. Additional documentation is provided in these files within the XMLs themselves for how to use. </p>
 <p>Essentially, copy these files to your mod's <code>FFTIVC/tables/&lt;enhanced/classic/combined&gt;/</code> edit them, and only leave what you've edited. Like <a href="#nex-merging">Nex Merging</a>, only the actual property changes will be tracked so that multiple mods can edit the same table.</p>
@@ -2778,7 +2784,10 @@
 <p>The mod loader disarms the primitive <a href="../../resources/other/debugging/">anti-debugging</a> that the game uses.</p>
 <hr>
 <h3 id="modding-api"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"></path></svg></span> Modding API<a class="headerlink" href="#modding-api" title="Permanent link">¶</a></h3>
-<p>A <a href="../mod_loader_api_fft/">modding API</a> is exposed.</p>
+<p>A <a href="../mod_loader_api_fft/">modding API</a> is exposed. </p>
+<p>An extended API with more features is available with <a href="https://www.nexusmods.com/finalfantasytacticstheivalicechronicles/mods/24">Faith Framework</a> such as:
+* <a href="../framework/imgui_api/">ImGui API</a> (Creating Debug/Modding GUIs)
+* <a href="../framework/nex_api/">Nex API</a> (Editing Nex tables at runtime)</p>
 <hr>
 <h2 id="publishing-mods-guidelines">Publishing Mods &amp; Guidelines<a class="headerlink" href="#publishing-mods-guidelines" title="Permanent link">¶</a></h2>
 <p><a href="https://www.nexusmods.com/games/finalfantasytacticstheivalicechronicles/">Nexus Mods</a> is the primary website to publish mods.</p>
