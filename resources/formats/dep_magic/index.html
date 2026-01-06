@@ -1090,6 +1090,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ids/eid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ids/gamemap_ids/" class="md-nav__link">
         
   
@@ -2426,13 +2454,26 @@
 <p>Registers all entities/dependencies related for a <code>.magic</code> file.</p>
 <p><a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_dep_MagicDependResource.bt">010 Editor Template here</a>.</p>
 <h2 id="magic"><code>.magic</code><a class="headerlink" href="#magic" title="Permanent link">¶</a></h2>
-<p>Contain a set of magic spells (basically blueprints that can be instantiated into spells) that can be used by characters. Each character has their own file which is different and two spells can have the same Id and yet be different, as long as they're contained in two different characters' files.</p>
-<p>It seems like these spell "blueprints" are divided into lists, which are then divided into distinct operations each containing a number of properties. Every property has a type and data (usually 4byte int or float) that represents different things based on the type.
-Basically properties just sets up an operation's parameter.</p>
-<p>The current guess is that magic spells are instances of these spell objects / blueprints, and the magic file contains data for spell size, velocity, direction, VFXAudio, AttackParam etc.</p>
-<p>Instances of spells are basically any attack that's not connected to any BNpc, which makes them unrelated to the character's collision files.
-They're like volatile npcs with their own collision, movement.</p>
+<p>Magic files contain spell, or dynamic projectile definitions that can be created by characters/enemies (BNpcs). Each BNpc has their own file which is different and two spells can have the same Id and yet be different, as long as they're contained in two different characters' files.</p>
+<p>These files are at <code>chara/&lt;id&gt;/magic/&lt;id&gt;.magic</code> (You will need to extract <code>chara/&lt;id&gt;/pack/&lt;id&gt;.pac</code>).</p>
+<p>A magic file defines magic ids, which are instantiated through <a href="../../../tutorials/timelines/chara_timelines/">chara timelines</a>.</p>
+<p>One magic 'entry' may contain groups of operations, which are uniquely identified by their own Id. These groups contain operations, which declares a magic's behavior, such as initialize a linear projectile, a VFX (<a href="../vatb/">vfxb id</a>), the hitbox, and a lot more.</p>
+<p>These operations contain properties. These properties merely just set up how an operation behaves. (Under the hood, all they really do is set an operation's internal field to a value).</p>
+<p>Operations may have properties that point to other groups by Id - they are essentially callbacks.</p>
 <p><a href="https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_magic.bt">010 Editor Template here</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can edit magic files at runtime using <a href="https://www.nexusmods.com/finalfantasy16/mods/138">FaithFramework</a> - Head to the resource manager and look for magic files.</p>
+</div>
+<hr>
+<p>For a quick example, Magic 3 (in <code>c1001.magic</code>) is Clive's Normal (non charged) shot.</p>
+<p>It declares 4 groups:</p>
+<ul>
+<li><code>4337</code> - Used to initialize the magic with operation 51 (you'll see this one a lot), which <a href="../../ids/eid/">Eid</a> to use for the current actor, and which target to use.</li>
+<li><code>4338</code> - Creates a projectile.</li>
+<li><code>4340</code> - Callback group for when the target was hit.</li>
+<li><code>4354</code> - Callback group for when the projectile 'expired' - it hit nobody.</li>
+</ul>
 
 
 
