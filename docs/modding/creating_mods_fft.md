@@ -65,6 +65,11 @@ Once you have modded assets you'd like to mod into the game:
 
 If you have successfully gotten your mod to work, congratulations!
 
+!!! tip
+    Reloaded-II also supports code-based mods, both with [.NET (C#)](https://reloaded-project.github.io/Reloaded-II/DevelopmentEnvironmentSetup/) or [Native](https://reloaded-project.github.io/Reloaded-II/NativeMods/).
+    
+    If you are going this path to implement something that the game does not support, **you are strongly recommended to implement this to the [mod loader](https://github.com/Nenkai/fftivc.utility.modloader), or [FaithFramework](https://github.com/Nenkai/FaithFramework) so that other mods may also benefit from it!
+    
 ## Features
 
 ### :material-image-edit: G2D (Graphics2D) Texture Modding
@@ -108,6 +113,7 @@ You can edit:
 * Abilities - `TableData/AbilityData.xml`
 * Items - `TableData/ItemData.xml`
 * JobCommands  (Skill Sets) - `TableData/JobCommandData.xml`
+* and more.
 
 Head to the mod loader's folder to find these files. Additional documentation is provided in these files within the XMLs themselves for how to use. 
 
@@ -139,7 +145,11 @@ The mod loader disarms the primitive [anti-debugging](../resources/other/debuggi
 
 ### :material-api: Modding API
 
-A [modding API](mod_loader_api_fft.md) is exposed.
+A [modding API](mod_loader_api_fft.md) is exposed. 
+
+An extended API with more features is available with [Faith Framework](https://www.nexusmods.com/finalfantasytacticstheivalicechronicles/mods/24) such as:
+* [ImGui API](../modding/framework/imgui_api.md) (Creating Debug/Modding GUIs)
+* [Nex API](../modding/framework/nex_api.md) (Editing Nex tables at runtime)
 
 ---
 

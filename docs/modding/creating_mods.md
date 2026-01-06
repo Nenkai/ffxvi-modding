@@ -54,13 +54,41 @@ Once you have modded assets you'd like to mod into the game:
     :material-download: An example mod (pre-1.1.0) can be found [here](https://github.com/Nenkai/ff16.utility.modloader/releases/download/1.0.1/ff16.template.helloworld.zip). This changes the bottom-left text of the main title screen to add "Hello World".
 
 
-!!! warning "Nested `.pac` files"
+!!! warning "IMPORTANT: Nested `.pac` files"
 
     If you want to repack nested `.pac` files, ensure that you pass the `--no-compress` argument to FF16Tools. These packs are placed in memory directly and accessed in-place, therefore they must be uncompressed.
 
+
 If you have successfully gotten your mod to work, congratulations!
 
+!!! tip
+    Reloaded-II also supports code-based mods, both with [.NET (C#)](https://reloaded-project.github.io/Reloaded-II/DevelopmentEnvironmentSetup/) or [Native](https://reloaded-project.github.io/Reloaded-II/NativeMods/).
+    
+    If you are going this path to implement something that the game does not support, **you are strongly recommended to implement this to the [mod loader](https://github.com/Nenkai/fftivc.utility.modloader), or [FaithFramework](https://github.com/Nenkai/FaithFramework) so that other mods may also benefit from it!
+
 ---
+
+## Features
+
+### :material-file-excel-box: Nex Merging
+
+When editing Nex files (.nxd), the mod loader will keep track of the cells you've edited, and merge them with table changes made by other mods, then build the final table. This allows multiple mods to edit the same table with less conflicts.
+
+---
+
+### :material-bug-check: Anti-Anti-Debug
+
+The mod loader disarms the primitive [anti-debugging](../resources/other/debugging.md) that the game uses.
+
+---
+
+### :material-api: Modding API
+
+A [modding API](mod_loader_api.md) is exposed. 
+
+An extended API with more features is available with [Faith Framework](https://www.nexusmods.com/finalfantasytacticstheivalicechronicles/mods/24) such as:
+* [ImGui API](../modding/framework/imgui_api.md) (Creating Debug/Modding GUIs)
+* [Nex API](../modding/framework/nex_api.md) (Editing Nex tables at runtime)
 
 ## Creating Mods for Manual Installation
 
