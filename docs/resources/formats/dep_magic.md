@@ -16,14 +16,30 @@ Registers all entities/dependencies related for a `.magic` file.
 
 ## `.magic`
 
-Contain a set of magic spells (basically blueprints that can be instantiated into spells) that can be used by characters. Each character has their own file which is different and two spells can have the same Id and yet be different, as long as they're contained in two different characters' files.
+Magic files contain spell, or dynamic projectile definitions that can be created by characters/enemies (BNpcs). Each BNpc has their own file which is different and two spells can have the same Id and yet be different, as long as they're contained in two different characters' files.
 
-It seems like these spell "blueprints" are divided into lists, which are then divided into distinct operations each containing a number of properties. Every property has a type and data (usually 4byte int or float) that represents different things based on the type.
-Basically properties just sets up an operation's parameter.
+These files are at `chara/<id>/magic/<id>.magic` (You will need to extract `chara/<id>/pack/<id>.pac`).
 
-The current guess is that magic spells are instances of these spell objects / blueprints, and the magic file contains data for spell size, velocity, direction, VFXAudio, AttackParam etc.
+A magic file defines magic ids, which are instantiated through [chara timelines](../../tutorials/timelines/chara_timelines.md).
 
-Instances of spells are basically any attack that's not connected to any BNpc, which makes them unrelated to the character's collision files.
-They're like volatile npcs with their own collision, movement.
+One magic 'entry' may contain groups of operations, which are uniquely identified by their own Id. These groups contain operations, which declares a magic's behavior, such as initialize a linear projectile, a VFX ([vfxb id](vatb.md)), the hitbox, and a lot more.
+
+These operations contain properties. These properties merely just set up how an operation behaves. (Under the hood, all they really do is set an operation's internal field to a value).
+
+Operations may have properties that point to other groups by Id - they are essentially callbacks.
 
 [010 Editor Template here](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_magic.bt).
+
+!!! tip
+    You can edit magic files at runtime using [FaithFramework](https://www.nexusmods.com/finalfantasy16/mods/138) - Head to the resource manager and look for magic files.
+
+---
+
+For a quick example, Magic 3 (in `c1001.magic`) is Clive's Normal (non charged) shot.
+
+It declares 4 groups:
+
+* `4337` - Used to initialize the magic with operation 51 (you'll see this one a lot), which [Eid](../ids/eid.md) to use for the current actor, and which target to use.
+* `4338` - Creates a projectile.
+* `4340` - Callback group for when the target was hit.
+* `4354` - Callback group for when the projectile 'expired' - it hit nobody.
