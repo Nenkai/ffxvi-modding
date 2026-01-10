@@ -10,13 +10,17 @@ Before loading the `.magic` file, a `.dep` file is loaded from the pack `system/
 
 ## `.dep`
 
-Registers all entities/dependencies related for a `.magic` file.
+Registers all entities/dependencies (BNpcBases/WeaponBases) required for a `.magic` file.
+
+They are located under the `chara` folder (sourced from `system/game/magic/depend_resource_info.pac`).
 
 [010 Editor Template here](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_dep_MagicDependResource.bt).
 
 ## `.magic`
 
 Magic files contain spell, or dynamic projectile definitions that can be created by characters/enemies (BNpcs). Each BNpc has their own file which is different and two spells can have the same Id and yet be different, as long as they're contained in two different characters' files.
+
+The file that gets loaded depends on the `MagicFilePath` column of the [Model](../../tutorials/nex/tables.md) nex table. The model row used depends on BNpcBase's `ModelId` column.
 
 These files are at `chara/<id>/magic/<id>.magic` (You will need to extract `chara/<id>/pack/<id>.pac`).
 
