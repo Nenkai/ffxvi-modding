@@ -100,7 +100,7 @@ c3001 <-> c3101 - "NPC Models"
     b0051 - "Tomes aka Harpocrates II Hyperboreos"
     b0053 - "Cyril"
     b0055 - "L’ubor"
-    b0056 - "Quintin
+    b0056 - "Quintin"
     b0057 - "Konrad"
     b0058 - "Not so wealthy Dhalmekian male"
     b0012 - "Theodore no bag"
