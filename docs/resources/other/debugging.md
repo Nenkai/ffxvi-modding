@@ -45,3 +45,13 @@ Use the mod loader and attach.
 !!! warning
     
     Starting the process and nopping `IsDebuggerPresent` causes the same issue where the game gets stuck without showing the main window.
+
+### RenderDoc
+
+You cannot use RenderDoc as is, even with the anti-debugging defused.
+
+The engine uses [NvAPI](https://developer.nvidia.com/nvapi/get-started) which RenderDoc explicitly doesn't support, and attempt to query an interface for `NvAPI_SYS_GetDriverAndBranchVersion` which RenderDoc [does not whitelist](https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/driver/ihv/nv/nvapi_hooks.cpp#L173). 
+
+There is a way to force enable vendor extensions but it appears to be gated behind [an API call](https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/replay/capture_options.cpp#L53-L58) as of 11/01/2026.
+
+[More info as to why here (Github Issue)](https://github.com/baldurk/renderdoc/issues/1193)
