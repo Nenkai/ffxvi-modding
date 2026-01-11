@@ -50,7 +50,9 @@ Use the mod loader and attach.
 
 You cannot use RenderDoc as is, even with the anti-debugging defused.
 
-The engine uses [NvAPI](https://developer.nvidia.com/nvapi/get-started) which RenderDoc explicitly doesn't support, and attempt to query an interface for `NvAPI_SYS_GetDriverAndBranchVersion` which RenderDoc [does not whitelist](https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/driver/ihv/nv/nvapi_hooks.cpp#L173). 
+The engine uses [NvAPI](https://developer.nvidia.com/nvapi/get-started) which RenderDoc explicitly doesn't support, and attempts to query an interface for `NvAPI_SYS_GetDriverAndBranchVersion` which RenderDoc [does not whitelist](https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/driver/ihv/nv/nvapi_hooks.cpp#L173).
+
+The attempt fails due to the `nvapi_QueryInterface` returning null, which causes an engine NvApi error (`0x96100005`), therefore the general graphics initialization also errors at the top-level (`0x96040004`). This makes the game bail early as failed to initialize.
 
 There is a way to force enable vendor extensions but it appears to be gated behind [an API call](https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/replay/capture_options.cpp#L53-L58) as of 11/01/2026.
 
