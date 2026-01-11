@@ -2562,7 +2562,8 @@
 </div>
 <h3 id="renderdoc">RenderDoc<a class="headerlink" href="#renderdoc" title="Permanent link">¶</a></h3>
 <p>You cannot use RenderDoc as is, even with the anti-debugging defused.</p>
-<p>The engine uses <a href="https://developer.nvidia.com/nvapi/get-started">NvAPI</a> which RenderDoc explicitly doesn't support, and attempt to query an interface for <code>NvAPI_SYS_GetDriverAndBranchVersion</code> which RenderDoc <a href="https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/driver/ihv/nv/nvapi_hooks.cpp#L173">does not whitelist</a>. </p>
+<p>The engine uses <a href="https://developer.nvidia.com/nvapi/get-started">NvAPI</a> which RenderDoc explicitly doesn't support, and attempts to query an interface for <code>NvAPI_SYS_GetDriverAndBranchVersion</code> which RenderDoc <a href="https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/driver/ihv/nv/nvapi_hooks.cpp#L173">does not whitelist</a>.</p>
+<p>The attempt fails due to the <code>nvapi_QueryInterface</code> returning null, which causes an engine NvApi error (<code>0x96100005</code>), therefore the general graphics initialization also errors at the top-level (<code>0x96040004</code>). This makes the game bail early as failed to initialize.</p>
 <p>There is a way to force enable vendor extensions but it appears to be gated behind <a href="https://github.com/baldurk/renderdoc/blob/075870caf5090b94f48812b7b69565db5e0b143e/renderdoc/replay/capture_options.cpp#L53-L58">an API call</a> as of 11/01/2026.</p>
 <p><a href="https://github.com/baldurk/renderdoc/issues/1193">More info as to why here (Github Issue)</a></p>
 
