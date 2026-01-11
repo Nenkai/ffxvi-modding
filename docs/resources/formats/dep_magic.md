@@ -32,7 +32,9 @@ These operations contain properties. These properties merely just set up how an 
 
 Operations may have properties that point to other groups by Id - they are essentially callbacks.
 
-[010 Editor Template here](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_magic.bt).
+* [Magic Ids to Names](https://github.com/Nenkai/FF16Tools/blob/master/FF16Tools.Files/Magic/Data/MagicIds.txt)
+* [FF16Tools's Magic Library](https://github.com/Nenkai/FF16Tools/tree/master/FF16Tools.Files/Magic) (extra documentation on properties, supported properties per operation & more)
+* [010 Editor Template here](https://github.com/Nenkai/010GameTemplates/blob/main/Square%20Enix/Final%20Fantasy%2016/FF16_magic.bt).
 
 !!! tip
     You can edit magic files at runtime using [FaithFramework](https://www.nexusmods.com/finalfantasy16/mods/138) - Head to the resource manager and look for magic files.
