@@ -87,6 +87,7 @@ nav:
     - Formats:
       - Format List: resources/formats/format_list.md
       - .ccb - Chara Collision: resources/formats/ccb.md
+      - .mdl - Model: resources/formats/mdl_model.md
       - .pac - Pack: resources/formats/pac.md
       - .nxd - Next ExcelDB: resources/formats/nxd.md
       - .magic/.dep: resources/formats/dep_magic.md
@@ -107,7 +108,6 @@ nav:
 
   - Tutorials:
     - Extracting Files: tutorials/file_extraction.md
-
     - Nex (NXD):
       - Database Editing: tutorials/nex/nxd_editing.md
       - Tables: tutorials/nex/tables.md
@@ -115,6 +115,10 @@ nav:
     - Textures:
       - Extracting Textures: tutorials/textures/texture_extraction.md
     
+    - Models: 
+      - Model Import/Export: tutorials/models/model_workflow.md
+      - Animation Import/Export: tutorials/models/animations.md
+
     - Timelines:
       - Introduction: tutorials/timelines/introduction.md
       - Common Elements: tutorials/timelines/common_elements.md
