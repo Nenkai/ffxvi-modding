@@ -31,3 +31,7 @@ MdlConverter.exe <path to .anmb file> <path to skl file>
 ### :material-import: `.gltf` -> `.anmb`
 
 :material-arrow-right: Refer to [this guide](AnimationImportGuide.pdf) by CyberSoul.
+
+!!! quote "Notes from obilang"
+
+    *The anmb is stored in 30fps, so as exported, but the importer is expecting 24 fps .so you have to save as 24fps for reimport for now*
