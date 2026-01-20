@@ -7,11 +7,13 @@
       
       
       
-        <link rel="canonical" href="https://nenkai.github.io/ffxvi-modding/tutorials/timelines/chara_timelines/">
+        <link rel="canonical" href="https://nenkai.github.io/ffxvi-modding/tutorials/models/model_workflow/">
       
       
-        <link rel="prev" href="../common_elements/">
+        <link rel="prev" href="../../textures/texture_extraction/">
       
+      
+        <link rel="next" href="../animations/">
       
       
         
@@ -22,7 +24,7 @@
     
     
       
-        <title>Character Timelines &amp; Elements - FINAL FANTASY XVI Modding</title>
+        <title>Model Import/Export - FINAL FANTASY XVI Modding</title>
       
     
     
@@ -58,17 +60,17 @@
     
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Character Timelines &amp; Elements - FINAL FANTASY XVI Modding">
+<meta property="og:title" content="Model Import/Export - FINAL FANTASY XVI Modding">
 <meta property="og:description" content="FINAL FANTASY XVI - Modding">
-<meta property="og:image" content="https://nenkai.github.io/ffxvi-modding/assets/images/social/tutorials/timelines/chara_timelines.png">
+<meta property="og:image" content="https://nenkai.github.io/ffxvi-modding/assets/images/social/tutorials/models/model_workflow.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://nenkai.github.io/ffxvi-modding/tutorials/timelines/chara_timelines/">
+<meta property="og:url" content="https://nenkai.github.io/ffxvi-modding/tutorials/models/model_workflow/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:title" content="Character Timelines &amp; Elements - FINAL FANTASY XVI Modding">
+<meta property="twitter:title" content="Model Import/Export - FINAL FANTASY XVI Modding">
 <meta property="twitter:description" content="FINAL FANTASY XVI - Modding">
-<meta property="twitter:image" content="https://nenkai.github.io/ffxvi-modding/assets/images/social/tutorials/timelines/chara_timelines.png">
+<meta property="twitter:image" content="https://nenkai.github.io/ffxvi-modding/assets/images/social/tutorials/models/model_workflow.png">
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -98,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#character-timelines" class="md-skip">
+        <a href="#model-workflow" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Character Timelines &amp; Elements
+              Model Import/Export
             
           </span>
         </div>
@@ -2173,6 +2175,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2188,11 +2192,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
@@ -2213,7 +2217,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2228,10 +2232,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../models/model_workflow/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22.51 6.457.001-.013a.89.89 0 0 0-.271-.638l-.027-.024q-.028-.025-.057-.048-.03-.022-.06-.04l-.029-.02-9.61-5.547a.89.89 0 0 0-.922.004L1.933 5.674l-.03.02-.023.014-.02.015a1 1 0 0 0-.147.134l-.003.003a.9.9 0 0 0-.221.584v.014l-.001.027v11.07c0 .328.18.63.469.784l9.599 5.542.023.011a1 1 0 0 0 .166.07l.04.01.072.015q.018.004.035.006a.8.8 0 0 0 .216 0q.018-.002.035-.006l.072-.014.04-.012.064-.022a1 1 0 0 0 .102-.047l.023-.011 9.599-5.542a.89.89 0 0 0 .469-.784V6.478zM5.255 6.082l6.537-3.774a.42.42 0 0 1 .418 0l6.537 3.774a.418.418 0 0 1 0 .725l-6.537 3.774a.42.42 0 0 1-.418 0L5.254 6.807a.418.418 0 0 1 0-.725m5.614 14.345a.417.417 0 0 1-.626.361l-6.524-3.766a.42.42 0 0 1-.209-.361V9.127a.417.417 0 0 1 .626-.361l6.524 3.766a.42.42 0 0 1 .209.362zm9.623-3.766a.42.42 0 0 1-.209.36l-6.524 3.767a.417.417 0 0 1-.626-.36v-7.533c0-.15.08-.287.209-.362l6.524-3.766a.417.417 0 0 1 .626.36z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Import/Export
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2249,6 +2282,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mdl-to-gltf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .mdl to .gltf
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gltf-to-mdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        .gltf to .mdl
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".gltf to .mdl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blender-export-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blender Export Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Converting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2261,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../models/animations/" class="md-nav__link">
+      <a href="../animations/" class="md-nav__link">
         
   
   
@@ -2296,8 +2427,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2313,11 +2442,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5">
         
           
           <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="">
@@ -2338,7 +2467,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2356,7 +2485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../timelines/introduction/" class="md-nav__link">
         
   
   
@@ -2384,7 +2513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../common_elements/" class="md-nav__link">
+      <a href="../../timelines/common_elements/" class="md-nav__link">
         
   
   
@@ -2409,37 +2538,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Character Timelines &amp; Elements
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../timelines/chara_timelines/" class="md-nav__link">
         
   
   
@@ -2455,241 +2557,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#known-character-timeline-elements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Known character timeline elements
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Known character timeline elements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#used-to-play-an-animation-given-an-anmb-file-on-the-character-executing-the-timeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to play an animation given an .anmb file on the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-activate-hitboxes-on-the-character-executing-the-timeline-setting-a-desired-attackparamid-to-inflict-on-the-target-upon-collision" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to activate hitboxes on the character executing the timeline, setting a desired AttackParamId to inflict on the target upon collision.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-interrupt-all-current-vertical-movement-and-prevent-any-further-of-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to interrupt all current vertical movement, and prevent any further of it.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-allow-the-player-to-execute-a-stomp-jump-cancel-to-cancel-the-currently-playing-character-animation-and-reset-airborne-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to allow the player to execute a Stomp (Jump Cancel) to cancel the currently playing character animation and reset airborne actions.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-create-an-instance-of-a-magic-object-given-the-magicid-for-this-to-execute-correctly-the-magicid-must-point-to-a-spell-correctly-included-inside-the-characters-magic-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to create an instance of a magic object given the MagicId. For this to execute correctly, the MagicId must point to a spell correctly included inside the character's .magic file.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#while-enabled-getting-hit-during-certain-animations-such-as-dodge-and-rooks-gambit-triggers-the-precision-effect-can-follow-up-with-another-action-automatically" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        While enabled, getting hit during certain animations (such as Dodge and Rook's Gambit) triggers the precision effect. Can follow up with another action automatically.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to spawn VFX or SFX at the position of the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to spawn VFX or SFX at the position of the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-play-a-facial-animation-given-an-anmb-file-on-the-character-executing-the-timeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to play a facial animation given an .anmb file on the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to spawn VFX or SFX at the position of the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#while-enabled-landing-a-successful-attack-on-a-target-will-move-the-user-upwards-and-keep-them-in-the-air-for-a-given-number-of-frames" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        While enabled, landing a successful attack on a target will move the user upwards and keep them in the air for a given number of frames.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2737,22 +2604,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#known-character-timeline-elements" class="md-nav__link">
+  <a href="#models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Known character timeline elements
+        Models
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Known character timeline elements">
+    <nav class="md-nav" aria-label="Models">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#used-to-play-an-animation-given-an-anmb-file-on-the-character-executing-the-timeline" class="md-nav__link">
+  <a href="#mdl-to-gltf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Used to play an animation given an .anmb file on the character executing the timeline.
+        .mdl to .gltf
       
     </span>
   </a>
@@ -2760,10 +2627,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#used-to-activate-hitboxes-on-the-character-executing-the-timeline-setting-a-desired-attackparamid-to-inflict-on-the-target-upon-collision" class="md-nav__link">
+  <a href="#gltf-to-mdl" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Used to activate hitboxes on the character executing the timeline, setting a desired AttackParamId to inflict on the target upon collision.
+        .gltf to .mdl
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".gltf to .mdl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blender-export-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blender Export Settings
       
     </span>
   </a>
@@ -2771,175 +2650,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#used-to-interrupt-all-current-vertical-movement-and-prevent-any-further-of-it" class="md-nav__link">
+  <a href="#converting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Used to interrupt all current vertical movement, and prevent any further of it.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-allow-the-player-to-execute-a-stomp-jump-cancel-to-cancel-the-currently-playing-character-animation-and-reset-airborne-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to allow the player to execute a Stomp (Jump Cancel) to cancel the currently playing character animation and reset airborne actions.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-create-an-instance-of-a-magic-object-given-the-magicid-for-this-to-execute-correctly-the-magicid-must-point-to-a-spell-correctly-included-inside-the-characters-magic-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to create an instance of a magic object given the MagicId. For this to execute correctly, the MagicId must point to a spell correctly included inside the character's .magic file.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#while-enabled-getting-hit-during-certain-animations-such-as-dodge-and-rooks-gambit-triggers-the-precision-effect-can-follow-up-with-another-action-automatically" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        While enabled, getting hit during certain animations (such as Dodge and Rook's Gambit) triggers the precision effect. Can follow up with another action automatically.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to spawn VFX or SFX at the position of the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to spawn VFX or SFX at the position of the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-play-a-facial-animation-given-an-anmb-file-on-the-character-executing-the-timeline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to play a facial animation given an .anmb file on the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Used to spawn VFX or SFX at the position of the character executing the timeline.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#while-enabled-landing-a-successful-attack-on-a-target-will-move-the-user-upwards-and-keep-them-in-the-air-for-a-given-number-of-frames" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        While enabled, landing a successful attack on a target will move the user upwards and keep them in the air for a given number of frames.
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unknown-wip_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Unknown / WIP
+        Converting
       
     </span>
   </a>
@@ -2948,6 +2662,22 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#animations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Animations
+      
+    </span>
+  </a>
   
 </li>
       
@@ -2968,7 +2698,7 @@
 
 
   
-    <a href="https://github.com/Nenkai/ffxvi-modding/edit/master/docs/tutorials/timelines/chara_timelines.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Nenkai/ffxvi-modding/edit/master/docs/tutorials/models/model_workflow.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2976,111 +2706,81 @@
   
 
 
-<h1 id="character-timelines">Character Timelines<a class="headerlink" href="#character-timelines" title="Permanent link">¶</a></h1>
-<p>These timelines use common elements (0xxx), as well as special elements unique to this timeline category (1xxx).</p>
-<h2 id="known-character-timeline-elements">Known character timeline elements<a class="headerlink" href="#known-character-timeline-elements" title="Permanent link">¶</a></h2>
-<details class="note">
-<summary><code>1001</code> - <code>PlayCharacterAnimation</code></summary>
-<h4 id="used-to-play-an-animation-given-an-anmb-file-on-the-character-executing-the-timeline">Used to play an animation given an .anmb file on the character executing the timeline.<a class="headerlink" href="#used-to-play-an-animation-given-an-anmb-file-on-the-character-executing-the-timeline" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-Anim - Path to the .anmb file containing the animation to play
+<h1 id="model-workflow"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22.51 6.457.001-.013a.89.89 0 0 0-.271-.638l-.027-.024q-.028-.025-.057-.048-.03-.022-.06-.04l-.029-.02-9.61-5.547a.89.89 0 0 0-.922.004L1.933 5.674l-.03.02-.023.014-.02.015a1 1 0 0 0-.147.134l-.003.003a.9.9 0 0 0-.221.584v.014l-.001.027v11.07c0 .328.18.63.469.784l9.599 5.542.023.011a1 1 0 0 0 .166.07l.04.01.072.015q.018.004.035.006a.8.8 0 0 0 .216 0q.018-.002.035-.006l.072-.014.04-.012.064-.022a1 1 0 0 0 .102-.047l.023-.011 9.599-5.542a.89.89 0 0 0 .469-.784V6.478zM5.255 6.082l6.537-3.774a.42.42 0 0 1 .418 0l6.537 3.774a.418.418 0 0 1 0 .725l-6.537 3.774a.42.42 0 0 1-.418 0L5.254 6.807a.418.418 0 0 1 0-.725m5.614 14.345a.417.417 0 0 1-.626.361l-6.524-3.766a.42.42 0 0 1-.209-.361V9.127a.417.417 0 0 1 .626-.361l6.524 3.766a.42.42 0 0 1 .209.362zm9.623-3.766a.42.42 0 0 1-.209.36l-6.524 3.767a.417.417 0 0 1-.626-.36v-7.533c0-.15.08-.287.209-.362l6.524-3.766a.417.417 0 0 1 .626.36z"></path></svg></span> Model Workflow<a class="headerlink" href="#model-workflow" title="Permanent link">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page only provided for modding purposes, not ripping purposes.</p>
+<p>This page may be missing information. It was written by someone only familiar with the tools, not 3D Modeling.</p>
+</div>
+<p>Requirements:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"></path></svg></span> <a href="https://github.com/Nenkai/FF16-Model-Importer">FF16-Model-Importer</a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.58 3.12v.01c-.31 0-.62.09-.87.26-.5.35-.56.93-.11 1.3L14.46 7l-8.73.03h-.01C5 7.03 4.3 7.5 4.16 8.1c-.16.61.34 1.12 1.1 1.12l4.43-.01-7.93 6.09c-.76.57-.99 1.52-.52 2.12.48.61 1.49.61 2.26 0l4.3-3.53s-.07.48-.06.76c0 .29.1.85.23 1.28.29.93.78 1.78 1.46 2.53.7.77 1.57 1.39 2.57 1.83 1.03.47 2.17.71 3.34.71 1.16 0 2.31-.25 3.35-.72 1-.44 1.86-1.07 2.56-1.84.68-.75 1.17-1.61 1.46-2.53.14-.47.23-.94.29-1.41 0-.47 0-.94-.06-1.41-.13-.91-.44-1.77-.94-2.55-.44-.71-1-1.34-1.69-1.87l-6.89-5.29a1.42 1.42 0 0 0-.84-.26m2.76 6.09c1.16 0 2.25.38 3.12 1.08.44.36.79.78 1.04 1.25.27.46.44 1.01.5 1.57.04.56-.04 1.12-.23 1.66-.2.54-.52 1.04-.95 1.49-.89.9-2.13 1.42-3.48 1.42-1.34 0-2.59-.51-3.48-1.41-.43-.44-.75-.95-.95-1.49a3.9 3.9 0 0 1-.22-1.66c.05-.56.22-1.09.48-1.57.26-.47.62-.89 1.06-1.25.86-.71 1.96-1.09 3.11-1.09m.1 1.4c-.78 0-1.5.28-2.03.73-.54.46-.91 1.1-.94 1.84-.04.75.26 1.45.79 1.97.54.53 1.32.85 2.18.85s1.63-.32 2.18-.85c.53-.52.83-1.22.79-1.97-.04-.74-.41-1.38-.94-1.84-.53-.45-1.25-.73-2.03-.73"></path></svg></span> Blender. The workflow is centered around Blender as a whole.</li>
+</ul>
+<p>It may be worthwhile to check out the dedicated <a href="../resources/formats/mdl_model.md">Model</a> format page to get an understanding of what is in there.</p>
+<hr>
+<h2 id="models">Models<a class="headerlink" href="#models" title="Permanent link">¶</a></h2>
+<h3 id="mdl-to-gltf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-4-4v3h-9v2h9v3M1 18V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3h-2V6H3v12h12v-3h2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2"></path></svg></span> <code>.mdl</code> to <code>.gltf</code><a class="headerlink" href="#mdl-to-gltf" title="Permanent link">¶</a></h3>
+<p>Drag any <code>.mdl</code> file into the executable for it to create a folder containing <code>.gltf</code> files for all 8 LODs.</p>
+<p>The format has no mesh names therefore they're taken from the material that they reference.</p>
+<div class="admonition warning">
+<p class="admonition-title">Armature</p>
+<p>There will be no armature in the case of rigged models. The skeleton is stored in a separate file, contained in a separate pack per model. </p>
+<p>Example: <code>chara/c1001/c1001.pac</code> -&gt; <code>animation/chara/c1001/skeleton/&lt;body/face/hair/&gt;/&lt;body/face/hair/&gt;.skl</code></p>
+<p>The tool supports this, provide the path to model aswell as the pac file and run this in a command prompt and run: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>MdlConverter.exe &lt;path to .mdl file&gt; &lt;path to .pac file&gt;
 </code></pre></div>
-</details>
-<details class="note">
-<summary><code>1002</code> - <code>EnableAttackParam</code></summary>
-<h4 id="used-to-activate-hitboxes-on-the-character-executing-the-timeline-setting-a-desired-attackparamid-to-inflict-on-the-target-upon-collision">Used to activate hitboxes on the character executing the timeline, setting a desired AttackParamId to inflict on the target upon collision.<a class="headerlink" href="#used-to-activate-hitboxes-on-the-character-executing-the-timeline-setting-a-desired-attackparamid-to-inflict-on-the-target-upon-collision" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-AttackParamId
-</code></pre></div>
-</details>
-<details class="note">
-<summary><code>1007</code> - <code>StopAllVerticalMomentum</code></summary>
-<h4 id="used-to-interrupt-all-current-vertical-movement-and-prevent-any-further-of-it">Used to interrupt all current vertical movement, and prevent any further of it.<a class="headerlink" href="#used-to-interrupt-all-current-vertical-movement-and-prevent-any-further-of-it" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1008</code> - <code>EnableStompExecution</code></summary>
-<h4 id="used-to-allow-the-player-to-execute-a-stomp-jump-cancel-to-cancel-the-currently-playing-character-animation-and-reset-airborne-actions">Used to allow the player to execute a Stomp (Jump Cancel) to cancel the currently playing character animation and reset airborne actions.<a class="headerlink" href="#used-to-allow-the-player-to-execute-a-stomp-jump-cancel-to-cancel-the-currently-playing-character-animation-and-reset-airborne-actions" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1010</code> - <code>TurnToTarget</code></summary>
-<h4 id="unknown-wip">Unknown / WIP<a class="headerlink" href="#unknown-wip" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1012</code> - <code>MagicCreate</code></summary>
-<h4 id="used-to-create-an-instance-of-a-magic-object-given-the-magicid-for-this-to-execute-correctly-the-magicid-must-point-to-a-spell-correctly-included-inside-the-characters-magic-file">Used to create an instance of a magic object given the MagicId. For this to execute correctly, the MagicId must point to a spell correctly included inside the character's .magic file.<a class="headerlink" href="#used-to-create-an-instance-of-a-magic-object-given-the-magicid-for-this-to-execute-correctly-the-magicid-must-point-to-a-spell-correctly-included-inside-the-characters-magic-file" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-UnkId / MagicId
-</code></pre></div>
-</details>
-<details class="note">
-<summary><code>1016</code> - <code>PrecedeInputUnk</code></summary>
-<h4 id="unknown-wip_1">Unknown / WIP<a class="headerlink" href="#unknown-wip_1" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1021</code> - <code>TriggerPrecisionEvasion</code></summary>
-<h4 id="while-enabled-getting-hit-during-certain-animations-such-as-dodge-and-rooks-gambit-triggers-the-precision-effect-can-follow-up-with-another-action-automatically">While enabled, getting hit during certain animations (such as Dodge and Rook's Gambit) triggers the precision effect. Can follow up with another action automatically.<a class="headerlink" href="#while-enabled-getting-hit-during-certain-animations-such-as-dodge-and-rooks-gambit-triggers-the-precision-effect-can-follow-up-with-another-action-automatically" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1023</code> - <code>PlayVisualOrSoundEffects</code></summary>
-<h4 id="used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline">Used to spawn VFX or SFX at the position of the character executing the timeline.<a class="headerlink" href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-VFX - Path to the .vfxb file containing the visual effects to play
-SE - Path to the file containing the sound effect to play
-</code></pre></div>
-</details>
-<details class="note">
-<summary><code>1030</code> - <code>PlayVisualOrSoundEffects2</code></summary>
-<h4 id="used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_1">Used to spawn VFX or SFX at the position of the character executing the timeline.<a class="headerlink" href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_1" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-VFX - Path to the .vfxb file containing the visual effects to play
-SE - Path to the file containing the sound effect to play
-</code></pre></div>
-</details>
-<details class="note">
-<summary><code>1035</code> - <code>PlayFacialAnimation</code></summary>
-<h4 id="used-to-play-a-facial-animation-given-an-anmb-file-on-the-character-executing-the-timeline">Used to play a facial animation given an .anmb file on the character executing the timeline.<a class="headerlink" href="#used-to-play-a-facial-animation-given-an-anmb-file-on-the-character-executing-the-timeline" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-Anim - Path to the .anmb file containing the facial animation to play
-</code></pre></div>
-</details>
-<details class="note">
-<summary><code>1047</code> - <code>SummonPartsVisibileRange</code></summary>
-<h4 id="unknown-wip_2">Unknown / WIP<a class="headerlink" href="#unknown-wip_2" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1049</code> - <code>PlayVisualOrSoundEffects3</code></summary>
-<h4 id="used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_2">Used to spawn VFX or SFX at the position of the character executing the timeline.<a class="headerlink" href="#used-to-spawn-vfx-or-sfx-at-the-position-of-the-character-executing-the-timeline_2" title="Permanent link">¶</a></h4>
-<div class="highlight"><pre><span></span><code>Parameters:
-VFX - Path to the .vfxb file containing the visual effects to play
-SE - Path to the file containing the sound effect to play
-</code></pre></div>
-</details>
-<details class="note">
-<summary><code>1053</code> - <code>BattleVoiceTrigger</code></summary>
-<h4 id="unknown-wip_3">Unknown / WIP<a class="headerlink" href="#unknown-wip_3" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1058</code> - <code>DisableReceiver</code></summary>
-<h4 id="unknown-wip_4">Unknown / WIP<a class="headerlink" href="#unknown-wip_4" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1086</code> - <code>TriggerUpwardMomentumOnAttack</code></summary>
-<h4 id="while-enabled-landing-a-successful-attack-on-a-target-will-move-the-user-upwards-and-keep-them-in-the-air-for-a-given-number-of-frames">While enabled, landing a successful attack on a target will move the user upwards and keep them in the air for a given number of frames.<a class="headerlink" href="#while-enabled-landing-a-successful-attack-on-a-target-will-move-the-user-upwards-and-keep-them-in-the-air-for-a-given-number-of-frames" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1097</code> - <code>DisableCharaUnk</code></summary>
-<h4 id="unknown-wip_5">Unknown / WIP<a class="headerlink" href="#unknown-wip_5" title="Permanent link">¶</a></h4>
-</details>
-<details class="note">
-<summary><code>1117</code> - <code>ActionEventTrigger</code></summary>
-<h4 id="unknown-wip_6">Unknown / WIP<a class="headerlink" href="#unknown-wip_6" title="Permanent link">¶</a></h4>
-</details>
+<p>Skeleton files are stored in a <a href="https://www.havok.com/">Havok</a> format (version <code>2020_2_0_r1</code>). Currently the tool supports up to 2018, so some models may not convert successfully due to additional unsupported data added in 2020.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note: Custom Attributes (click to expand)</p>
+<p>There may be per-vertex custom data. The tool currently puts them in custom GLTF attributes starting with <code>_</code>.</p>
+<p>You can access these by selecting a mesh in Blender, heading to the <code>Data</code> tab on the right side, and <code>Attributes</code>. From there you can head into Vertex Paint mode.</p>
+<p>The <code>_COLOR_0</code> is not put inside <code>COLOR_0</code> as it uses the alpha channel that Blender 4.1 drops. It appears to be used as wrinkles data in the case of face models.</p>
+</div>
+<hr>
+<h3 id="gltf-to-mdl"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14 12-4-4v3H2v2h8v3m10 2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3h2V6h12v12H6v-3H4v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2"></path></svg></span> <code>.gltf</code> to <code>.mdl</code><a class="headerlink" href="#gltf-to-mdl" title="Permanent link">¶</a></h3>
+<h4 id="blender-export-settings"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.58 3.12v.01c-.31 0-.62.09-.87.26-.5.35-.56.93-.11 1.3L14.46 7l-8.73.03h-.01C5 7.03 4.3 7.5 4.16 8.1c-.16.61.34 1.12 1.1 1.12l4.43-.01-7.93 6.09c-.76.57-.99 1.52-.52 2.12.48.61 1.49.61 2.26 0l4.3-3.53s-.07.48-.06.76c0 .29.1.85.23 1.28.29.93.78 1.78 1.46 2.53.7.77 1.57 1.39 2.57 1.83 1.03.47 2.17.71 3.34.71 1.16 0 2.31-.25 3.35-.72 1-.44 1.86-1.07 2.56-1.84.68-.75 1.17-1.61 1.46-2.53.14-.47.23-.94.29-1.41 0-.47 0-.94-.06-1.41-.13-.91-.44-1.77-.94-2.55-.44-.71-1-1.34-1.69-1.87l-6.89-5.29a1.42 1.42 0 0 0-.84-.26m2.76 6.09c1.16 0 2.25.38 3.12 1.08.44.36.79.78 1.04 1.25.27.46.44 1.01.5 1.57.04.56-.04 1.12-.23 1.66-.2.54-.52 1.04-.95 1.49-.89.9-2.13 1.42-3.48 1.42-1.34 0-2.59-.51-3.48-1.41-.43-.44-.75-.95-.95-1.49a3.9 3.9 0 0 1-.22-1.66c.05-.56.22-1.09.48-1.57.26-.47.62-.89 1.06-1.25.86-.71 1.96-1.09 3.11-1.09m.1 1.4c-.78 0-1.5.28-2.03.73-.54.46-.91 1.1-.94 1.84-.04.75.26 1.45.79 1.97.54.53 1.32.85 2.18.85s1.63-.32 2.18-.85c.53-.52.83-1.22.79-1.97-.04-.74-.41-1.38-.94-1.84-.53-.45-1.25-.73-2.03-.73"></path></svg></span> Blender Export Settings<a class="headerlink" href="#blender-export-settings" title="Permanent link">¶</a></h4>
+<p><strong>Make sure the following options are enabled, very important!</strong></p>
+<ul>
+<li><code>Data</code><ul>
+<li><code>Mesh</code><ul>
+<li>Tangents</li>
+<li><strong>Attributes</strong></li>
+</ul>
+</li>
+<li><code>Vertex Colors</code><ul>
+<li>Use Vertex Color (Active)</li>
+<li>Export All Vertex Colors</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Strongly recommended to leave this as default for FFXVI.</p>
+<h4 id="converting">Converting<a class="headerlink" href="#converting" title="Permanent link">¶</a></h4>
+<p>To convert back to <code>.mdl</code>, you need the original folder, <strong>aswell as the original file</strong>.</p>
+<p>The tool will use the original <code>.mdl</code> as a base for all the data, such as the joints, vfx data, etc.</p>
+<p>Upon building, the tool will clear ALL of the following:</p>
+<ul>
+<li>LODs</li>
+<li>Meshes</li>
+<li>Vertex/Index buffers</li>
+<li>Vertex layout Attributes</li>
+</ul>
+<p>Everything else will be preserved from the original model specified.</p>
+<hr>
+<h2 id="animations">Animations<a class="headerlink" href="#animations" title="Permanent link">¶</a></h2>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg></span> Continue on to the <a href="../animations/">Animations</a> page.</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -3112,7 +2812,7 @@ SE - Path to the file containing the sound effect to play
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../common_elements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Common Elements">
+          <a href="../../textures/texture_extraction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Extracting Textures">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
@@ -3122,11 +2822,27 @@ SE - Path to the file containing the sound effect to play
                 Previous
               </span>
               <div class="md-ellipsis">
-                Common Elements
+                Extracting Textures
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../animations/" class="md-footer__link md-footer__link--next" aria-label="Next: Animation Import/Export">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Animation Import/Export
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
         
       </nav>
     
