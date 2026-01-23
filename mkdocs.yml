@@ -76,21 +76,23 @@ nav:
     - Asset Paths: resources/asset_paths.md
     
     - IDs:
-      - Character/Model IDs: resources/ids/character_ids.md
       - BNpc IDs: resources/ids/bnpc_ids.md
+      - Character/Model IDs: resources/ids/character_ids.md
+      - Equip Item IDs: resources/ids/equip_item_ids.md
       - ENpc IDs: resources/ids/enpc_ids.md
       - Eid: resources/ids/eid.md
       - Game Map/Level IDs: resources/ids/gamemap_ids.md
       - Item IDs: resources/ids/item_ids.md
-      - Equip Item IDs: resources/ids/equip_item_ids.md
+      - Hardcoded IDs: resources/ids/hardcoded_ids.md
+      
 
     - Formats:
       - Format List: resources/formats/format_list.md
       - .ccb - Chara Collision: resources/formats/ccb.md
-      - .mdl - Model: resources/formats/mdl_model.md
-      - .pac - Pack: resources/formats/pac.md
-      - .nxd - Next ExcelDB: resources/formats/nxd.md
       - .magic/.dep: resources/formats/dep_magic.md
+      - .mdl - Model: resources/formats/mdl_model.md
+      - .nxd - Next ExcelDB: resources/formats/nxd.md
+      - .pac - Pack: resources/formats/pac.md
       - .vatb - VFX Audio Table: resources/formats/vatb.md
 
     - Misc:
