@@ -24,20 +24,23 @@ Once you have modded assets you'd like to mod into the game:
     │  └─ FFXVI/
     │     └─ data/
     │        ├─ ui/gameflow/title/title01.uib # (1)!
-    |        ├─ nxd/en/equipitem.nxd # (2)!
+    |        ├─ nxd/equipitem.en.nxd # (2)!
     │        ...
     │
     ├─ ModConfig.json
     └─ ...
     ```
 
-    1.  This will go in pack `0028`.
+    1. The mod loader will automatically put this file in a pack named `0028.diff.pack`. `.diff.pack` files are modded packs.
 
-    2.  A sub-folder with a locale name will appropriately put it in the correct locale pack. `nxd/en/equipitem.nxd` will translate to pack `0007.en` and put `nxd/equipitem.nxd` inside it.
+    2. Locale files will go in their locale pack automatically. `nxd/equipitem.en.nxd` will go into `0007.en.diff.pack` (`0007` is the `nxd` folder). Note: The old way (i.e `nxd/<locale>/equipitem.nxd`) is still supported, **but not recommended**.
 
     Also, any changes you make to [Nex](../tutorials/nex/nxd_editing.md) tables won't replace files altogether, but only cell changes you've made to increase compatibility with other mods. **This also means that you should only edit cells you actually need to edit to avoid potential conflicts.**
 
-??? example "Example (Mod Loader < 1.1.0)"
+??? example "Old Example (Mod Loader < 1.1.0)"
+
+    The old way (which is still supported for backwards compatibility reasons) allow you to insert files to any arbitrary pack.
+    
     ```{ .sh .no-copy }
     .
     ├─ ff16.<category>.<mymodname>/
@@ -64,7 +67,7 @@ If you have successfully gotten your mod to work, congratulations!
 !!! tip
     Reloaded-II also supports code-based mods, both with [.NET (C#)](https://reloaded-project.github.io/Reloaded-II/DevelopmentEnvironmentSetup/) or [Native](https://reloaded-project.github.io/Reloaded-II/NativeMods/).
     
-    If you are going this path to implement something that the game does not support like generic behavior, **you are strongly recommended to implement this to the [mod loader](https://github.com/Nenkai/fftivc.utility.modloader), or [FaithFramework](https://github.com/Nenkai/FaithFramework) so that other mods may also benefit from it!**
+    If you are going this path to implement something that the game does not support like generic behavior, **you are strongly recommended to implement this to the [mod loader](https://github.com/Nenkai/ff16.utility.modloader), or [FaithFramework](https://github.com/Nenkai/FaithFramework) so that other mods may also benefit from it!**
 
 ---
 
@@ -86,7 +89,7 @@ The mod loader disarms the primitive [anti-debugging](../resources/other/debuggi
 
 A [modding API](mod_loader_api.md) is exposed. 
 
-An extended API with more features is available with [Faith Framework](https://www.nexusmods.com/finalfantasytacticstheivalicechronicles/mods/24) such as:
+An extended API with more features is available with [Faith Framework](https://www.nexusmods.com/finalfantasy16/mods/138) such as:
 
 * [ImGui API](../modding/framework/imgui_api.md) (Creating Debug/Modding GUIs)
 * [Nex API](../modding/framework/nex_api.md) (Editing Nex tables at runtime)
